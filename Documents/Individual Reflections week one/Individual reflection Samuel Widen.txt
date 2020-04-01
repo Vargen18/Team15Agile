@@ -1,0 +1,20 @@
+What do I want to learn or understand better?
+A. I don't currently know of three KPIs that would add value to the project. 
+B. It would be good to know three usable KPIs, so that we can increase efficency or gain increased insight. 
+A->B. I should ask other students or look at earlier projects to get an idea of what other KPIs we could utilize. 
+
+How can I help someone else, or the entire team, to learn something new?
+A. Not everyone on the team is currently comfortable with using git. 
+B. Everyone on the team  being comfortable with git would ensure there aren't added unnecessary hurdles to get over when working. 
+A->B. Since I know how to use git and also know of an easy to use GUI, I should help by showing the other group members the ropes and answering their questions about git. 
+
+What is my contribution towards the team’s use of Scrum?
+A. I am present at the lectures and meetings to make sure I don't miss any new info. Since we haven't started properly working with the meat of the project, 
+it is hard to contribute to the team's use of scrum, but it should be sufficient to be there when we discuss things as well as attending the lectures for now. 
+B. I keep being up to date on what I need to do to contribute towards the team's use of scrum once the project starts. 
+A-B. I think keeping up with this pace will get me to B without issues. 
+
+What is my contribution towards the team’s deliveries?
+A. Filling in this reflection and discussing upcoming deliverable with the other team members. 
+B. I know what I should do to contribute to the new deliverables. 
+A->B. I need to read ahead on what deliverables are coming up so I can have a better perspective while discussing it with the others. 
