@@ -1,0 +1,33 @@
+Individual reflection week 1 by Johannes Kvernes
+
+What do I want to learn or understand better?
+(A) What do I know now?
+I have taken a course which was partly focused on agile process management, so I know a little bit about it.
+(B) What do I want to learn?
+I am not quite sure about KPIs, and would like to learn more about how to measure things that provide value for our team.
+(A -> B) How do I learn it?
+Look through slides again, search about it, discuss with the group or others.
+
+How can I help someone else, or the entire team, to learn something new?
+(A) Is there something that someone does not know how to do?
+There are members of the group who have not used git.
+(B) What do I want to do to help someone learn something new?
+I could teach the people who have not used git before how to use it.
+(A -> B) How do I want to help someone else learn something new?
+We will have a github session next week. I could be active there. Also when we start coding.
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+Not much to be honest.
+(B) What do I want to contribute with?
+I plan on keeping the Trello board updated and organized. If we decide to use other things for organization I will do the same there.
+(A -> B) How can I contribute?
+This one is pretty straight forward, just do it.
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+I came up with an idea for a project.
+(B) What do I want to contribute with?
+I wanna code alot. But I will do other things as well, like coming up with ideas for features of the product.
+(A -> B) How can I contribute?
+I don't really need a plan to code, that's gonna happen automatically. But I will spend some time designated to coming up with feature ideas.
