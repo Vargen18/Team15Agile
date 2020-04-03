@@ -1,0 +1,20 @@
+How can I help someone else, or the entire team, to learn something new?
+A. The team seems to be a bit confused regarding which idea to choose.
+B. The team has chosen the best idea in terms of what fits our plan.
+A->B. With help from the teachers and with further discussion within the team and with the customers I believe we will be able to choose the best idea.
+
+What is my contribution towards the team’s use of Scrum?
+A. This is only the first week so right now I do not believe I can contribute so much to this.
+B. I have a lot of knowledge from lectures and from own research, I can contribute to my team in terms of what scrum is and how it should be implemented. 
+A-B. I attend all future lectures and do some research on my own. 
+
+What is my contribution towards the team’s deliveries?
+A. The social contract needs to be finished.
+B. The contract is signed and contains right information.
+A->B. I have to make sure everybody knows what the contract should contain and make sure everybody signs it in time.
+
+
+What do I want to learn or understand better?
+A. How to structure the development of the website.
+B. I know which languages we will use and how the process of developing the website will look like.
+A->B. I need to be curious and ask my teammates a lot since they have more knowledge than me on these subjects.
