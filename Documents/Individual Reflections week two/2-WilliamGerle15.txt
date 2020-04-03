@@ -1,0 +1,15 @@
+How can I help someone else, or the entire team, to learn something new?
+A. The connection with the customer and the development of the idea is under construction.
+B. Everybody feels comfortable with the idea and how it will develop in the future.
+A->B. Since I have a different background than most of my group members I can perhaps help them with the development of the idea and communication with the customer.
+
+
+What is my contribution towards the team’s use of Scrum?
+A. We are beginning to use scrum.
+B. The team fully understands scrum and applies it correctly.
+A-B. I read more about scrum and try to help my team become better at it.
+
+What is my contribution towards the team’s deliveries?
+A. The business model canvas was something I felt more responsible of.
+B. The business model canvas is well done and submitted.
+A->B. I have to make sure everybody understands the business model canvas.
