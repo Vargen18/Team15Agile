@@ -1,0 +1,20 @@
+Self-evaluation 
+3/4 – 2020
+Oliver Karmetun
+
+What do I want to learn or understand better?
+It seems we have decided on using java script as the main language for our website. We also think of using the library React. 
+Therefor I would like to find some tutorials on both of these and check them out so that I can learn. I will do this during next week.
+
+How can I help someone else, or the entire team, to learn something new?
+Since I have some experience with working in a grocery store and have a good contact with our customer, I hope to be able to offer feedback when we do our user stories from the view of the store manager. 
+I will talk with the customer and show her our progress and mock ups so far.
+
+What is my contribution towards the team’s use of Scrum?
+I think that some of our user stories currently are somewhat too large and not broken down enough so I will bring this up with the team when we finalize our product backlog. 
+
+What is my contribution towards the team’s deliveries?
+I was present during the making of the model canvas.
+I have been in contact with the customer and gotten some valuable info as well as documents for us to use during the project. 
+For example we discussed how to organize the store, and I received an excel document with all the sections and categories of the wares. This document needed to be cleaned up before I gave it to the group. 
+I will check with the customer if we can get an excel with all the products in the store
