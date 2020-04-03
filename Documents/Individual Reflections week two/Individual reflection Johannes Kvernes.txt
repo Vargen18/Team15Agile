@@ -1,0 +1,33 @@
+Individual reflection week 2 by Johannes Kvernes
+
+What do I want to learn or understand better?
+(A) What do I know now?
+I still don’t know much about KPIs.
+(B) What do I want to learn?
+I would still like to learn about KPIs.
+(A -> B) How do I learn it?
+Look through slides again, search about it, discuss with the group or others.
+
+How can I help someone else, or the entire team, to learn something new?
+(A) Is there something that someone does not know how to do?
+We will likely use reactjs and nodejs (although we have not decided this, but are still going over options). It seems like no one in the team has used these before, including me.
+(B) What do I want to do to help someone learn something new?
+Even though I have not used these libraries, I have a pretty easy time getting familiar with code, so I can help those who need it as much as I can with that.
+(A -> B) How do I want to help someone else learn something new?
+Look at docs, but also apply general programming knowledge.
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+I have, as I said last week that I would, kept the trello board updated by moving all of the user stories that we came up with together over from a document to the trello board.
+(B) What do I want to contribute with?
+I want to continue keeping the trello board organized, but also continuously look over the user stories to make sure they are still valid and update them if needed.
+(A -> B) How can I contribute?
+Spend some time each sprint, probably when we are selecting which user stories to move from product backlog to sprint backlog, to check if the user stories should be changed or remain the way they are.
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+I contributed with a mockup.
+(B) What do I want to contribute with?
+I want to speak more and take more initiative, as it feels like I’m not doing much right now.
+(A -> B) How can I contribute?
+Just speak more and take more initiative, I guess.
