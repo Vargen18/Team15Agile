@@ -1,0 +1,10 @@
+Anna Nilsson
+
+What do I want to learn or understand better?
+I want to learn more about React and Node, a frontend and backend library that could be used to build our website. Currently my knowledge is about the libraries are limited, to learn more I will read up on their websites and talk to friends I know are well versed in them. 
+
+how can I help someone else, or the entire team, to learn something new?/ what is my contribution towards the team’s use of Scrum?
+The team is looking for libraries to help ease the development of the website. Currently we do not have any that we are using. I am trying to learn more about two libraries to halp the team learn more about them.    
+
+what is my contribution towards the team’s deliveries?
+The team has several features and criterias they want the website to fulfill. This needs to be visualized to give the team a clearer picture of what we want to create. This is reached by creating a mockup of some pages of the website. 
