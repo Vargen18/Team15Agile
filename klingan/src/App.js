@@ -1,14 +1,14 @@
 import React from "react";
 import HelloWorld from "./HelloWorld";
-import Square from "./Square";
 import "./App.css";
-import ProductList from "./Components/ProductList";
+import Order from "./Components/Order";
 
 function App() {
   return (
     <div className="App">
+      <h1>Affärens Sida</h1>
       <HelloWorld />
-      <ProductList />
+      <Order />
     </div>
   );
 }
