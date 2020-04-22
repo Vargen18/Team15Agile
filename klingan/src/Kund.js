@@ -2,8 +2,9 @@ import React from 'react';
 import HelloWorld from './HelloWorld';
 import Square from './Square';
 import './App.css';
-import ReactDOM from 'react-dom'
-import Handlare from './Handlare'
+import './Kund.css';
+import ReactDOM from 'react-dom';
+import Handlare from './Handlare';
 
 
 function Kund() {
@@ -11,7 +12,7 @@ function Kund() {
     return (
       <div className="Kund">
         {GoToHandlare()}
-        <Square name="Kund"/>     
+        <h1>Kund MotherFucker</h1>     
       </div>
     );
   }

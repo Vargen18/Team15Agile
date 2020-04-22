@@ -2,14 +2,15 @@ import React from "react";
 import HelloWorld from "./HelloWorld";
 import Square from "./Square";
 import "./App.css";
+import "./Handlare.css"
 import ReactDOM from "react-dom";
-import Kund from './Kund'
+import Kund from './Kund';
 
 function Handlare() {
   return (
     <div className="Handlare">
       {GoToKund()}
-      <Square name="Handlare" />
+      <h1>Handlare</h1>
     </div>
   );
 }
