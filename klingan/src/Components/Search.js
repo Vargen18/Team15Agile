@@ -3,6 +3,7 @@ import { getProducts } from "../database/Database";
 
 class Search {
   Search(searchTerm) {
+    //Sends a pop-up for each product that matches the (hardcoded) search term.
     searchTerm = "Potatis"; //Hårdkodat for now
     var products = getProducts();
     var flag = true;
