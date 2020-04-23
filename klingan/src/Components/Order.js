@@ -1,20 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
 import CustomerInfromation from "./CustomerInformation";
 import ProductList from "./ProductList";
 
-function Order(props) {
-  const products = [
-    { id: 0, name: "Potatis" },
-    { id: 1, name: "Lösgodis" },
-    { id: 2, name: "Frysta grönsaker" },
-  ];
+class Order extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      productList: props.ProductList,
+      customerInformation: props.CustomerInformation,
+    };
+  }
 
-  return (
-    <div>
-      <CustomerInfromation />
-      <ProductList products={products} />
-    </div>
-  );
+  render() {
+    return (
+      <div>
+        <CustomerInfromation
+          name={this.state.customerInformation.name}
+          mail={this.state.customerInformation.mail}
+          telefon={this.state.customerInformation.telefon}
+        />
+        <ProductList products={this.state.productList} />
+      </div>
+    );
+  }
 }
 
 export default Order;
