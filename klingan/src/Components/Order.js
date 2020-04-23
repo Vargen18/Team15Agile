@@ -6,19 +6,16 @@ class Order extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      productList: props.ProductList,
-      customerInformation: props.CustomerInformation,
+      productList: props.productList,
+      customer: props.customer,
     };
+    console.log(this.state);
   }
 
   render() {
     return (
       <div>
-        <CustomerInfromation
-          name={this.state.customerInformation.name}
-          mail={this.state.customerInformation.mail}
-          telefon={this.state.customerInformation.telefon}
-        />
+        <CustomerInfromation customer={this.state.customer} />
         <ProductList products={this.state.productList} />
       </div>
     );
