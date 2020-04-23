@@ -5,7 +5,6 @@ import './App.css';
 import ReactDOM from 'react-dom'
 import Handlare from './Handlare'
 import Kund from './Kund'
-import Product from './Product'
 
 function App() {
 
@@ -14,7 +13,6 @@ function App() {
       <HelloWorld />
       {GoToHandlare()}
       {GoToKund()}
-      {GoToProduct()}
       <Square name="Max" />
       <Square name="William" />
       <Square name="Gman" />
@@ -30,17 +28,6 @@ function GoToHandlare() {
 function redirectToHandlare() {
   ReactDOM.render(
     <Handlare />,
-    document.getElementById('root')
-  );
-}
-
-function GoToProduct() {
-  return <button onClick={redirectToProduct}>Product</button>
-}
-
-function redirectToProduct() {
-  ReactDOM.render(
-    <Product />,
     document.getElementById('root')
   );
 }
