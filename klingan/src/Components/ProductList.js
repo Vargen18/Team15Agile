@@ -11,7 +11,9 @@ class ProductList extends Component {
     return (
       <ul>
         {this.state.products.map((product) => (
-          <li key={product.id}>{product.name}</li>
+          <li key={product.id}>
+            <Product name={product.name} />
+          </li>
         ))}
       </ul>
     );
