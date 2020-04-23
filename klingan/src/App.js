@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <h1>Affärens Sida</h1>
       <HelloWorld />
-      <Order CustomerInformation={customer} ProductList={products} />
+      <Order customer={customer} productList={products} />
     </div>
   );
 }
