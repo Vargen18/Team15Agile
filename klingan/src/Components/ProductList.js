@@ -1,14 +1,21 @@
-import React from "react";
+import React, { Component } from "react";
 import Product from "./Product";
 
-function ProductList(props) {
-  return (
-    <div>
-      <Product name="Potatis" />
-      <Product name="Lösgodis" />
-      <Product name="Frysta Grönsaker" />
-    </div>
-  );
+class ProductList extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { products: props.products };
+  }
+
+  render() {
+    return (
+      <ul>
+        {this.state.products.map((product) => (
+          <li key={product.id}>{product.name}</li>
+        ))}
+      </ul>
+    );
+  }
 }
 
 export default ProductList;
