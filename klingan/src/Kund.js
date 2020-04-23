@@ -5,27 +5,40 @@ import './App.css';
 import './Kund.css';
 import ReactDOM from 'react-dom';
 import Handlare from './Handlare';
+import Product from './Product';
 
 
 function Kund() {
 
-    return (
-      <div className="Kund">
-        {GoToHandlare()}
-        <h1>Kund MotherFucker</h1>     
-      </div>
-    );
-  }
+  return (
+    <div className="Kund">
+      {GoToHandlare()}
+      <h1>Kund MotherFucker</h1>
+      {ShowProduct()}
+    </div>
+  );
+}
 
-  function GoToHandlare(){
-    return <button onClick={redirectToHandlare}>Handlare</button>
-  }
-  
-  function redirectToHandlare(){
-    ReactDOM.render(
-        <Handlare/>,
-        document.getElementById('root')
-      );
-  }
+function ShowProduct() {
+  return (
+    <div className="Product">
+      <Product name="Milk" url="https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg" />
+      <Product name="Youghurt" url="https://webcomicms.net/sites/default/files/clipart/143564/yoghurt-pictures-143564-9861608.jpg" />
+      <Product name="Nocco" url="https://www.tingstad.com/fixed/images/Main/1570702879/21366260.png" />
+    </div>
+  )
 
-  export default Kund;
+}
+
+function GoToHandlare() {
+  return <button onClick={redirectToHandlare}>Handlare</button>
+}
+
+function redirectToHandlare() {
+  ReactDOM.render(
+    <Handlare />,
+    document.getElementById('root')
+  );
+}
+
+export default Kund;
