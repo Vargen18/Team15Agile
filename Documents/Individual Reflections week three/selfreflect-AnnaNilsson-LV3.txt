@@ -1,0 +1,9 @@
+What do I want to learn or understand better?
+I want understand css and learn more about how to dynamically store data.
+ 
+
+how can I help someone else, or the entire team, to learn something new?/ what is my contribution towards the team’s use of Scrum?
+I am continually helping the team move forward in scrum by being a so called collector. I summarise and conclude many discussions that drag on for too long. This helps us keeping focused and on track 
+
+what is my contribution towards the team’s deliveries?                        
+I have been part of a smaller team that have coded for one user story, I have written code and discussed how we should structure our code. I have also drawn two overviews of our webpage to give a visual overview on how our components should be structured and how they relate to one another.           
