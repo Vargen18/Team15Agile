@@ -1,22 +1,20 @@
-import React from 'react';
-import HelloWorld from './HelloWorld';
-import Square from './Square';
-import './App.css';
 import ReactDOM from 'react-dom'
 import Handlare from './Handlare'
 import Kund from './Kund'
+import React from "react";
+import HelloWorld from "./HelloWorld";
+import "./App.css";
+import Order from "./Components/Order";
+import * as db from "./database/Database";
+import Square from './Square';
 
 function App() {
 
   return (
     <div className="App">
+      <h1>Affärens Sida</h1>
       <HelloWorld />
-      {GoToHandlare()}
-      {GoToKund()}
-      <Square name="Max" />
-      <Square name="William" />
-      <Square name="Gman" />
-      <Square name="Schmag" />
+      <Order customer={db.getCustomer()} productList={db.getProducts()} />
     </div>
   );
 }
