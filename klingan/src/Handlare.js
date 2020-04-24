@@ -2,19 +2,25 @@ import React from "react";
 import HelloWorld from "./HelloWorld";
 import Square from "./Square";
 import "./App.css";
-import "./Handlare.css"
+import "./Handlare.css";
 import ReactDOM from "react-dom";
-import Kund from './Kund';
-import Product from './Product';
+import Kund from "./Kund";
+import Product from "./Product";
+import Order from "./Components/Order";
+import * as db from "./database/Database";
 
 function Handlare() {
   return (
     <div className="Handlare">
       {GoToKund()}
       <h1>Handlare</h1>
-      <Product />
+      {ShowOrder()}
     </div>
   );
+}
+
+function ShowOrder() {
+  return <Order customer={db.getCustomer()} productList={db.getProducts()} />;
 }
 
 function GoToKund() {
