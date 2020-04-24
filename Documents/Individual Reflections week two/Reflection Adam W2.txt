@@ -1,0 +1,20 @@
+﻿What do I want to learn or understand better?
+React and javascript in general.
+Watch tutorials and do some problems on codewars.
+Also remember to upload these to the repository in time since I just noticed I forgot to do that.
+
+
+
+
+How can I help someone else, or the entire team, to learn something new?
+Gitkraken and programming practises in general is new to some members. So the goal is to make everybody have atleast an ok picture on that stuff and are comfortable asking questions and since I have more experience compared to the economy guys for example, I will try to explain everything in a reasonable way to them.
+
+
+
+
+What is my contribution towards the team’s use of Scrum?
+Tried to keep the trello board looking slim.
+
+
+What is my contribution towards the team’s deliveries?
+Pushed for us to have a “sprint 0” to get the working environment and git setup before the real sprints and coding starts.

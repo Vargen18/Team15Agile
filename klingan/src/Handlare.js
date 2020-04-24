@@ -2,27 +2,25 @@ import React from "react";
 import HelloWorld from "./HelloWorld";
 import Square from "./Square";
 import "./App.css";
+import "./Handlare.css";
 import ReactDOM from "react-dom";
-import Handlare from "./Handlare";
 import Kund from "./Kund";
+import Product from "./Product";
+import Order from "./Components/Order";
+import * as db from "./database/Database";
 
-function App() {
+function Handlare() {
   return (
-    <div className="App">
-      <h1>Affärens Sida</h1>
-      <HelloWorld />
-      {GoToHandlare()}
+    <div className="Handlare">
       {GoToKund()}
+      <h1>Handlare</h1>
+      {ShowOrder()}
     </div>
   );
 }
 
-function GoToHandlare() {
-  return <button onClick={redirectToHandlare}>Handlare</button>;
-}
-
-function redirectToHandlare() {
-  ReactDOM.render(<Handlare />, document.getElementById("root"));
+function ShowOrder() {
+  return <Order customer={db.getCustomer()} productList={db.getProducts()} />;
 }
 
 function GoToKund() {
@@ -33,4 +31,4 @@ function redirectToKund() {
   ReactDOM.render(<Kund />, document.getElementById("root"));
 }
 
-export default App;
+export default Handlare;
