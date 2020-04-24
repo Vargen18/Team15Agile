@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // Class that holds the name of a product and can render that name, without any real formatting.
 // Made to be used for the product list component.
 // Param: name
-class Product extends Component {
+class ProductListIcon extends Component {
   constructor(props) {
     super(props);
     this.state = { product: props.name };
@@ -18,4 +18,4 @@ class Product extends Component {
   }
 }
 
-export default Product;
+export default ProductListIcon;

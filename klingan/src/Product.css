@@ -1,0 +1,26 @@
+.Product{
+    text-align: center;
+    padding: .80em;
+  }
+
+  h3:hover {
+    color: green;
+  }
+
+  .container {
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+  }
+
+  .Product {
+    border: 3px solid gray;
+    padding: .20em;
+    border-radius: .1em;
+    display: inline-flex;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+  }
