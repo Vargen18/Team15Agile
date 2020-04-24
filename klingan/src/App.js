@@ -5,18 +5,18 @@ import './App.css';
 import ReactDOM from 'react-dom'
 import Handlare from './Handlare'
 import Kund from './Kund'
+import Order from "./Components/Order";
+import * as db from "./database/Database";
 
 function App() {
 
   return (
     <div className="App">
+      <h1>Affärens Sida</h1>
       <HelloWorld />
       {GoToHandlare()}
       {GoToKund()}
-      <Square name="Max" />
-      <Square name="William" />
-      <Square name="Gman" />
-      <Square name="Schmag" />
+      <Order customer={db.getCustomer()} productList={db.getProducts()} />
     </div>
   );
 }
