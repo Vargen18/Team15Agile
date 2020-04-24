@@ -1,0 +1,33 @@
+Individual reflection week 3 by Johannes Kvernes
+
+What do I want to learn or understand better?
+(A) What do I know now?
+I have learned more about KPI:s by reading up on them and discussing with others.
+(B) What do I want to learn?
+I now want to learn more about react and understand the many different functions and applications it has,  as it seems like a powerful tool for creating websites.
+(A -> B) How do I learn it?
+I could watch tutorials on Youtube and read guides online, but most importantly I have to code a lot.
+
+How can I help someone else, or the entire team, to learn something new?
+(A) Is there something that someone does not know how to do?
+Currently, everyone has pretty much the same knowledge scrum-wise.
+(B) What do I want to do to help someone learn something new?
+If anyone has any difficulties with programming, I can point them in the right direction.
+(A -> B) How do I want to help someone else learn something new?
+As last time, apply my programming knowledge. This time though, we have decided to make a website using reactjs. I have some experience with html and css (used with react), so I can teach whoever needs it.
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+I have contributed with a way to break down the user stories into tasks and keep them in the trello board. I have also come up with ideas about several other things.
+(B) What do I want to contribute with?
+Trello board as usual. Also voice my opinions and thoughts (I’m pretty bad at that).
+(A -> B) How can I accomplish that?
+Spend some time each sprint to check if the user stories should be changed or remain the way they are. 
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+I have coded, and written part of the team reflection.
+(B) What do I want to contribute with?
+I want to code more.
+(A -> B) How can I contribute?
+“Steal” some user story and work on it on my own (we code in small groups now, but I could take a small user story and code it myself). Only if the team agrees of course.
