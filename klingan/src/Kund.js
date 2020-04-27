@@ -13,7 +13,7 @@ function Kund() {
   return (
     <div className="Kund">
       {GoToHandlare()}
-      <h1>Kund MotherFucker</h1>
+      <h1>Kund</h1>
       {ShowProduct()}
     </div>
   );

@@ -1,0 +1,25 @@
+Individual reflection – week 3 - William Gerle
+	
+
+	What do I want to learn or understand better?
+	   A: This week I got some basic understanding of the tools we are using which are Gitkraken, react and JavaScript.
+	   B: Next week, I would like to be able to use Gitkraken myself and also expand my knowledge within react and in JavaScript.
+	   A->B: I am going to take help from my teammates and also spend a lot of hours coding to learn react and Gitkraken. I will also watch some tutorials on YouTube to further get some knowledge.
+	
+
+	How can I help someone else, or the entire team, to learn something new?
+	   A: I found a very educational YouTube video of react that all team members watched to learn the basics of react.
+	   B: Next week, I would like to have better understanding of how we will display products in our website.
+	   A->B: Develop our product database and write code that connects to this database.
+	
+
+	What is my contribution towards the team’s use of Scrum?
+	   A:  This week I have tried to be apart of all our Daily Scrum meetings as well as trying to get more clear scrum roles in the team.
+	   B: Next week, I want to be able to create tasks for our user stories in an efficient way.
+	   A->B: Trying to set up tasks and see how it works. Then developing my way of developing these tasks for the user stories.
+	
+
+	What is my contribution towards the team’s deliveries?
+	   A: Max and I coded the user story which objective was to display a product at the customer website.
+	   B: Next week, I would like to develop the product database.
+	   A->B: Learn more about object-orientation and connecting components in React.
