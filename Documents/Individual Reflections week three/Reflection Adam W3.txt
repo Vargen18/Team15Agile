@@ -1,0 +1,35 @@
+﻿What do I want to learn or understand better?
+(A) What do I know now?
+Some javascript and css.
+(B) What do I want to learn?
+I want to be better at it and not have to google simple stuff all the time.
+(A -> B) How do I learn it?
+Keep working on it and maybe do some side tasks.
+
+
+
+
+How can I help someone else, or the entire team, to learn something new?
+I feel like everybody has about the same level of knowledge when it comes to scrum and if there is something we don't know we always manage to figure it out together. So try to keep the cohesion of the group strong so we can keep doing good work.
+
+
+
+
+
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+Helped discuss the user stories and manage the trelloboard with acceptance criterias. Feel like everyone has been good at that so far.
+(B) What do I want to contribute with?
+The same as last week.
+(A -> B) How can I accomplish that?
+Keep on doing it.
+
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+Coding and writing the team reflection.
+(B) What do I want to contribute with?
+Coding and writing the team reflection. Maybe code even more.
+(A -> B) How can I contribute?
+Doing the work. Allocate more time to it.
