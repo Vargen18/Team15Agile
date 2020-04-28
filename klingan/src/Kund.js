@@ -13,9 +13,10 @@ function Kund() {
   return (
     <div className="Kund">
       {GoToHandlare()}
+      {ShoppingKartButton()}
       <h1>Kund</h1>
       {ShowProduct()}
-      {OpenShoppingKart}
+      
     </div>
   );
 }
@@ -43,8 +44,12 @@ function redirectToHandlare() {
 }
 
 
+function ShoppingKartButton(){
+  return <button onClick={OpenShoppingKart}>Varukorg</button>
+}
+
 function OpenShoppingKart(){
-  return <button>Varukorg</button>
+  alert ('ShoppingKart')
 }
 
 export default Kund;
