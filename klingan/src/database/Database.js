@@ -10,6 +10,13 @@ export function getProducts() {
   ];
 }
 
+export function getOrders() {
+  return [
+    { id: 0, products: getProducts() },
+    { id: 1, products: getProducts() },
+  ];
+}
+
 export function getCustomer() {
   return { name: "Börje", mail: "börje@mail.com", telefon: "031" };
 }
