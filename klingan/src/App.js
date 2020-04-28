@@ -11,6 +11,7 @@ function App() {
   return (
     <div class="wrapper">
       <MetaTags>
+        <title>ICA Klingan</title>
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
@@ -19,7 +20,7 @@ function App() {
 
       <div className="App">
         <h1>Affärens Sida</h1>
-        
+
         <HelloWorld />
         {GoToHandlare()}
         {GoToKund()}
