@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import CustomerInformation from "./CustomerInformation";
 import ProductList from "./ProductList";
+import ReactDOM from "react-dom";
+import Handlare from "../Handlare";
 
 // A class that holds the CustomerInformation aswell as a ProductList for a specifik Order.
 // To be displayed for the store when they plan to finish the order.
@@ -18,11 +20,16 @@ class Order extends Component {
   render() {
     return (
       <div>
+        <button onClick={redirectToOrders}>Gå tillbaka till ordrar</button>
         <CustomerInformation customer={this.state.customer} />
         <ProductList products={this.state.productList} />
       </div>
     );
   }
+}
+
+function redirectToOrders() {
+  ReactDOM.render(<Handlare />, document.getElementById("root"));
 }
 
 export default Order;
