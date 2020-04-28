@@ -15,6 +15,7 @@ function Kund() {
       {GoToHandlare()}
       <h1>Kund</h1>
       {ShowProduct()}
+      {OpenShoppingKart}
     </div>
   );
 }
@@ -39,6 +40,11 @@ function redirectToHandlare() {
     <Handlare />,
     document.getElementById('root')
   );
+}
+
+
+function OpenShoppingKart(){
+  return <button>Varukorg</button>
 }
 
 export default Kund;
