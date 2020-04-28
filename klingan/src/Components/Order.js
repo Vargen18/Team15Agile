@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CustomerInfromation from "./CustomerInformation";
+import CustomerInformation from "./CustomerInformation";
 import ProductList from "./ProductList";
 
 // A class that holds the CustomerInformation aswell as a ProductList for a specifik Order.
@@ -13,13 +13,12 @@ class Order extends Component {
       productList: props.productList,
       customer: props.customer,
     };
-    console.log(this.state);
   }
 
   render() {
     return (
       <div>
-        <CustomerInfromation customer={this.state.customer} />
+        <CustomerInformation customer={this.state.customer} />
         <ProductList products={this.state.productList} />
       </div>
     );
