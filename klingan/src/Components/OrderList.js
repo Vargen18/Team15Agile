@@ -15,7 +15,7 @@ class OrderList extends Component {
       <ul>
         {this.state.orders.map((order) => (
           <li key={order.id}>
-            <OrderListIcon length={order.products.length} />
+            <OrderListIcon order={order} />
           </li>
         ))}
       </ul>

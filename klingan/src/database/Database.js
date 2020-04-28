@@ -12,8 +12,8 @@ export function getProducts() {
 
 export function getOrders() {
   return [
-    { id: 0, products: getProducts() },
-    { id: 1, products: getProducts() },
+    { id: 0, order: { customer: getCustomer(), products: getProducts() } },
+    { id: 1, order: { customer: getCustomer(), products: getProducts() } },
   ];
 }
 
