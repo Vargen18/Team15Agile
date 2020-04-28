@@ -11,12 +11,19 @@ import Product from './Product';
 function Kund() {
 
   return (
-    <div className="Kund">
-      {GoToHandlare()}
-      {ShoppingKartButton()}
-      <h1>Kund</h1>
-      {ShowProduct()}
-      
+    <div className="Wrapper">
+      <div className="ShoppingCart">
+        <p>Potatis</p>
+      </div>
+      <div className="Kund">
+        <div className="buttonsNShit">
+          {GoToHandlare()}
+          {ShoppingKartButton()}
+        </div>
+        <h1>Kund</h1>
+        {ShowProduct()}
+        
+      </div>
     </div>
   );
 }
