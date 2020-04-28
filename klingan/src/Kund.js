@@ -45,7 +45,9 @@ function redirectToHandlare() {
 
 
 function ShoppingKartButton(){
-  return <button onClick={OpenShoppingKart}>Varukorg</button>
+  return(
+    <i class="material-icons-outlined" onClick={OpenShoppingKart}>shopping_cart</i>
+  )
 }
 
 function OpenShoppingKart(){

@@ -3,3 +3,9 @@
 .Kund{
     text-align: center;
   }
+
+.material-icons-outlined{
+  border: 2px solid gray;
+  padding: .05em;
+  border-radius: .1em;
+}
