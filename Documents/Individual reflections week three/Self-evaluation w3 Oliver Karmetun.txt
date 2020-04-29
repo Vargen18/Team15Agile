@@ -1,0 +1,35 @@
+Self-evaluation 
+24/4 – 2020
+Oliver Karmetun
+
+What do I want to learn or understand better?:
+
+I now a better understanding of react and how to use it. 
+I still feel that I can learn some more regarding websites 
+in general work and how to switch between pages, so I will look 
+for information about this next week. It will be a great help 
+for the user story I and two other team members are going to be 
+implementing (Switching between orders) as well.
+
+How can I help someone else, or the entire team, to learn something new?: 
+
+I will continue to assist with what I know regarding grocery stores and 
+online implementations of them in order to help improve our prioritizing. 
+I will also keep in contact with our customer in order to get their input.  
+
+What is my contribution towards the team’s use of Scrum?:
+
+Multiple team members brought up the fact that our user stories where to large 
+and not broken up well enough into acceptance criteria.  We will thus look over 
+this for the next sprint. 
+There also might be the issue that our user stories do not offer value by themselves, 
+we will discuss this further. 
+
+What is my contribution towards the team’s deliveries?: 
+
+I have been working together with Johannes and Anna in 
+order to finalize the user story “As store manager I want 
+to see an order”. Our workflow according to me was perfect. 
+We programmed on one computer at a time, so I don’t have any 
+commits, but we were all present and active during our coding 
+sessions. 
