@@ -3,9 +3,6 @@ import OrderListIcon from "./OrderListIcon";
 import ReactDOM from "react-dom";
 import Order from "./Order";
 
-// A class that holds a list of products, to be used in the Order component.
-// The products are displayed after one another with breaks in between.
-// Param: list of products.
 class OrderList extends Component {
   constructor(props) {
     super(props);

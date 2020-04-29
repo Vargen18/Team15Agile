@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Order from "./Order";
 
-// Class that holds the name of a product and can render that name, without any real formatting.
-// Made to be used for the product list component.
-// Param: name
 class OrderListIcon extends Component {
   constructor(props) {
     super(props);
