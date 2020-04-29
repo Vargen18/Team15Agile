@@ -5,15 +5,23 @@ import "./App.css";
 import ReactDOM from "react-dom";
 import Handlare from "./Handlare";
 import Kund from "./Kund";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Affärens Sida</h1>
-      <HelloWorld />
-      {GoToHandlare()}
-      {GoToKund()}
-    </div>
+    //Here we use routing instead of Go/Ridir to switch between pages. So functions below are unused.
+    <Router>
+      <div className="App">
+        <Route path="/Handlare" component={Handlare} />
+        <Route path="/Kund" component={Kund} />
+      </div>
+    </Router>
+    // <div className="App">
+    //   <h1>Affärens Sida</h1>
+    //   <HelloWorld />
+    //   {GoToHandlare()}
+    //   {GoToKund()}
+    // </div>
   );
 }
 
