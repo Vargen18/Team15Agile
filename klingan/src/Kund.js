@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import HelloWorld from './HelloWorld';
 import Square from './Square';
 import './App.css';
@@ -6,15 +6,51 @@ import './Kund.css';
 import ReactDOM from 'react-dom';
 import Handlare from './Handlare';
 import Product from './Product';
+import { getProducts } from './database/Database';
+import { func } from 'prop-types';
+
+
+class ShoppingCart extends Component{
+  constructor(props) {
+    super(props);
+    this.addProduct = this.addProduct.bind(this);
+    this.state = {cartItems: [<p>YEP</p>]};
+  }
+
+  render(){
+    return <div className="ShoppingCart">
+    {this.state.cartItems}
+    <button onClick={this.addProduct}>MORE YEP</button>;
+    </div>
+  }
+
+  
+
+  getCartItems() {
+    return (
+      <div class="Cart">
+        {this.state.cartItems}
+        </div>
+    )
+  }
+
+  
+  addProduct(){
+    const a = getProducts()[0];
+    this.state.cartItems.push(a);
+    this.setState(this.state);
+  }
+   
+
+}
+
 
 
 function Kund() {
-
+  const shoppingCart = <ShoppingCart/>;
+  //shoppingCart.addProduct();
   return (
     <div className="Wrapper">
-      <div className="ShoppingCart">
-        <p>Potatis</p>
-      </div>
       <div className="Kund">
         <div className="buttonsNShit">
           {GoToHandlare()}
@@ -22,7 +58,7 @@ function Kund() {
         </div>
         <h1>Kund</h1>
         {ShowProduct()}
-        
+        {shoppingCart}
       </div>
     </div>
   );
@@ -60,5 +96,6 @@ function ShoppingKartButton(){
 function OpenShoppingKart(){
   alert ('ShoppingKart')
 }
+
 
 export default Kund;
