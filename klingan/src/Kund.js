@@ -13,6 +13,7 @@ class ShoppingCart extends Component {
   constructor(props) {
     super(props);
     this.addProduct = this.addProduct.bind(this);
+    this.removeProduct = this.removeProduct.bind(this);
     this.state = {
       cartItems: [
         {
@@ -37,7 +38,8 @@ class ShoppingCart extends Component {
         {this.state.cartItems.map(product => (
           <Product name={product.name} url={product.url} key={product.key} />
         ))}
-        <button onClick={this.addProduct}>MORE YEP</button>;
+        <button onClick={this.addProduct}>MORE YEP</button>;¨
+        <button onClick={this.removeProduct}>LESS YEP</button>;
       </div>
     );
   }
@@ -46,21 +48,33 @@ class ShoppingCart extends Component {
     return <div class="Cart">{this.state.cartItems}</div>;
   }
 
-  addProduct() {
-    const a = {
+  addProduct(Product) {
+    const newProduct = {
       name: "YEP",
       url:
         "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
       key: "Dock"
     };
     const oldItems = this.state.cartItems;
-    const newItems = [...oldItems, a];
+    const newItems = [...oldItems, newProduct];
     console.log("YEP");
     //this.setState(this.state.cartItems.concat(a));
-    this.setState((state) => {
-      return {cartItems: state.cartItems.concat(a)}
-    })
+    this.setState(state => {
+      return { cartItems: state.cartItems.concat(newProduct) };
+    });
     //alert("YEP2");
+  }
+
+  removeProduct(Product) {
+    for (let i = 0; i < this.state.cartItems.length; i++){
+      if(this.state.cartItems[i].name == "YEP"){
+        this.setState(state => {
+          return { cartItems: state.cartItems.splice(i,1) };
+        });
+        //break;
+      }
+      
+    }
   }
 }
 
