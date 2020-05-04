@@ -1,0 +1,35 @@
+Individual reflection week 4 by Johannes Kvernes
+
+What do I want to learn or understand better?
+(A) What do I know now?
+I have learned more about some functions that react offers, like routing for example.
+(B) What do I want to learn?
+I want to learn even more about react, but also about css because we need to make the site ok to look at.
+(A -> B) How do I learn it?
+Read guides and code a lot.
+
+How can I help someone else, or the entire team, to learn something new?
+(A) Is there something that someone does not know how to do?
+Currently, everyone still has the same knowledge scrum-wise. There is a slight difference in coding ability and therefore coding style.
+(B) What do I want to do to help someone learn something new?
+I can give those who need it some pointers on how to write better code.
+(A -> B) How do I want to help someone else learn something new?
+Apply my programming knowledge.
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+I have spoken more and contributed with ideas.
+(B) What do I want to contribute with?
+Trello board as usual. Also speak more and give more ideas and feedback to things I have opinions about.
+(A -> B) How can I accomplish that?
+Spend some time to check if the user stories should be changed or remain the way they are. 
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+I have coded, and written part of the team reflection.
+(B) What do I want to contribute with?
+I want to code more. Next week in particular, I want to make sure the website looks good, so I will do a lot of css work.
+(A -> B) How can I contribute?
+Read up a lot on css.
+
+
