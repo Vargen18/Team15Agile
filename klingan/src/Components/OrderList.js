@@ -14,8 +14,9 @@ class OrderList extends Component {
       <ul>
         {this.state.orders.map((order) => (
           <li key={order.id}>
-            <OrderListIcon order={order} />
-            {console.log(order.id)}
+            <a href={`/handlare/order/${order.id}`}>
+              <OrderListIcon order={order} />
+            </a>
           </li>
         ))}
       </ul>

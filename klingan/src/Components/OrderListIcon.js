@@ -10,7 +10,7 @@ class OrderListIcon extends Component {
 
   render() {
     return (
-      <div onClick={() => redirectToOrder(this.state.order)}>
+      <div>
         <span>{this.state.order.order.customer.name}: </span>
         <span>{this.state.order.order.products.length}</span>
       </div>
