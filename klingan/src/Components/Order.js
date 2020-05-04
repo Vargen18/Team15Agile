@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import CustomerInformation from "./CustomerInformation";
 import ProductList from "./ProductList";
 import * as db from "../database/Database";
-import Handlare from "../Handlare";
 
 // A class that holds the CustomerInformation aswell as a ProductList for a specifik Order.
 // To be displayed for the store when they plan to finish the order.
@@ -26,10 +25,6 @@ class Order extends Component {
       </div>
     );
   }
-}
-
-function redirectToOrders() {
-  ReactDOM.render(<Handlare />, document.getElementById("root"));
 }
 
 export default Order;

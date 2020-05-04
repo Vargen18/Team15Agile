@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import Order from "./Order";
 
 class OrderListIcon extends Component {
   constructor(props) {
@@ -16,16 +14,6 @@ class OrderListIcon extends Component {
       </div>
     );
   }
-}
-
-function redirectToOrder(order) {
-  ReactDOM.render(
-    <Order
-      customer={order.order.customer}
-      productList={order.order.products}
-    />,
-    document.getElementById("root")
-  );
 }
 
 export default OrderListIcon;
