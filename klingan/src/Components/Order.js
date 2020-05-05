@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CustomerInformation from "./CustomerInformation";
-import ProductList from "./ProductList";
+import OrderProductList from "./OrderProductList";
 import * as db from "../database/Database";
 
 // A class that holds the CustomerInformation aswell as a ProductList for a specifik Order.
@@ -21,7 +21,7 @@ class Order extends Component {
       <div>
         <a href="/handlare">Tillbaka till alla Inköpslistor</a>
         <CustomerInformation customer={this.state.customer} />
-        <ProductList products={this.state.productList} />
+        <OrderProductList products={this.state.productList} />
       </div>
     );
   }

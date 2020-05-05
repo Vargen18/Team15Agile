@@ -4,6 +4,7 @@ import Handlare from "./Handlare";
 import Kund from "./Kund";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Order from "./Components/Order";
+import Hem from "./Components/Hem";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/handlare" exact component={Handlare} />
         <Route path="/kund" exact component={Kund} />
         <Route path="/handlare/order/:id" component={Order} />
+        <Route path="/" exact component={Hem} />
       </div>
     </Router>
   );
