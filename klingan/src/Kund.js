@@ -20,29 +20,29 @@ class ShoppingCart extends Component {
     this.state = {
       cartItems: [
         {
-          name: "YEP",
+          name: "YEPpp",
           url:
             "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
-          key: "CLOCK",
+          key: "CLOCK"
         },
         {
-          name: "YEP",
+          name: "CO",
           url:
             "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
-          key: "KOCK",
-        },
-      ],
+          key: "KOCK"
+        }
+      ]
     };
   }
 
   render() {
     return (
       <div className="ShoppingCart">
-        {this.state.cartItems.map((product) => (
+        {this.state.cartItems.map(product => (
           <Product name={product.name} url={product.url} key={product.key} />
         ))}
-        <button onClick={this.addProduct}>MORE YEP</button>;¨
-        <button onClick={this.removeProduct}>LESS YEP</button>;
+        <button onClick={this.addProduct}>MORE YEP</button>;
+        <button onClick={() => this.removeProduct({name: "YEP"})}>LESS YEP</button>; {/* This is mostly for testing, it simply calls removeProduct with a product with name:YEP*/}
       </div>
     );
   }
@@ -56,25 +56,25 @@ class ShoppingCart extends Component {
       name: "YEP",
       url:
         "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
-      key: "Dock",
+      key: "Dock"
     };
     const oldItems = this.state.cartItems;
     const newItems = [...oldItems, newProduct];
     console.log("YEP");
-    //this.setState(this.state.cartItems.concat(a));
-    this.setState((state) => {
+    this.setState(state => {
       return { cartItems: state.cartItems.concat(newProduct) };
     });
-    //alert("YEP2");
   }
 
-  removeProduct(Product) {
+  removeProduct(Product) { 
+    var flag = false;
     for (let i = 0; i < this.state.cartItems.length; i++) {
-      if (this.state.cartItems[i].name == "YEP") {
-        this.setState((state) => {
-          return { cartItems: state.cartItems.splice(i, 1) };
-        });
-        //break;
+      if (this.state.cartItems[i].name == Product.name) {
+        this.state.cartItems.splice(i, 1);
+
+        i--;
+        this.setState(this.state);
+        break;
       }
     }
   }
