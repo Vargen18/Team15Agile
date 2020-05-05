@@ -8,7 +8,7 @@ import Hem from "./Components/Hem";
 
 function App() {
   return (
-    //Here we use routing instead of Go/Ridir to switch between pages. So functions below are unused.
+    //Here we use routing instead of Go/Ridir to switch between pages.
     <Router>
       <div className="App">
         <Route path="/handlare" exact component={Handlare} />

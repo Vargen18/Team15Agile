@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 
+//Class that holds information that is displayed on order items
+//Params order
+
 class OrderListIcon extends Component {
   constructor(props) {
     super(props);
-    this.state = { order: props.order }; //Should not be name
+    this.state = { order: props.order };
   }
 
   render() {
