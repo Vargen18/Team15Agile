@@ -8,7 +8,7 @@ import Kund from "./Kund";
 import Product from "./Product";
 import Order from "./Components/Order";
 import * as db from "./database/Database";
-import App from "./App";
+import OrderList from "./Components/OrderList";
 
 function Handlare() {
   return (
@@ -16,13 +16,17 @@ function Handlare() {
       {GoToKund()}
       {GoHome()}
       <h1>Handlare</h1>
-      {ShowOrder()}
+      {ShowOrders()}
     </div>
   );
 }
 
 function ShowOrder() {
   return <Order customer={db.getCustomer()} productList={db.getProducts()} />;
+}
+
+function ShowOrders() {
+  return <OrderList orders={db.getOrders()} />;
 }
 
 function GoToKund() {

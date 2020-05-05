@@ -1,0 +1,22 @@
+Individual reflection – week 4
+
+What do I want to learn or understand better?
+  A:This week, I have learnt more about using CSS as a way for making the web site look nicer.
+  B:Next week, I want to learn how to store the shopping lists in some kind of database.
+  A->B: I am gonna learn about the database through Google and then experiment with the material found.
+
+How can I help someone else, or the entire team, to learn something new?
+  A: This week, I told the group about how the CSS code for the customer side and product display works.
+  B: I would like to tell the group about what I have found out about the database structure.
+  A->B: I need to understand how the database structure works and make a plan of how to tell it for the group.
+
+What is my contribution towards the team’s use of Scrum?
+A: This week, I proposed that we put a bigger, more general user story for implementing the database structure and let the user story be to develop more detailed user stories.
+B: Next week, I would like to continue to define clear acceptance criteria for the more detailed user stories.
+A->B: I will do that by checking the user story's contributions towards the project scope.
+   
+
+What is my contribution towards the team’s deliveries?
+   A: This week, I have developed the customer side further and been able to display several products nicely.
+   B: Next week, I would like to be able to save the bought products in some way (like a database) and transfer them to the store manager side.
+   A->B: By researching about different database structure and try to implement them.
