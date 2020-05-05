@@ -1,0 +1,23 @@
+What do I want to learn or understand better?
+    A: This week there was a whole lot of trouble with how react affects javascript, but in the end we figured it out and got it to work. 
+    B: It looks as though routing is going to be something we'll be using almost everywhere, so it would probably be good to know about it. 
+    A->B: Anna and/or Johannes sent a video on how routing works, so checking that out should help in learning it. 
+
+
+How can I help someone else, or the entire team, to learn something new?
+    A: The whole react  vs javascript debacle should put me in a position to bestow that knowledge on the others, although I haven't actually done that. 
+    B: Depending on how things turn out  with what kind of persistence we use I might be able to help with my (slightly limited) experience with JSON, and if we go for a node module instead I can help with smooth installation across branches and gitignore thingies. 
+    A->B: Maybe I should look into JSON in relation to javascript in case that is the persistence we go for. 
+
+
+What is my contribution towards the team’s use of Scrum?
+    A: This week, I have attended most daily scrums and all other meetings. There is continous "debate"/discussion about things relevant to scrum, which I think I am able to contribute to simply by joining the discussion. 
+    B: Next week, I would like to really understand better how to balance laying a good foundation (code wise) and delivering value to the product owner. 
+    A->B: This should be achievable simply with some reflection, and perhaps discussing it with the other group members. 
+    
+
+
+What is my contribution towards the team’s deliveries?
+    A: This week, me and Adam worked on implementing a shopping cart, which is one of the steps towards letting the customer (that is, the product owner's customer) create a shopping list. 
+    B: Next week, it looks like we will keep refining this shopping cart, since it was a lot harder to get started with than expected. Ideally we will be done with it and move on to another user-story before the end of the week though. 
+    A->B: This should be easy to achieve as long as I work and discuss the progress with Adam. 
