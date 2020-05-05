@@ -21,6 +21,10 @@ export function getOrders() {
   ];
 }
 
+export function getOrder(i) {
+  return getOrders()[i];
+}
+
 export function getCustomer() {
   return { name: "Börje", mail: "börje@mail.com", telefon: "031" };
 }

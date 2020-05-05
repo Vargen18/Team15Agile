@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import CustomerInformation from "./CustomerInformation";
 import OrderProductList from "./OrderProductList";
-import ReactDOM from "react-dom";
-import Handlare from "../Handlare";
+import * as db from "../database/Database";
 
 // A class that holds the CustomerInformation aswell as a ProductList for a specifik Order.
 // To be displayed for the store when they plan to finish the order.
@@ -12,24 +11,20 @@ class Order extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      productList: props.productList,
-      customer: props.customer,
+      productList: db.getOrder(parseInt(props.match.params.id)).order.products,
+      customer: db.getOrder(parseInt(props.match.params.id)).order.customer,
     };
   }
 
   render() {
     return (
       <div>
-        <button onClick={redirectToOrders}>Gå tillbaka till ordrar</button>
+        <a href="/handlare">Tillbaka till alla Inköpslistor</a>
         <CustomerInformation customer={this.state.customer} />
         <OrderProductList products={this.state.productList} />
       </div>
     );
   }
-}
-
-function redirectToOrders() {
-  ReactDOM.render(<Handlare />, document.getElementById("root"));
 }
 
 export default Order;
