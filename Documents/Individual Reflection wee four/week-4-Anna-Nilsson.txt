@@ -1,0 +1,11 @@
+What do I want to learn or understand better?
+I want to delve deeper into CSS and learn how to implement it smoothly into our application. This will be done by reading up on it. 
+
+
+How can I help someone else, or the entire team, to learn something new?/ what is my contribution towards the team’s use of Scrum?
+Last week my sub-group discovered “routing” and implemented it on our branch. We discussed it with the rest of the team and explained how it worked. We, and I, helped them learn something new. 
+
+
+what is my contribution towards the team’s deliveries? 
+
+I have been part of a subgroup that have coded for a user story and finished it. I have also done a fair share of research of routing and other react elements. Furthermore I have been in contact with a react expert who have agreed to help us if we need it. 
