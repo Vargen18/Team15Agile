@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../orderProductListIcon.css";
 
 // Class that holds the name of a product and can render that name, without any real formatting.
 // Made to be used for the product list component.
@@ -11,7 +12,7 @@ class OrderProductListIcon extends Component {
 
   render() {
     return (
-      <div>
+      <div className="orderProductListIcon">
         <span>{this.state.product}</span>
       </div>
     );

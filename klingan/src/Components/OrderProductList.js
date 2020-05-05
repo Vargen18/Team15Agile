@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import OrderProductListIcon from "./OrderProductListIcon";
+import "../orderProductList.css";
 
 // A class that holds a list of products, to be used in the Order component.
 // The products are displayed after one another with breaks in between.
@@ -12,13 +13,11 @@ class OrderProductList extends Component {
 
   render() {
     return (
-      <ul>
+      <div className="orderProductList">
         {this.state.products.map((product) => (
-          <li key={product.id}>
-            <OrderProductListIcon name={product.name} />
-          </li>
+          <OrderProductListIcon name={product.name} />
         ))}
-      </ul>
+      </div>
     );
   }
 }
