@@ -5,6 +5,7 @@ import "./App.css";
 import "./Handlare.css";
 import ReactDOM from "react-dom";
 import Kund from "./Kund";
+import App from "./App";
 import Product from "./Product";
 import Order from "./Components/Order";
 import * as db from "./database/Database";
