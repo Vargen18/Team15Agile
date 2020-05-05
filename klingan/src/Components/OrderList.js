@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import OrderListIcon from "./OrderListIcon";
+import "../orderList.css";
 
 class OrderList extends Component {
   constructor(props) {
@@ -9,15 +10,11 @@ class OrderList extends Component {
 
   render() {
     return (
-      <ul>
+      <div className="orderList">
         {this.state.orders.map((order) => (
-          <li key={order.id}>
-            <a href={`/handlare/order/${order.id}`}>
-              <OrderListIcon order={order} />
-            </a>
-          </li>
+          <OrderListIcon order={order} />
         ))}
-      </ul>
+      </div>
     );
   }
 }

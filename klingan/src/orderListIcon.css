@@ -1,0 +1,9 @@
+.orderListIcon {
+  height: 48px;
+  margin: 8px;
+  border-radius: 10px;
+  width: 960px;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.75);
+}

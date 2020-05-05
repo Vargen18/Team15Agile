@@ -9,13 +9,9 @@ function Handlare() {
     <div className="Handlare">
       <a href="/kund">Gå till Kund</a>
       <h1>Handlare</h1>
-      {ShowOrders()}
+      <OrderList orders={db.getOrders()} />;
     </div>
   );
-}
-
-function ShowOrders() {
-  return <OrderList orders={db.getOrders()} />;
 }
 
 export default Handlare;
