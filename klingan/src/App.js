@@ -33,4 +33,12 @@ function redirectToKund() {
   ReactDOM.render(<Kund />, document.getElementById("root"));
 }
 
+function GoHome() {
+  return <button onClick={redirectHome}>Hem</button>;
+}
+
+function redirectHome() {
+  ReactDOM.render(<App />, document.getElementById("root"));
+}
+
 export default App;

@@ -3,12 +3,14 @@ import Search from "./Components/Search";
 
 const search = new Search();
 const HelloWorld = () => {
+
+
   function sayHello() {
     alert("Hello, World!");
   }
 
   return (
-    <button onClick={search.Search}>Click me!</button> //Repurposed for testing search
+    <button onClick={search}>Click me!</button> //Repurposed for testing search
   );
 };
 

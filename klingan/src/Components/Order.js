@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import CustomerInformation from "./CustomerInformation";
-import ProductList from "./ProductList";
+import OrderProductList from "./OrderProductList";
 import ReactDOM from "react-dom";
 import Handlare from "../Handlare";
 
@@ -22,7 +22,7 @@ class Order extends Component {
       <div>
         <button onClick={redirectToOrders}>Gå tillbaka till ordrar</button>
         <CustomerInformation customer={this.state.customer} />
-        <ProductList products={this.state.productList} />
+        <OrderProductList products={this.state.productList} />
       </div>
     );
   }

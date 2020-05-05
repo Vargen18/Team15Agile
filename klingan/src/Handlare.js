@@ -5,6 +5,7 @@ import "./App.css";
 import "./Handlare.css";
 import ReactDOM from "react-dom";
 import Kund from "./Kund";
+import App from "./App";
 import Product from "./Product";
 import Order from "./Components/Order";
 import * as db from "./database/Database";
@@ -14,6 +15,7 @@ function Handlare() {
   return (
     <div className="Handlare">
       {GoToKund()}
+      {GoHome()}
       <h1>Handlare</h1>
       {ShowOrders()}
     </div>
@@ -34,6 +36,14 @@ function GoToKund() {
 
 function redirectToKund() {
   ReactDOM.render(<Kund />, document.getElementById("root"));
+}
+
+function GoHome() {
+  return <button onClick={redirectHome}>Hem</button>;
+}
+
+function redirectHome() {
+  ReactDOM.render(<App />, document.getElementById("root"));
 }
 
 export default Handlare;
