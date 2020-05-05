@@ -8,6 +8,9 @@ import Handlare from "./Handlare";
 import Product from "./Product";
 import { getProducts } from "./database/Database";
 import { func } from "prop-types";
+import ShowProducts from "./Components/ShowProducts";
+import * as db from "./database/Database";
+import App from "./App";
 
 class ShoppingCart extends Component {
   constructor(props) {
@@ -20,22 +23,22 @@ class ShoppingCart extends Component {
           name: "YEP",
           url:
             "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
-          key: "CLOCK"
+          key: "CLOCK",
         },
         {
           name: "YEP",
           url:
             "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
-          key: "KOCK"
-        }
-      ]
+          key: "KOCK",
+        },
+      ],
     };
   }
 
   render() {
     return (
       <div className="ShoppingCart">
-        {this.state.cartItems.map(product => (
+        {this.state.cartItems.map((product) => (
           <Product name={product.name} url={product.url} key={product.key} />
         ))}
         <button onClick={this.addProduct}>MORE YEP</button>;¨
@@ -53,27 +56,26 @@ class ShoppingCart extends Component {
       name: "YEP",
       url:
         "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
-      key: "Dock"
+      key: "Dock",
     };
     const oldItems = this.state.cartItems;
     const newItems = [...oldItems, newProduct];
     console.log("YEP");
     //this.setState(this.state.cartItems.concat(a));
-    this.setState(state => {
+    this.setState((state) => {
       return { cartItems: state.cartItems.concat(newProduct) };
     });
     //alert("YEP2");
   }
 
   removeProduct(Product) {
-    for (let i = 0; i < this.state.cartItems.length; i++){
-      if(this.state.cartItems[i].name == "YEP"){
-        this.setState(state => {
-          return { cartItems: state.cartItems.splice(i,1) };
+    for (let i = 0; i < this.state.cartItems.length; i++) {
+      if (this.state.cartItems[i].name == "YEP") {
+        this.setState((state) => {
+          return { cartItems: state.cartItems.splice(i, 1) };
         });
         //break;
       }
-      
     }
   }
 }
@@ -84,10 +86,8 @@ function Kund() {
   return (
     <div className="Wrapper">
       <div className="Kund">
-        <div className="buttonsNShit">
-          {GoToHandlare()}
-          {ShoppingKartButton()}
-        </div>
+        <div className="buttonsNShit">{ShoppingKartButton()}</div>
+        <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
         {ShowProduct()}
         {shoppingCart}
@@ -97,22 +97,7 @@ function Kund() {
 }
 
 function ShowProduct() {
-  return (
-    <div class="container">
-      <Product
-        name="Milk"
-        url="https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg"
-      />
-      <Product
-        name="Yoghurt"
-        url="https://webcomicms.net/sites/default/files/clipart/143564/yoghurt-pictures-143564-9861608.jpg"
-      />
-      <Product
-        name="Nocco"
-        url="https://www.tingstad.com/fixed/images/Main/1570702879/21366260.png"
-      />
-    </div>
-  );
+  return <ShowProducts productList={db.getProducts()} />;
 }
 
 function GoToHandlare() {
@@ -122,7 +107,6 @@ function GoToHandlare() {
 function redirectToHandlare() {
   ReactDOM.render(<Handlare />, document.getElementById("root"));
 }
-
 function ShoppingKartButton() {
   return (
     <i class="material-icons-outlined" onClick={OpenShoppingKart}>
@@ -133,6 +117,14 @@ function ShoppingKartButton() {
 
 function OpenShoppingKart() {
   alert("ShoppingKart");
+}
+
+function GoHome() {
+  return <button onClick={redirectHome}>Hem</button>;
+}
+
+function redirectHome() {
+  ReactDOM.render(<App />, document.getElementById("root"));
 }
 
 export default Kund;

@@ -1,0 +1,26 @@
+Individual reflection – week 4 - William Gerle
+	
+
+	What do I want to learn or understand better?
+	  A:This week, I learned a lot about user stories and how they can be developed for best use. I have started to learn about CSS to change the look of the website.
+	  B:Next week, I would first of all like to go back to my other weeks goal about learning Gitkraken. I would like to be able to use it independently. Secondly I hope to learn more about databases since I am most likely to be working with that next week.
+	  A->B: I am gonna watch a tutorial on Gitkraken on youtube and also talk with my teammates. About databases I would use the internet a lot and YouTube.
+	
+
+	How can I help someone else, or the entire team, to learn something new?
+	  A: This week, I told the group about how the CSS code for the customer side and product display works.
+	  B: I would like to gain knowledge about databases that I can share with my group. I would like to tell the group about what I have found out about the database structure.
+	  A->B: I need to learn a lot about databases and get a plan of how to implement it in our project.
+	
+
+	What is my contribution towards the team’s use of Scrum?
+	A: This week, I have attended all daily scrums and also or other meetings. I believe that I also have been a big part of the reconstruction of our reflections which were a bit lacking the first week.
+	B: Next week, I would like to further develop my skills around the scrum board and the design of user stories.
+	A->B: I hope to achieve this by strong team work, research and in collaboration with our supervisor.
+	   
+	
+
+	What is my contribution towards the team’s deliveries?
+	   A: This week, Max and I have been working on the customer side of the website, more specifically on the display of products.
+	   B: Next week, I would like to implement a database which I believe is important for our website.
+	   A->B: I will do my research and together with my group I believe a database will be implemented.

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import CustomerInfromation from "./CustomerInformation";
-import ProductList from "./ProductList";
+import CustomerInformation from "./CustomerInformation";
+import OrderProductList from "./OrderProductList";
+import * as db from "../database/Database";
 
 // A class that holds the CustomerInformation aswell as a ProductList for a specifik Order.
 // To be displayed for the store when they plan to finish the order.
@@ -10,17 +11,17 @@ class Order extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      productList: props.productList,
-      customer: props.customer,
+      productList: db.getOrder(parseInt(props.match.params.id)).order.products,
+      customer: db.getOrder(parseInt(props.match.params.id)).order.customer,
     };
-    console.log(this.state);
   }
 
   render() {
     return (
       <div>
-        <CustomerInfromation customer={this.state.customer} />
-        <ProductList products={this.state.productList} />
+        <a href="/handlare">Tillbaka till alla Inköpslistor</a>
+        <CustomerInformation customer={this.state.customer} />
+        <OrderProductList products={this.state.productList} />
       </div>
     );
   }
