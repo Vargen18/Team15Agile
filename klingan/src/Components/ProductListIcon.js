@@ -9,26 +9,25 @@ class ProductListIcon extends Component {
     this.state = {
       product: props.name,
       picture: props.url,
-      button: false
+      button: false,
+      kund: props.kund
     };
+
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {
     this.setState({
-      button: !this.state.button,
+      button: !this.state.button
     });
+    console.log(this.state.kund);
+    this.state.kund.addProduct(this.state.product);
   }
 
   render() {
     return (
       <div className="Product">
-        <img
-          src={this.state.picture}
-          width="200"
-          height="200"
-          alt="new"
-        />
+        <img src={this.state.picture} width="200" height="200" alt="new" />
         <h3>{this.state.product}</h3>
         <button
           className={this.state.button ? "buttonTrue" : "buttonFalse"}

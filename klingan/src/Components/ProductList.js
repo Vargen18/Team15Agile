@@ -7,11 +7,10 @@ import ProductListIcon from "./ProductListIcon";
 class ProductList extends Component {
   constructor(props) {
     super(props);
-    this.state = { products: props.products };
+    this.state = { products: props.products, kund: props.kund };
   }
 
   render() {
-
     const nrProducts = this.state.products.length;
     const fullRows = Math.floor(nrProducts / 3);
     const lastRow = nrProducts % 3;
@@ -19,24 +18,27 @@ class ProductList extends Component {
 
     var k = 0;
     for (var i = 0; i < fullRows; i++) {
-      disp.push(<div class="container">{
-        this.state.products.slice(k, k + 3).map((product) => (
-          <ProductListIcon name={product.name} url={product.url} />
-        ))}
-      </div>);
+      disp.push(
+        <div class="container">
+          {this.state.products.slice(k, k + 3).map(product => (
+            <ProductListIcon name={product.name} url={product.url} />
+          ))}
+        </div>
+      );
       k = k + 3;
     }
 
     if (lastRow != 0) {
-      disp.push(<div class="container">{
-        this.state.products.slice(k, k + 3).map((product) => (
-          <ProductListIcon name={product.name} url={product.url} />
-        ))}
-      </div>);
+      disp.push(
+        <div class="container">
+          {this.state.products.slice(k, k + 3).map(product => (
+            <ProductListIcon name={product.name} url={product.url} />
+          ))}
+        </div>
+      );
     }
 
-    return (<h1>{disp}</h1>);
-
+    return <h1>{disp}</h1>;
 
     /*
 
@@ -68,7 +70,6 @@ class ProductList extends Component {
     );
   }
   */
-
   }
 }
 

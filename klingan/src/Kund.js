@@ -41,8 +41,24 @@ class ShoppingCart extends Component {
         {this.state.cartItems.map(product => (
           <Product name={product.name} url={product.url} key={product.key} />
         ))}
-        <button onClick={this.addProduct}>MORE YEP</button>;
-        <button onClick={() => this.removeProduct({name: "YEP"})}>LESS YEP</button>; {/* This is mostly for testing, it simply calls removeProduct with a product with name:YEP*/}
+        <button
+          onClick={() =>
+            this.addProduct({
+              id: 5,
+              name: "Vodka",
+              url:
+                "https://webcomicms.net/sites/default/files/clipart/143564/yoghurt-pictures-143564-9861608.jpg"
+            })
+          }
+        >
+          MORE YEP
+        </button>
+        ;
+        <button onClick={() => this.removeProduct({ name: "YEP" })}>
+          LESS YEP
+        </button>
+        ;{" "}
+        {/* This is mostly for testing, it simply calls removeProduct with a product with name:YEP*/}
       </div>
     );
   }
@@ -52,21 +68,13 @@ class ShoppingCart extends Component {
   }
 
   addProduct(Product) {
-    const newProduct = {
-      name: "YEP",
-      url:
-        "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
-      key: "Dock"
-    };
-    const oldItems = this.state.cartItems;
-    const newItems = [...oldItems, newProduct];
     console.log("YEP");
     this.setState(state => {
-      return { cartItems: state.cartItems.concat(newProduct) };
+      return { cartItems: state.cartItems.concat(Product) };
     });
   }
 
-  removeProduct(Product) { 
+  removeProduct(Product) {
     var flag = false;
     for (let i = 0; i < this.state.cartItems.length; i++) {
       if (this.state.cartItems[i].name == Product.name) {
@@ -89,15 +97,16 @@ function Kund() {
         <div className="buttonsNShit">{ShoppingKartButton()}</div>
         <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
-        {ShowProduct()}
+        {ShowProduct(shoppingCart)}
         {shoppingCart}
       </div>
     </div>
   );
 }
 
-function ShowProduct() {
-  return <ShowProducts productList={db.getProducts()} />;
+function ShowProduct(shoppingCart) {
+  console.log(shoppingCart);
+  return <ShowProducts productList={db.getProducts()} kund={shoppingCart} />;
 }
 
 function GoToHandlare() {
