@@ -7,7 +7,12 @@ import ProductListIcon from "./ProductListIcon";
 class ProductList extends Component {
   constructor(props) {
     super(props);
-    this.state = { products: props.products, kund: props.kund };
+    this.state = {
+      products: props.products,
+      kund: props.kund,
+      addProd: props.addProd,
+      removeProd: props.removeProd
+    };
   }
 
   render() {
@@ -21,7 +26,13 @@ class ProductList extends Component {
       disp.push(
         <div class="container">
           {this.state.products.slice(k, k + 3).map(product => (
-            <ProductListIcon name={product.name} url={product.url} />
+            <ProductListIcon
+              product={product}
+              name={product.name}
+              url={product.url}
+              addProd={this.state.addProd}
+              removeProd={this.state.removeProd}
+            />
           ))}
         </div>
       );
@@ -32,7 +43,13 @@ class ProductList extends Component {
       disp.push(
         <div class="container">
           {this.state.products.slice(k, k + 3).map(product => (
-            <ProductListIcon name={product.name} url={product.url} />
+            <ProductListIcon
+              product={product}
+              name={product.name}
+              url={product.url}
+              addProd={this.state.addProd}
+              removeProd={this.state.removeProd}
+            />
           ))}
         </div>
       );

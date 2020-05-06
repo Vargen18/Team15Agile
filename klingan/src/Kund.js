@@ -12,13 +12,14 @@ import ShowProducts from "./Components/ShowProducts";
 import * as db from "./database/Database";
 import App from "./App";
 
-class ShoppingCart extends Component {
+class Kund extends Component {
   constructor(props) {
     super(props);
     this.addProduct = this.addProduct.bind(this);
     this.removeProduct = this.removeProduct.bind(this);
+    //this.ShowProduct = this.ShowProduct.bind(this);
     this.state = {
-      cartItems: [
+      cart: [
         {
           name: "YEPpp",
           url:
@@ -37,48 +38,68 @@ class ShoppingCart extends Component {
 
   render() {
     return (
-      <div className="ShoppingCart">
-        {this.state.cartItems.map(product => (
-          <Product name={product.name} url={product.url} key={product.key} />
-        ))}
-        <button
-          onClick={() =>
-            this.addProduct({
-              id: 5,
-              name: "Vodka",
-              url:
-                "https://webcomicms.net/sites/default/files/clipart/143564/yoghurt-pictures-143564-9861608.jpg"
-            })
-          }
-        >
-          MORE YEP
-        </button>
-        ;
-        <button onClick={() => this.removeProduct({ name: "YEP" })}>
-          LESS YEP
-        </button>
-        ;{" "}
-        {/* This is mostly for testing, it simply calls removeProduct with a product with name:YEP*/}
+      <div className="Kund">
+        <div className="buttonsNShit">{ShoppingKartButton()}</div>
+        <a href="/handlare">Gå till Handlare</a>
+        <h1>Kund</h1>
+        <main>
+          {this.ShowProduct()}
+
+          <div className="ShoppingCart">
+            {this.state.cart.map(product => (
+              <Product
+                name={product.name}
+                url={product.url}
+                key={product.key}
+              />
+            ))}
+            <button
+              onClick={() =>
+                this.addProduct({
+                  id: 5,
+                  name: "YEP",
+                  url:
+                    "https://webcomicms.net/sites/default/files/clipart/143564/yoghurt-pictures-143564-9861608.jpg"
+                })
+              }
+            >
+              MORE YEP
+            </button>
+            <button onClick={() => this.removeProduct({ name: "YEP" })}>
+              LESS YEP
+            </button>
+            {/* This is mostly for testing, it simply calls removeProduct with a product with name:YEP*/}
+          </div>
+        </main>
       </div>
     );
   }
 
+  ShowProduct() {
+    return (
+      <ShowProducts
+        productList={db.getProducts()}
+        addProd={this.addProduct.bind(this)}
+        removeProd={this.removeProduct.bind(this)}
+      />
+    );
+  }
+
   getCartItems() {
-    return <div class="Cart">{this.state.cartItems}</div>;
+    return <div class="Cart">{this.state.cart}</div>;
   }
 
   addProduct(Product) {
-    console.log("YEP");
     this.setState(state => {
-      return { cartItems: state.cartItems.concat(Product) };
+      return { cart: state.cart.concat(Product) };
     });
   }
 
   removeProduct(Product) {
     var flag = false;
-    for (let i = 0; i < this.state.cartItems.length; i++) {
-      if (this.state.cartItems[i].name == Product.name) {
-        this.state.cartItems.splice(i, 1);
+    for (let i = 0; i < this.state.cart.length; i++) {
+      if (this.state.cart[i].name == Product.name) {
+        this.state.cart.splice(i, 1);
 
         i--;
         this.setState(this.state);
@@ -88,34 +109,6 @@ class ShoppingCart extends Component {
   }
 }
 
-function Kund() {
-  const shoppingCart = <ShoppingCart />;
-  //shoppingCart.addProduct();
-  return (
-    <div className="Wrapper">
-      <div className="Kund">
-        <div className="buttonsNShit">{ShoppingKartButton()}</div>
-        <a href="/handlare">Gå till Handlare</a>
-        <h1>Kund</h1>
-        {ShowProduct(shoppingCart)}
-        {shoppingCart}
-      </div>
-    </div>
-  );
-}
-
-function ShowProduct(shoppingCart) {
-  console.log(shoppingCart);
-  return <ShowProducts productList={db.getProducts()} kund={shoppingCart} />;
-}
-
-function GoToHandlare() {
-  return <button onClick={redirectToHandlare}>Handlare</button>;
-}
-
-function redirectToHandlare() {
-  ReactDOM.render(<Handlare />, document.getElementById("root"));
-}
 function ShoppingKartButton() {
   return (
     <i class="material-icons-outlined" onClick={OpenShoppingKart}>
@@ -126,14 +119,6 @@ function ShoppingKartButton() {
 
 function OpenShoppingKart() {
   alert("ShoppingKart");
-}
-
-function GoHome() {
-  return <button onClick={redirectHome}>Hem</button>;
-}
-
-function redirectHome() {
-  ReactDOM.render(<App />, document.getElementById("root"));
 }
 
 export default Kund;

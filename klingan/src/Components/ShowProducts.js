@@ -10,15 +10,21 @@ class Order extends Component {
     super(props);
     this.state = {
       productList: props.productList,
-      kund: props.kund
+      kund: props.kund,
+      addProd: props.addProd,
+      removeProd: props.removeProd
     };
-    console.log(this.state);
   }
 
   render() {
     return (
       <div>
-        <ProductList products={this.state.productList} kund={this.state.kund} />
+        <ProductList
+          products={this.state.productList}
+          kund={this.state.kund}
+          addProd={this.state.addProd}  
+          removeProd={this.state.removeProd}
+        />
       </div>
     );
   }
