@@ -10,17 +10,17 @@
 }
 
 .ShoppingCart {
-  width: 80%;
-  height: 60%;
   border: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  z-index: 2;
-  background-color: hotpink;
+  background-color: palegreen;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:  top;
+  flex-direction: column;
 }
+
+main{
+ display: flex;
+ flex-direction: row;  
+ justify-content: space-around;
+}
+
