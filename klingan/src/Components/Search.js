@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { getProducts } from "../database/Database";
 
+// Unfinished class that will be used for searching and sorting.
 class Search {
   Search(searchTerm) {
     //Sends a pop-up for each product that matches the (hardcoded) search term.

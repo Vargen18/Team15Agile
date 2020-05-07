@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 
-//Class that holds information that is displayed on order items
+//Class that holds information that is displayed on order items in the order list.
 //Params order
-
 class OrderListIcon extends Component {
   constructor(props) {
     super(props);
