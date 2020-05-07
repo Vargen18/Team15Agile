@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ProductList from "./ProductList";
 
-// A class that holds the CustomerInformation aswell as a ProductList for a specifik Order.
+// A class that holds the CustomerInformation aswell as a ProductList for a specific Order.
 // To be displayed for the store when they plan to finish the order.
 // Customer information displayed first followed by the list of products as specified by the mockups.
 // Param: ProductList, CustomerInformation.
@@ -11,6 +11,7 @@ class Order extends Component {
     this.state = {
       productList: props.productList,
       kund: props.kund,
+      units: props.units,
       addProd: props.addProd,
       removeProd: props.removeProd
     };

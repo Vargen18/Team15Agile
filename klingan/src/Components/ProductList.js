@@ -30,6 +30,7 @@ class ProductList extends Component {
               product={product}
               name={product.name}
               url={product.url}
+              units={product.units}
               addProd={this.state.addProd}
               removeProd={this.state.removeProd}
             />
@@ -47,6 +48,7 @@ class ProductList extends Component {
               product={product}
               name={product.name}
               url={product.url}
+              units={product.units}
               addProd={this.state.addProd}
               removeProd={this.state.removeProd}
             />

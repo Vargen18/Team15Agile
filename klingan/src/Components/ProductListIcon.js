@@ -10,24 +10,24 @@ class ProductListIcon extends Component {
       product: props.product,
       productName: props.name,
       picture: props.url,
-      button: false,
+      units: props.units,
       kund: props.kund,
       addProd: props.addProd,
-      removeProd: props.removeProd
+      removeProd: props.removeProd,
     };
 
-    this.handleClick = this.handleClick.bind(this);
+    this.increaseClick = this.increaseClick.bind(this);
+    this.decreaseClick = this.decreaseClick.bind(this);
   }
 
-  handleClick() {
-    if (this.state.button) {
-      this.state.removeProd(this.state.product);
-    } else {
-      this.state.addProd(this.state.product);
-    }
-    this.setState({
-      button: !this.state.button
-    });
+  increaseClick() {
+    this.state.addProd({name : this.state.product.name, url: this.state.product.url, units: 4});
+    //this.state.kund.addProduct(this.state.product);
+  }
+
+  decreaseClick() {
+    this.state.removeProd(this.state.product);
+
     //this.state.kund.addProduct(this.state.product);
   }
 
@@ -36,12 +36,8 @@ class ProductListIcon extends Component {
       <div className="Product">
         <img src={this.state.picture} width="200" height="200" alt="new" />
         <h3>{this.state.productName}</h3>
-        <button
-          className={this.state.button ? "buttonTrue" : "buttonFalse"}
-          onClick={this.handleClick}
-        >
-          Välj denna produkt
-        </button>
+        <button onClick={this.increaseClick}>Öka denna produkt</button>
+        <button onClick={this.decreaseClick}>Minska denna produkt</button>
       </div>
     );
   }

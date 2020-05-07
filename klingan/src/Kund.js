@@ -12,6 +12,7 @@ import ShowProducts from "./Components/ShowProducts";
 import * as db from "./database/Database";
 import App from "./App";
 
+// Kund is the main component for the Kund page. Loads the products and keeps track of the customers shoppingcart.
 class Kund extends Component {
   constructor(props) {
     super(props);
@@ -26,7 +27,6 @@ class Kund extends Component {
   render() {
     return (
       <div className="Kund">
-        <div className="buttonsNShit">{ShoppingKartButton()}</div>
         <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
         <main>
@@ -38,6 +38,7 @@ class Kund extends Component {
                 name={product.name}
                 url={product.url}
                 key={product.key}
+                units={product.units}
               />
             ))}
             <button
@@ -47,6 +48,7 @@ class Kund extends Component {
                   name: "YEP",
                   url:
                     "https://webcomicms.net/sites/default/files/clipart/143564/yoghurt-pictures-143564-9861608.jpg",
+                  units: 5,
                 })
               }
             >
@@ -62,6 +64,7 @@ class Kund extends Component {
     );
   }
 
+  // Loads all the products in the database and binds the add and removeproduct functions to the current Kund.
   ShowProduct() {
     return (
       <ShowProducts
@@ -77,25 +80,47 @@ class Kund extends Component {
   }
 
   addProduct(Product) {
-    this.setState((state) => {
-      return { cart: state.cart.concat(Product) };
-    });
+    let i = this.productExists(Product);
+    if (i == -1) {
+      this.setState((state) => {
+        return {
+          cart: state.cart.concat({
+            name: Product.name,
+            url: Product.url,
+            units: 1,
+          }),
+        };
+      });
+    } else {
+      console.log(Product);
+
+      this.state.cart[i].units += 1;
+      this.setState(this.state);
+    }
     // update localStorage
     sessionStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
 
-  removeProduct(Product) {
-    var flag = false;
+  productExists(product) {
     for (let i = 0; i < this.state.cart.length; i++) {
-      if (this.state.cart[i].name == Product.name) {
-        this.state.cart.splice(i, 1);
-
-        i--;
-        this.setState(this.state);
-
-        break;
+      if (this.state.cart[i].name == product.name) {
+        return i;
       }
     }
+    return -1;
+  }
+
+  
+  removeProduct(Product) {
+    let i = this.productExists(Product);
+    if (i > -1) {
+      if (this.state.cart[i].units == 1) {
+        this.state.cart.splice(i, 1);
+      } else {
+        this.state.cart[i].units -= 1;
+      }
+    }
+    this.setState(this.state);
     // update localStorage
     sessionStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
@@ -123,18 +148,6 @@ class Kund extends Component {
   componentDidMount() {
     this.hydrateStateWithLocalStorage();
   }
-}
-
-function ShoppingKartButton() {
-  return (
-    <i class="material-icons-outlined" onClick={OpenShoppingKart}>
-      shopping_cart
-    </i>
-  );
-}
-
-function OpenShoppingKart() {
-  alert("ShoppingKart");
 }
 
 /*
