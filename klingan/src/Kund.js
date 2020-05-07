@@ -19,20 +19,7 @@ class Kund extends Component {
     this.removeProduct = this.removeProduct.bind(this);
     //this.ShowProduct = this.ShowProduct.bind(this);
     this.state = {
-      cart: [
-        {
-          name: "YEPpp",
-          url:
-            "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
-          key: "CLOCK"
-        },
-        {
-          name: "CO",
-          url:
-            "https://upload.wikimedia.org/wikipedia/commons/a/a5/Glass_of_Milk_%2833657535532%29.jpg",
-          key: "KOCK"
-        }
-      ]
+      cart: [],
     };
   }
 
@@ -46,7 +33,7 @@ class Kund extends Component {
           {this.ShowProduct()}
 
           <div className="ShoppingCart">
-            {this.state.cart.map(product => (
+            {this.state.cart.map((product) => (
               <Product
                 name={product.name}
                 url={product.url}
@@ -59,7 +46,7 @@ class Kund extends Component {
                   id: 5,
                   name: "YEP",
                   url:
-                    "https://webcomicms.net/sites/default/files/clipart/143564/yoghurt-pictures-143564-9861608.jpg"
+                    "https://webcomicms.net/sites/default/files/clipart/143564/yoghurt-pictures-143564-9861608.jpg",
                 })
               }
             >
@@ -90,9 +77,11 @@ class Kund extends Component {
   }
 
   addProduct(Product) {
-    this.setState(state => {
+    this.setState((state) => {
       return { cart: state.cart.concat(Product) };
     });
+    // update localStorage
+    sessionStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
 
   removeProduct(Product) {
@@ -103,9 +92,36 @@ class Kund extends Component {
 
         i--;
         this.setState(this.state);
+
         break;
       }
     }
+    // update localStorage
+    sessionStorage.setItem("cart", JSON.stringify(this.state.cart));
+  }
+
+  hydrateStateWithLocalStorage() {
+    // for all items in state
+    for (let id in this.state) {
+      // if the key exists in localStorage
+      if (sessionStorage.hasOwnProperty(id)) {
+        // get the key's value from localStorage
+        let products = sessionStorage.getItem(id);
+
+        // parse the localStorage string and setState
+        try {
+          products = JSON.parse(products);
+          this.setState({ [id]: products });
+        } catch (e) {
+          // handle empty string
+          this.setState({ [id]: products });
+        }
+      }
+    }
+  }
+
+  componentDidMount() {
+    this.hydrateStateWithLocalStorage();
   }
 }
 
@@ -121,4 +137,29 @@ function OpenShoppingKart() {
   alert("ShoppingKart");
 }
 
+/*
+componentDidMount() {
+  this.hydrateStateWithLocalStorage();
+}
+
+hydrateStateWithLocalStorage() {
+  // for all items in state
+  for (let name in this.state) {
+    // if the key exists in localStorage
+    if (localStorage.hasOwnProperty(name)) {
+      // get the key's value from localStorage
+      let Productss = localStorage.getItem("Product");
+
+      // parse the localStorage string and setState
+      try {
+        Productss = JSON.parse(Productss);
+        this.setState(this.state);
+      } catch (e) {
+        // handle empty string
+        this.setState(this.state);
+      }
+    }
+  }
+}
+*/
 export default Kund;
