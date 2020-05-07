@@ -55,6 +55,9 @@ class Kund extends Component {
             <button onClick={() => this.removeProduct({ name: "YEP" })}>
               LESS YEP
             </button>
+            <button onClick={() => this.submitKart()}>
+              Submit this cart!
+            </button>
             {/* This is mostly for testing, it simply calls removeProduct with a product with name:YEP*/}
           </div>
         </main>
@@ -74,6 +77,11 @@ class Kund extends Component {
 
   getCartItems() {
     return <div class="Cart">{this.state.cart}</div>;
+  }
+
+  submitKart() {
+    localStorage.setItem('cart', JSON.stringify(this.state.cart));
+    alert("Subsmitted");
   }
 
   addProduct(Product) {

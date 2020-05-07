@@ -9,9 +9,15 @@ function Handlare() {
     <div className="Handlare">
       <a href="/kund">Gå till Kund</a>
       <h1>Handlare</h1>
+      {ShowCart()}
       {ShowOrders()}
     </div>
   );
+}
+
+function ShowCart() {
+  const res = JSON.stringify(localStorage.getItem('cart'));
+  return res;
 }
 
 function ShowOrders() {
