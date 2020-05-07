@@ -9,7 +9,7 @@ class ProductListIcon extends Component {
     this.state = {
       product: props.name,
       picture: props.url,
-      button: false
+      button: false,
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -23,12 +23,7 @@ class ProductListIcon extends Component {
   render() {
     return (
       <div className="Product">
-        <img
-          src={this.state.picture}
-          width="200"
-          height="200"
-          alt="new"
-        />
+        <img src={this.state.picture} width="200" height="200" alt="new" />
         <h3>{this.state.product}</h3>
         <button
           className={this.state.button ? "buttonTrue" : "buttonFalse"}
