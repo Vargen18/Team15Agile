@@ -16,8 +16,16 @@ function Handlare() {
 }
 
 function ShowCart() {
-  const res = JSON.stringify(localStorage.getItem('cart'));
-  return res;
+  const cart = JSON.parse(localStorage.getItem('cart'));
+
+  return (
+    <div>
+      <h3>Kundens beställning:</h3>
+      {cart.map((cart) =>
+        <li>{cart.name}</li>
+      )}
+    </div>
+  );
 }
 
 function ShowOrders() {

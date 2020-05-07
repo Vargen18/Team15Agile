@@ -3,6 +3,7 @@ import React, { Component } from "react";
 // Class that holds the name of a product and can render that name, without any real formatting.
 // Made to be used for the product list component.
 // Param: name
+
 class ProductListIcon extends Component {
   constructor(props) {
     super(props);
@@ -10,8 +11,8 @@ class ProductListIcon extends Component {
       product: props.product,
       productName: props.name,
       picture: props.url,
-      button: false,
       kund: props.kund,
+      button: false,
       addProd: props.addProd,
       removeProd: props.removeProd
     };
@@ -20,6 +21,7 @@ class ProductListIcon extends Component {
   }
 
   handleClick() {
+
     if (this.state.button) {
       this.state.removeProd(this.state.product);
     } else {
@@ -28,7 +30,6 @@ class ProductListIcon extends Component {
     this.setState({
       button: !this.state.button
     });
-    //this.state.kund.addProduct(this.state.product);
   }
 
   render() {
