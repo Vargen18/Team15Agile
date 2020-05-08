@@ -1,4 +1,5 @@
 import React from "react";
+import MetaTags from "react-meta-tags";
 import "./App.css";
 import Handlare from "./Handlare";
 import Kund from "./Kund";
@@ -9,7 +10,9 @@ import Hem from "./Components/Hem";
 //Main App function that handles routing between pages.
 function App() {
   return (
-    //Here we use routing instead of Go/Ridir to switch between pages.
+    //Here we use routing instead of Go/Ridir to switch between pages. So functions below are unused.
+    <div class="wrapper">
+      <h1>Affärens Sida</h1>
     <Router>
       <div className="App">
         <Route path="/handlare" exact component={Handlare} />
@@ -18,6 +21,12 @@ function App() {
         <Route path="/" exact component={Hem} />
       </div>
     </Router>
+    
+      <MetaTags>
+        <title>ICA Klingan</title>
+      </MetaTags>
+    </div>
+        
   );
 }
 export default App;

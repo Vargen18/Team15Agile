@@ -10,7 +10,21 @@ function Handlare() {
     <div className="Handlare">
       <a href="/kund">Gå till Kund</a>
       <h1>Handlare</h1>
+      {ShowCart()}
       {ShowOrders()}
+    </div>
+  );
+}
+
+function ShowCart() {
+  const cart = JSON.parse(localStorage.getItem('cart'));
+
+  return (
+    <div>
+      <h3>Kundens beställning:</h3>
+      {cart.map((cart) =>
+        <li>{cart.name}</li>
+      )}
     </div>
   );
 }

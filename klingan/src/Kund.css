@@ -1,5 +1,26 @@
+.Kund {
+  text-align: center;
+}
 
+.material-icons-outlined {
+  border: 2px solid gray;
+  padding: 0.05em;
+  border-radius: 0.1em;
+  margin-left: auto;
+}
 
-.Kund{
-    text-align: center;
-  }
+.ShoppingCart {
+  border: 1px solid black;
+  background-color: palegreen;
+  display: flex;
+  align-items: center;
+  justify-content:  top;
+  flex-direction: column;
+}
+
+main{
+ display: flex;
+ flex-direction: row;  
+ justify-content: space-around;
+}
+
