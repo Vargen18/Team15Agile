@@ -150,29 +150,4 @@ function OpenShoppingKart() {
   alert("ShoppingKart");
 }
 
-/*
-componentDidMount() {
-  this.hydrateStateWithLocalStorage();
-}
-
-hydrateStateWithLocalStorage() {
-  // for all items in state
-  for (let name in this.state) {
-    // if the key exists in localStorage
-    if (localStorage.hasOwnProperty(name)) {
-      // get the key's value from localStorage
-      let Productss = localStorage.getItem("Product");
-
-      // parse the localStorage string and setState
-      try {
-        Productss = JSON.parse(Productss);
-        this.setState(this.state);
-      } catch (e) {
-        // handle empty string
-        this.setState(this.state);
-      }
-    }
-  }
-}
-*/
 export default Kund;
