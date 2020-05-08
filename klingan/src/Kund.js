@@ -17,7 +17,6 @@ class Kund extends Component {
     super(props);
     this.addProduct = this.addProduct.bind(this);
     this.removeProduct = this.removeProduct.bind(this);
-    //this.ShowProduct = this.ShowProduct.bind(this);
     this.state = {
       cart: [],
     };
