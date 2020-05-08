@@ -12,10 +12,12 @@ class OrderProductListIcon extends Component {
   render() {
     return (
       <div>
-        <span>{this.state.product}</span>
+        <span>{this.state.product} Mängd:</span>
       </div>
     );
   }
 }
+
+// Mängd ska hämta mängden från state.product.amount typ. Ska dynamiskt se om de är st eller kg
 
 export default OrderProductListIcon;
