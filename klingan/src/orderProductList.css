@@ -1,8 +1,0 @@
-.orderProductList {
-  background-color: lightpink;
-  margin: 8px;
-  width: 480px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}

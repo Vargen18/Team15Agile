@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import CustomerInformation from "./CustomerInformation";
 import OrderProductList from "./OrderProductList";
 import * as db from "../database/Database";
-import "../order.css";
 
 // A class that holds the CustomerInformation aswell as a ProductList for a specifik Order.
 // To be displayed for the store when they plan to finish the order.
@@ -20,10 +19,8 @@ class Order extends Component {
   render() {
     return (
       <div>
-        <div className="order">
-          <CustomerInformation customer={this.state.customer} />
-          <OrderProductList products={this.state.productList} />
-        </div>
+        <CustomerInformation customer={this.state.customer} />
+        <OrderProductList products={this.state.productList} />
       </div>
     );
   }

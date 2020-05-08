@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "../customerInformation.css";
 
 // A class that holds the name, mail and phone number of a customer. It renders this information in a list with breaks in between.
 // Made to be used for the Order component.
@@ -14,7 +13,7 @@ class CustomerInformation extends Component {
 
   render() {
     return (
-      <div className="customerInformation">
+      <div>
         <span>Kundens namn: {this.state.customer.name}</span>
         <br />
         <span>Mailadress: {this.state.customer.mail}</span>

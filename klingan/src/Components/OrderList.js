@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import OrderListIcon from "./OrderListIcon";
-import "../orderList.css";
 import ListGroup from "react-bootstrap/ListGroup";
 
 class OrderList extends Component {
