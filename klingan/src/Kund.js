@@ -27,7 +27,7 @@ class Kund extends Component {
       <div className="Kund">
         <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
-        <main>
+        <div className="cart">
           {this.ShowProduct()}
       
 
@@ -42,7 +42,7 @@ class Kund extends Component {
             ))}
             
           </div>
-        </main>
+        </div>
       </div>
     );
   }

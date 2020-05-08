@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import OrderListIcon from "./OrderListIcon";
+import ListGroup from "react-bootstrap/ListGroup";
 
 // A class that holds all orders sent in by customers.
 // To be displayed for the store when they review all customers orders.
@@ -13,15 +14,13 @@ class OrderList extends Component {
 
   render() {
     return (
-      <ul>
+      <ListGroup>
         {this.state.orders.map((order) => (
-          <li key={order.id}>
-            <a href={`/handlare/order/${order.id}`}>
-              <OrderListIcon order={order} />
-            </a>
-          </li>
+          <ListGroup.Item action href={`/handlare/order/${order.id}`}>
+            <OrderListIcon order={order} />
+          </ListGroup.Item>
         ))}
-      </ul>
+      </ListGroup>
     );
   }
 }

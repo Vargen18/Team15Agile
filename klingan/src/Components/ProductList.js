@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ProductListIcon from "./ProductListIcon";
+import "../productList.css";
 
 // A class that is used to display clickable products in a list, to be used for the main browse window.
 // Param: list of products.
@@ -15,16 +16,9 @@ class ProductList extends Component {
   }
 
   render() {
-    const nrProducts = this.state.products.length;
-    const fullRows = Math.floor(nrProducts / 3);
-    const lastRow = nrProducts % 3;
-    const disp = [];
-
-    var k = 0;
-    for (var i = 0; i < fullRows; i++) {
-      disp.push(
-        <div class="container">
-          {this.state.products.slice(k, k + 3).map(product => (
+    return (
+      <div class="productList">
+        {this.state.products.map((product) => (
             <ProductListIcon
               product={product}
               name={product.name}
@@ -32,32 +26,14 @@ class ProductList extends Component {
               units={product.units}
               addProd={this.state.addProd}
               removeProd={this.state.removeProd}
-            />
-          ))}
-        </div>
-      );
-      k = k + 3;
-    }
-
-    if (lastRow != 0) {
-      disp.push(
-        <div class="container">
-          {this.state.products.slice(k, k + 3).map(product => (
-            <ProductListIcon
-              product={product}
-              name={product.name}
-              url={product.url}
-              units={product.units}
-              addProd={this.state.addProd}
-              removeProd={this.state.removeProd}
-            />
-          ))}
-        </div>
-      );
-    }
-
-    return <h1>{disp}</h1>;
-  }
+        
+            />))}
+            
+      </div>
+        
+        
+        
+        );
+        }
 }
-
 export default ProductList;

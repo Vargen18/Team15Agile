@@ -17,7 +17,7 @@ export function getProducts() {
 export function getOrders() {
   return [
     { id: 0, order: { customer: getCustomer(), products: getProducts() } },
-    { id: 1, order: { customer: getCustomer(), products: getProducts() } },
+    { id: 1, order: { customer: getCustomer2(), products: getProducts() } },
   ];
 }
 
@@ -27,4 +27,8 @@ export function getOrder(i) {
 
 export function getCustomer() {
   return { name: "Börje", mail: "börje@mail.com", telefon: "031" };
+}
+
+export function getCustomer2() {
+  return { name: "Ingjerd", mail: "Ingjerd@mail.com", telefon: "032" };
 }

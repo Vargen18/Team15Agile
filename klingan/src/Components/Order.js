@@ -19,7 +19,6 @@ class Order extends Component {
   render() {
     return (
       <div>
-        <a href="/handlare">Tillbaka till alla Inköpslistor</a>
         <CustomerInformation customer={this.state.customer} />
         <OrderProductList products={this.state.productList} />
       </div>
