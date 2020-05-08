@@ -3,8 +3,8 @@ import CustomerInformation from "./CustomerInformation";
 import OrderProductList from "./OrderProductList";
 import * as db from "../database/Database";
 
-// A class that holds the CustomerInformation aswell as a ProductList for a specifik Order.
-// To be displayed for the store when they plan to finish the order.
+// A class that holds the CustomerInformation aswell as a ProductList for a specific Order.
+// To be displayed for the store when they plan to finish or just check on the order.
 // Customer information displayed first followed by the list of products as specified by the mockups.
 // Param: ProductList, CustomerInformation.
 class Order extends Component {

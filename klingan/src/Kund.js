@@ -10,6 +10,7 @@ import ShowProducts from "./Components/ShowProducts";
 import * as db from "./database/Database";
 import App from "./App";
 
+// A function used for rendering the page viewable by the customer.
 function Kund() {
   return (
     <div className="Kund">
