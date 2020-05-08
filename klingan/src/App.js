@@ -8,6 +8,7 @@ import Hem from "./Components/Hem";
 import NavigationBar from "./Components/NavigationBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+//Main App function that handles routing between pages.
 function App() {
   return (
     //Here we use routing instead of Go/Ridir to switch between pages. So functions below are unused.

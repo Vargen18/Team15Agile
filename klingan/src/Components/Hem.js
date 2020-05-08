@@ -1,5 +1,6 @@
 import React from "react";
 
+//The standard home page reached when opening the program/site.
 function Hem() {
   return (
     <div className="Hem">

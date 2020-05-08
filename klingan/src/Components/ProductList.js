@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import ProductListIcon from "./ProductListIcon";
 import "../productList.css";
 
-// A class that holds a list of products, to be used in the Order component.
-// The products are displayed after one another with breaks in between.
+// A class that is used to display clickable products in a list, to be used for the main browse window.
 // Param: list of products.
 class ProductList extends Component {
   constructor(props) {
