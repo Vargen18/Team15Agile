@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import OrderListIcon from "./OrderListIcon";
 import "../orderList.css";
+import ListGroup from "react-bootstrap/ListGroup";
 
 class OrderList extends Component {
   constructor(props) {
@@ -10,11 +11,13 @@ class OrderList extends Component {
 
   render() {
     return (
-      <div className="orderList">
+      <ListGroup>
         {this.state.orders.map((order) => (
-          <OrderListIcon order={order} />
+          <ListGroup.Item action href={`/handlare/order/${order.id}`}>
+            <OrderListIcon order={order} />
+          </ListGroup.Item>
         ))}
-      </div>
+      </ListGroup>
     );
   }
 }

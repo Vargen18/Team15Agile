@@ -9,13 +9,12 @@ class OrderListIcon extends Component {
 
   render() {
     return (
-      <a
-        className="orderListIcon"
-        href={`/handlare/order/${this.state.order.id}`}
-      >
-        <span>{this.state.order.order.customer.name}: </span>
-        <span>{this.state.order.order.products.length} produkter</span>
-      </a>
+      <React.Fragment>
+        <span>
+          {this.state.order.order.customer.name}:{" "}
+          {this.state.order.order.products.length} produkter
+        </span>
+      </React.Fragment>
     );
   }
 }
