@@ -13,7 +13,7 @@ import App from "./App";
 function Kund() {
   return (
     <div className="Kund">
-      <a href="/handlare">Gå till Handlare</a>
+      {/* <a href="/handlare">Gå till Handlare</a> */}
       <h1>Kund</h1>
       {ShowProduct()}
     </div>
