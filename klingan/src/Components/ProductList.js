@@ -7,49 +7,33 @@ import "../productList.css";
 class ProductList extends Component {
   constructor(props) {
     super(props);
-    this.state = { products: props.products };
+    this.state = {
+      products: props.products,
+      kund: props.kund,
+      addProd: props.addProd,
+      removeProd: props.removeProd
+    };
   }
 
   render() {
     return (
       <div class="productList">
         {this.state.products.map((product) => (
-          <ProductListIcon name={product.name} url={product.url} />
-        ))}
+            <ProductListIcon
+              product={product}
+              name={product.name}
+              url={product.url}
+              units={product.units}
+              addProd={this.state.addProd}
+              removeProd={this.state.removeProd}
+        
+            />))}
+            
       </div>
-    );
-
-    /*
-
-    if (fullRows > 0) {
-
-      return (
-      )
-    }
-      } else {}
-    */
-    /*
-
-    return (
-      <div>
-          <h3>Number of products: {nrProducts}</h3>
-          <h3>Full rows: {fullRows}</h3>
-          <h3>Last row: {lastRow}</h3>
-
-      if (fullRows > 0) {
-            <div class="container">{
-              this.state.products.slice(0, 3).map((product) => (
-                <ProductListIcon name={product.name} url={product.url} />
-              ))}
-            </div>
-          } else {
-            <h3>Nothing</h3>
-          }
-        </div>
-    );
-  }
-  */
-  }
+        
+        
+        
+        );
+        }
 }
-
 export default ProductList;

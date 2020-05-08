@@ -8,6 +8,10 @@ class ShowProducts extends Component {
     super(props);
     this.state = {
       productList: props.productList,
+      kund: props.kund,
+      units: props.units,
+      addProd: props.addProd,
+      removeProd: props.removeProd,
     };
     console.log(this.state);
   }
@@ -15,7 +19,12 @@ class ShowProducts extends Component {
   render() {
     return (
       <div>
-        <ProductList products={this.state.productList} />
+        <ProductList
+          products={this.state.productList}
+          kund={this.state.kund}
+          addProd={this.state.addProd}
+          removeProd={this.state.removeProd}
+        />
       </div>
     );
   }

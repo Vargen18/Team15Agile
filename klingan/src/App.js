@@ -1,4 +1,5 @@
 import React from "react";
+import MetaTags from "react-meta-tags";
 import "./App.css";
 import Handlare from "./Handlare";
 import Kund from "./Kund";
@@ -20,6 +21,9 @@ function App() {
         <Route path="/handlare/order/:id" component={Order} />
         <Route path="/" exact component={Hem} />
       </Router>
+      <MetaTags>
+        <title>ICA Klingan</title>
+      </MetaTags>
     </div>
   );
 }
