@@ -41,22 +41,7 @@ class Kund extends Component {
                 units={product.units}
               />
             ))}
-            <button
-              onClick={() =>
-                this.addProduct({
-                  id: 5,
-                  name: "YEP",
-                  url:
-                    "https://webcomicms.net/sites/default/files/clipart/143564/yoghurt-pictures-143564-9861608.jpg",
-                  units: 5,
-                })
-              }
-            >
-              MORE YEP
-            </button>
-            <button onClick={() => this.removeProduct({ name: "YEP" })}>
-              LESS YEP
-            </button>
+            
             {/* This is mostly for testing, it simply calls removeProduct with a product with name:YEP*/}
           </div>
         </main>
@@ -105,7 +90,7 @@ class Kund extends Component {
         };
       });
     } else {
-      console.log(Product);
+      //console.log(Product);
 
       this.state.cart[i].units += 1;
       this.setState(this.state);

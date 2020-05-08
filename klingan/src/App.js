@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Order from "./Components/Order";
 import Hem from "./Components/Hem";
 
+//Main App function that handles routing between pages.
 function App() {
   return (
     //Here we use routing instead of Go/Ridir to switch between pages. So functions below are unused.

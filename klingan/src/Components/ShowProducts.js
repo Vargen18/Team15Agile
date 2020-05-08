@@ -1,11 +1,9 @@
 import React, { Component } from "react";
 import ProductList from "./ProductList";
 
-// A class that holds the CustomerInformation aswell as a ProductList for a specific Order.
-// To be displayed for the store when they plan to finish the order.
-// Customer information displayed first followed by the list of products as specified by the mockups.
-// Param: ProductList, CustomerInformation.
-class Order extends Component {
+// A class that is displayed in the main browse window showing all products in the list using ProductList
+// Param: list of products.
+class ShowProducts extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -13,8 +11,9 @@ class Order extends Component {
       kund: props.kund,
       units: props.units,
       addProd: props.addProd,
-      removeProd: props.removeProd
+      removeProd: props.removeProd,
     };
+    console.log(this.state);
   }
 
   render() {
@@ -23,7 +22,7 @@ class Order extends Component {
         <ProductList
           products={this.state.productList}
           kund={this.state.kund}
-          addProd={this.state.addProd}  
+          addProd={this.state.addProd}
           removeProd={this.state.removeProd}
         />
       </div>
@@ -31,4 +30,4 @@ class Order extends Component {
   }
 }
 
-export default Order;
+export default ShowProducts;

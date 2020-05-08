@@ -4,6 +4,7 @@ import "./Handlare.css";
 import * as db from "./database/Database";
 import OrderList from "./Components/OrderList";
 
+//Function that is used for rendering the "Affär sida".
 function Handlare() {
   return (
     <div className="Handlare">
