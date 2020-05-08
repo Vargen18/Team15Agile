@@ -41,7 +41,6 @@ class Kund extends Component {
               />
             ))}
             
-            {/* This is mostly for testing, it simply calls removeProduct with a product with name:YEP*/}
           </div>
         </main>
       </div>
