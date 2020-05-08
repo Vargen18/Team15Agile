@@ -58,37 +58,6 @@ class ProductList extends Component {
     }
 
     return <h1>{disp}</h1>;
-
-    /*
-
-    if (fullRows > 0) {
-
-      return (
-      )
-    }
-      } else {}
-    */
-    /*
-
-    return (
-      <div>
-          <h3>Number of products: {nrProducts}</h3>
-          <h3>Full rows: {fullRows}</h3>
-          <h3>Last row: {lastRow}</h3>
-
-      if (fullRows > 0) {
-            <div class="container">{
-              this.state.products.slice(0, 3).map((product) => (
-                <ProductListIcon name={product.name} url={product.url} />
-              ))}
-            </div>
-          } else {
-            <h3>Nothing</h3>
-          }
-        </div>
-    );
-  }
-  */
   }
 }
 

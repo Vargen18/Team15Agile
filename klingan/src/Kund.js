@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import HelloWorld from "./HelloWorld";
-import Square from "./Square";
 import "./App.css";
 import "./Kund.css";
 import ReactDOM from "react-dom";
@@ -31,6 +30,7 @@ class Kund extends Component {
         <h1>Kund</h1>
         <main>
           {this.ShowProduct()}
+      
 
           <div className="ShoppingCart">
             {this.state.cart.map((product) => (
@@ -60,6 +60,19 @@ class Kund extends Component {
             {/* This is mostly for testing, it simply calls removeProduct with a product with name:YEP*/}
           </div>
         </main>
+      </div>
+    );
+  }
+
+  ChangeNrProducts(product) {
+    return (
+      <div>
+        <button onClick={() => this.addProduct(product)}>
+          +
+      </button>
+        <button onClick={() => this.removeProduct(product)}>
+          -
+      </button>
       </div>
     );
   }
@@ -98,7 +111,7 @@ class Kund extends Component {
       this.setState(this.state);
     }
     // update localStorage
-    sessionStorage.setItem("cart", JSON.stringify(this.state.cart));
+    localStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
 
   productExists(product) {
@@ -122,16 +135,16 @@ class Kund extends Component {
     }
     this.setState(this.state);
     // update localStorage
-    sessionStorage.setItem("cart", JSON.stringify(this.state.cart));
+    localStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
 
   hydrateStateWithLocalStorage() {
     // for all items in state
     for (let id in this.state) {
       // if the key exists in localStorage
-      if (sessionStorage.hasOwnProperty(id)) {
+      if (localStorage.hasOwnProperty(id)) {
         // get the key's value from localStorage
-        let products = sessionStorage.getItem(id);
+        let products = localStorage.getItem(id);
 
         // parse the localStorage string and setState
         try {
@@ -148,6 +161,18 @@ class Kund extends Component {
   componentDidMount() {
     this.hydrateStateWithLocalStorage();
   }
+}
+
+function ShoppingKartButton() {
+  return (
+    <i class="material-icons-outlined" onClick={OpenShoppingKart}>
+      shopping_cart
+    </i>
+  );
+}
+
+function OpenShoppingKart() {
+  alert("ShoppingKart");
 }
 
 /*
