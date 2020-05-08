@@ -80,15 +80,8 @@ class Kund extends Component {
   addProduct(Product) {
     let i = this.productExists(Product);
     if (i == -1) {
-      this.setState((state) => {
-        return {
-          cart: state.cart.concat({
-            name: Product.name,
-            url: Product.url,
-            units: 1,
-          }),
-        };
-      });
+      this.state.cart.push(Product);
+      this.setState(this.state);
     } else {
       //console.log(Product);
 

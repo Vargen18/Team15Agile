@@ -21,7 +21,7 @@ class ProductListIcon extends Component {
   }
 
   increaseClick() {
-    this.state.addProd({name : this.state.product.name, url: this.state.product.url, units: 4});
+    this.state.addProd({name : this.state.product.name, url: this.state.product.url, units: 1});
     //this.state.kund.addProduct(this.state.product);
   }
 
