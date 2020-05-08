@@ -1,0 +1,21 @@
+Individual reflection – week 5
+
+What do I want to learn or understand better?
+  A:This week, I have learnt a lot about how localStorage works and how to apply it to our e commerce context.
+  B:Next week, I want to learn how to develop the localStorage functionality even further and be able to create even more ShoppingCart objects.
+  A->B: I am going to learn this primarily by experiment with the already existing code as well as looking for more example code on the Internet.
+
+How can I help someone else, or the entire team, to learn something new?
+  A: This week, I showed for the group how localStorage works and the difference between localStorage and sessionStorage.
+  B: Next week, I would like to learn more about working with CSS and be able to graphically design the website as I want.
+  A->B: I need to understand the already existing CSS code we have got and experiment with it.
+
+What is my contribution towards the team’s use of Scrum?
+A: This week, I helped defining the user stories connected to the storage functionality and developed their acceptance criteria.
+B: Next week, I would like to make the group put more focus on the Product Owner and Customer and let them review the code more throughly.
+A->B: I will do that by discussing this with the group on our Monday meeting.
+
+What is my contribution towards the team’s deliveries?
+   A: This week, I have contributed strongly to connect the customer side with the store manager's side through localStorage, which was not possible at all previously.
+   B: Next week, I would like to work with dividing the shopping lists per customer, which will require a slightly different implementation of localStorage.
+   A->B: By experimenting with the already existing code and search on the Internet for example code.
