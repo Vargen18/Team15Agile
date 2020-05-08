@@ -81,7 +81,6 @@ class Kund extends Component {
       this.state.cart.push(Product);
       this.setState(this.state);
     } else {
-      //console.log(Product);
 
       this.state.cart[i].units += 1;
       this.setState(this.state);
