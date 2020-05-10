@@ -1,0 +1,25 @@
+Individual reflection – week 5 - William Gerle
+	
+
+	What do I want to learn or understand better?
+	  A:This week, I have been working a lot with how to store data after a page refresh and also between our different pages. 
+	  B:Next week, I would like to further develop my knowledge withing sessionStorage and LocalStorage.
+	  A->B: How I am gonna get to B is in collaboration with my teammates and by experimenting with the code and watching YouTube.
+	
+
+	How can I help someone else, or the entire team, to learn something new?
+	  A: This week, since Max and I had been working on localStorage we tried to explain for the group how this works by showing our code and discussing during the meetings.
+	  B: Next week, I hopefully got more knowledge of localStorage and maybe also how to get data from an Excelsheet and hopefully I will be able to share this with the group.
+	  A->B: I need to further develop my skills withing localStorage and also learn how to get data from excelsheets. I will use internet for this to find information.
+	
+
+	What is my contribution towards the team’s use of Scrum?
+	A: This week, I discussed some changes for our daily scrum meetings with the group. The plan is to have better structure and try to get the daily scrum meetings shorter and more effective.
+	B: Next week, I hope to implement the above discussed changes when having our daily scrum meetings.
+	A->B: I will do this by trying our new structure during the meetings and maybe be more active to hold the new structure and make sure it works.
+	
+
+	What is my contribution towards the team’s deliveries?
+	   A: This week, my contribution was the implementation of localStorage which was vital for our website to work properly.
+	   B: Next week, I hope to develop our localStorageCode and also maybe get a good way to import the goods from the excelsheet.
+	   A->B: I plan to get to B by experimenting and watching videos and of course also, in collaboration with my team members.
