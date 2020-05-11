@@ -1,0 +1,33 @@
+Individual reflection week 5 by Johannes Kvernes
+
+What do I want to learn or understand better?
+(A) What do I know now?
+As I was one of the team members who was tasked with making the site look better, I have learned about bootstrap and its components.
+(B) What do I want to learn?
+I thought it was fun to create bootstrap components, so I would like to learn more about that. However, that will not be next week because we will focus on other things that produce more value.
+(A -> B) How do I learn it?
+Read guides and code a lot.
+
+How can I help someone else, or the entire team, to learn something new?
+(A) What have I done to help the team?
+I have come up with ideas on to improve the code, and how to make the structure of the code better.
+(B) What do I want to do to help someone learn something new?
+I can give those who need it some pointers.
+(A -> B) How do I want to help someone else learn something new?
+Apply my programming knowledge.
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+Honestly, not much. Last week I said I would speak more and give feedback and such, but I didn’t really do that.
+(B) What do I want to contribute with?
+Keep the Trello board updated as usual. Speak more and give more ideas and feedback about things I have opinions about.
+(A -> B) How can I accomplish that?
+Spend some time to check if the user stories should be changed or remain the way they are. Also really try to speak more.
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+I have coded (mostly css and bootstrap), and written part of the team reflection.
+(B) What do I want to contribute with?
+I want to code more. Next week I want to focus a lot on creating value for the client, so I will pick highly prioritized user stories that we have avoided until now.
+(A -> B) How can I contribute?
+Code a bunch.
