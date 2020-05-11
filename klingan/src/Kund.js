@@ -29,11 +29,12 @@ class Kund extends Component {
         <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
         <button onClick={() => this.setState({ category: "Mat" })}>Mat</button>
-        <button onClick={() => this.setState({ category: "Dryck" })}>Dryck</button>
+        <button onClick={() => this.setState({ category: "Dryck" })}>
+          Dryck
+        </button>
         <h3>{this.state.category}</h3>
         <div className="cart">
           {this.ShowProduct()}
-
 
           <div className="ShoppingCart">
             {this.state.cart.map((product) => (
@@ -44,7 +45,6 @@ class Kund extends Component {
                 units={product.units}
               />
             ))}
-
           </div>
         </div>
       </div>
@@ -54,28 +54,24 @@ class Kund extends Component {
   ChangeNrProducts(product) {
     return (
       <div>
-        <button onClick={() => this.addProduct(product)}>
-          +
-      </button>
-        <button onClick={() => this.removeProduct(product)}>
-          -
-      </button>
+        <button onClick={() => this.addProduct(product)}>+</button>
+        <button onClick={() => this.removeProduct(product)}>-</button>
       </div>
     );
   }
 
   // Loads all the products in the database and binds the add and removeproduct functions to the current Kund.
   ShowProduct() {
-    const k = "";
+    var k = this.state.category;
+    var productList = db.getProducts().filter((product) => {
+      return k == product.category;
+    });
     return (
       <div>
         <h1>{k}</h1>
         <ShowProducts
-          productList={db.getProducts().filter(product => {
-            console.log(this.state.category);
-            return k == product.category;
-          })}
-
+          key={this.state.category}
+          productList={productList}
           addProd={this.addProduct.bind(this)}
           removeProd={this.removeProduct.bind(this)}
         />
@@ -93,7 +89,6 @@ class Kund extends Component {
       this.state.cart.push(Product);
       this.setState(this.state);
     } else {
-
       this.state.cart[i].units += 1;
       this.setState(this.state);
     }
@@ -109,7 +104,6 @@ class Kund extends Component {
     }
     return -1;
   }
-
 
   removeProduct(Product) {
     let i = this.productExists(Product);

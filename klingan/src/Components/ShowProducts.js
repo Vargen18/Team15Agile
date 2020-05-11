@@ -12,8 +12,8 @@ class ShowProducts extends Component {
       units: props.units,
       addProd: props.addProd,
       removeProd: props.removeProd,
+      key: props.key,
     };
-    console.log(this.state);
   }
 
   render() {
