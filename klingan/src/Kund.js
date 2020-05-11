@@ -19,7 +19,7 @@ class Kund extends Component {
     this.removeProduct = this.removeProduct.bind(this);
     this.state = {
       cart: [],
-      category: true,
+      category: "Mat",
     };
   }
 
@@ -66,12 +66,20 @@ class Kund extends Component {
 
   // Loads all the products in the database and binds the add and removeproduct functions to the current Kund.
   ShowProduct() {
+    const k = "";
     return (
-      <ShowProducts
-        productList={db.getProducts().filter(product => product.category == "Mat")}
-        addProd={this.addProduct.bind(this)}
-        removeProd={this.removeProduct.bind(this)}
-      />
+      <div>
+        <h1>{k}</h1>
+        <ShowProducts
+          productList={db.getProducts().filter(product => {
+            console.log(this.state.category);
+            return k == product.category;
+          })}
+
+          addProd={this.addProduct.bind(this)}
+          removeProd={this.removeProduct.bind(this)}
+        />
+      </div>
     );
   }
 
