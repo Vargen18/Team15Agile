@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import OrderProductListIcon from "./OrderProductListIcon";
-
+import * as sorter from "../OrderProductSorter";
 import "../Handlare.css";
 import ListGroup from "react-bootstrap/ListGroup";
 
@@ -16,13 +16,13 @@ class OrderProductList extends Component {
   render() {
     return (
       <div className="Handlare">
-      <ListGroup>
-        {this.state.products.map((product) => (
-          <ListGroup.Item>
-            <OrderProductListIcon name={product.name} />
-          </ListGroup.Item>
-        ))}
-      </ListGroup>
+        <ListGroup>
+          {sorter.sortOrder(this.state.products).map((product) => (
+            <ListGroup.Item>
+              <OrderProductListIcon name={product.name} />
+            </ListGroup.Item>
+          ))}
+        </ListGroup>
       </div>
     );
   }
