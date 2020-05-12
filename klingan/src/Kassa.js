@@ -1,4 +1,5 @@
-import React from "react";
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import "./App.css";
 import "./Handlare.css";
 import * as db from "./database/Database";
@@ -20,70 +21,83 @@ const schema = yup.object({
   kommentar: yup.string(),
 });
 
-function Kassa() {
-  return (
-    <Formik
-      validationSchema={schema}
-      onSubmit={console.log}
-      initialValues={{
-        name: "Test"
-      }}
-    >
-      <div className="Kassa">
-        <h1>Kassa</h1>
-        <Form>
-          <Form.Group as={Row} controlId="formHorizontalNamn">
-            <Form.Label column sm={2}>
-              Namn:
-            </Form.Label>
-            <Col sm={10}>
-              <Form.Control type="namn" placeholder="Namn" inputRef = {(input) => this.name = input }/>
-            </Col>
-          </Form.Group>
+class Kassa extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { nameRef: React.createRef(), input: "" };
+  }
 
-          <Form.Group as={Row} controlId="formHorizontalMailadress">
-            <Form.Label column sm={2}>
-              Mailadress:
-            </Form.Label>
-            <Col sm={10}>
-              <Form.Control type="mailadress" placeholder="Mailadress" />
-            </Col>
-          </Form.Group>
+  render() {
+    return (
+      <Formik
+        validationSchema={schema}
+        onSubmit={console.log}
+        initialValues={{
+          name: "Test",
+        }}
+      >
+        <div className="Kassa">
+          <h1>Kassa</h1>
+          <Form>
+            <Form.Group as={Row} controlId="formHorizontalNamn">
+              <Form.Label column sm={2}>
+                Namn:
+              </Form.Label>
+              <Col sm={10}>
+                <Form.Control
+                  type="namn"
+                  placeholder="Namn"
+                  ref={this.state.nameRef}
+                />
+              </Col>
+            </Form.Group>
 
-          <Form.Group as={Row} controlId="formHorizontalTelefon">
-            <Form.Label column sm={2}>
-              Telefon:
-            </Form.Label>
-            <Col sm={10}>
-              <Form.Control type="telefon" placeholder="Telefon" />
-            </Col>
-          </Form.Group>
+            <Form.Group as={Row} controlId="formHorizontalMailadress">
+              <Form.Label column sm={2}>
+                Mailadress:
+              </Form.Label>
+              <Col sm={10}>
+                <Form.Control type="mailadress" placeholder="Mailadress" />
+              </Col>
+            </Form.Group>
 
-          <Form.Group as={Row} controlId="formHorizontalÖnskemål">
-            <Form.Label column sm={2}>
-              Övriga önskemål:
-            </Form.Label>
-            <Col sm={10}>
-              <Form.Control
-                type="kommentar"
-                placeholder="T ex: Ekologisk, glutenfritt"
-              />
-            </Col>
-          </Form.Group>
+            <Form.Group as={Row} controlId="formHorizontalTelefon">
+              <Form.Label column sm={2}>
+                Telefon:
+              </Form.Label>
+              <Col sm={10}>
+                <Form.Control type="telefon" placeholder="Telefon" />
+              </Col>
+            </Form.Group>
 
-          {ShowCart()}
+            <Form.Group as={Row} controlId="formHorizontalÖnskemål">
+              <Form.Label column sm={2}>
+                Övriga önskemål:
+              </Form.Label>
+              <Col sm={10}>
+                <Form.Control
+                  type="kommentar"
+                  placeholder="T ex: Ekologisk, glutenfritt"
+                />
+              </Col>
+            </Form.Group>
 
-          <Form.Group as={Row}>
-            <Col sm={{ span: 8, offset: 2 }}>
-              <Button onClick={() => console.log(this)}>
-                Skicka Beställning
-              </Button>
-            </Col>
-          </Form.Group>
-        </Form>
-      </div>
-    </Formik>
-  );
+            {ShowCart()}
+
+            <Form.Group as={Row}>
+              <Col sm={{ span: 8, offset: 2 }}>
+                <Button
+                  onClick={() => console.log(this.state.nameRef.current.value)}
+                >
+                  Skicka Beställning
+                </Button>
+              </Col>
+            </Form.Group>
+          </Form>
+        </div>
+      </Formik>
+    );
+  }
 }
 
 function ShowCart() {
