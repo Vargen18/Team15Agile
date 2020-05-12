@@ -16,12 +16,14 @@ class NavigationBar extends Component {
           <Nav className="mr-auto">
             <Nav.Link href="/kund">Kund</Nav.Link>
             <Nav.Link href="/handlare">Handlare</Nav.Link>
+            <Nav.Link href="/kassa">Gå till kassan</Nav.Link>
+            <i class="material-icons-outlined">
+              {" "}
+              {/* This should also redirect to the kassa */}
+              shopping_cart
+            </i>
           </Nav>
         </Navbar.Collapse>
-        <a href="/kassa">Gå till kassan</a>
-        <i class="material-icons-outlined"> {/* This should also redirect to the kassa */}
-          shopping_cart
-        </i>
       </Navbar>
     );
   }
