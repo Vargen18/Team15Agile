@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import HelloWorld from "./HelloWorld";
 import "./App.css";
 import "./Kund.css";
-import ReactDOM from "react-dom";
-import Handlare from "./Handlare";
 import Product from "./Product";
 import { getProducts } from "./database/Database";
 import { func } from "prop-types";
