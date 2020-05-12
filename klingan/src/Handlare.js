@@ -17,17 +17,19 @@ function Handlare() {
 }
 
 function ShowCart() {
-  const cart = JSON.parse(localStorage.getItem('cart'));
-
-  return (
-    <div>
-      <h3>Kundens beställning:</h3>
-      {cart.map((cart) =>
-        <li>{cart.name}</li>
-      )}
-    </div>
-  );
+  const cart = JSON.parse(localStorage.getItem("cart"));
+  if (cart == null) {
+    return null;
+  } else {
+    return (
+      <div>
+        <h3>Kundens beställning:</h3>
+        {cart.map((cart) => (
+          <li>{cart.name}</li>
+        ))}
+      </div>
+    );
+  }
 }
-
 
 export default Handlare;
