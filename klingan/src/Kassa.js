@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import "./App.css";
 import "./Handlare.css";
 import * as db from "./database/Database";
@@ -24,7 +23,12 @@ const schema = yup.object({
 class Kassa extends Component {
   constructor(props) {
     super(props);
-    this.state = { nameRef: React.createRef(), input: "" };
+    this.state = {
+      nameRef: React.createRef(),
+      mailRef: React.createRef(),
+      phoneRef: React.createRef(),
+      commentRef: React.createRef(),
+    };
   }
 
   render() {
@@ -57,7 +61,11 @@ class Kassa extends Component {
                 Mailadress:
               </Form.Label>
               <Col sm={10}>
-                <Form.Control type="mailadress" placeholder="Mailadress" />
+                <Form.Control
+                  type="mailadress"
+                  placeholder="Mailadress"
+                  ref={this.state.mailRef}
+                />
               </Col>
             </Form.Group>
 
@@ -66,7 +74,11 @@ class Kassa extends Component {
                 Telefon:
               </Form.Label>
               <Col sm={10}>
-                <Form.Control type="telefon" placeholder="Telefon" />
+                <Form.Control
+                  type="telefon"
+                  placeholder="Telefon"
+                  ref={this.state.phoneRef}
+                />
               </Col>
             </Form.Group>
 
@@ -78,6 +90,7 @@ class Kassa extends Component {
                 <Form.Control
                   type="kommentar"
                   placeholder="T ex: Ekologisk, glutenfritt"
+                  ref={this.state.commentRef}
                 />
               </Col>
             </Form.Group>
@@ -87,7 +100,14 @@ class Kassa extends Component {
             <Form.Group as={Row}>
               <Col sm={{ span: 8, offset: 2 }}>
                 <Button
-                  onClick={() => console.log(this.state.nameRef.current.value)}
+                  onClick={() =>
+                    console.log(
+                      this.state.nameRef.current.value,
+                      this.state.phoneRef.current.value,
+                      this.state.mailRef.current.value,
+                      this.state.commentRef.current.value
+                    )
+                  }
                 >
                   Skicka Beställning
                 </Button>
