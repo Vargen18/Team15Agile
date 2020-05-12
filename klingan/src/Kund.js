@@ -22,11 +22,9 @@ class Kund extends Component {
   render() {
     return (
       <div className="Kund">
-        <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
         <div className="cart">
           {this.ShowProduct()}
-      
 
           <div className="ShoppingCart">
             {this.state.cart.map((product) => (
@@ -37,7 +35,6 @@ class Kund extends Component {
                 units={product.units}
               />
             ))}
-            
           </div>
         </div>
       </div>
@@ -47,12 +44,8 @@ class Kund extends Component {
   ChangeNrProducts(product) {
     return (
       <div>
-        <button onClick={() => this.addProduct(product)}>
-          +
-      </button>
-        <button onClick={() => this.removeProduct(product)}>
-          -
-      </button>
+        <button onClick={() => this.addProduct(product)}>+</button>
+        <button onClick={() => this.removeProduct(product)}>-</button>
       </div>
     );
   }
@@ -78,7 +71,6 @@ class Kund extends Component {
       this.state.cart.push(Product);
       this.setState(this.state);
     } else {
-
       this.state.cart[i].units += 1;
       this.setState(this.state);
     }
@@ -95,7 +87,6 @@ class Kund extends Component {
     return -1;
   }
 
-  
   removeProduct(Product) {
     let i = this.productExists(Product);
     if (i > -1) {
