@@ -5,6 +5,8 @@ import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
 import { Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 class NavigationBar extends Component {
   render() {
@@ -17,11 +19,9 @@ class NavigationBar extends Component {
             <Nav.Link href="/kund">Kund</Nav.Link>
             <Nav.Link href="/handlare">Handlare</Nav.Link>
             <Nav.Link href="/kassa">Gå till kassan</Nav.Link>
-            <i class="material-icons-outlined">
-              {" "}
-              {/* This should also redirect to the kassa */}
-              shopping_cart
-            </i>
+            <a href="/kassa">
+              <i class="material-icons-outlined">shopping_cart</i>
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
