@@ -25,7 +25,11 @@ function ShowCart() {
       <div>
         <h3>Kundens beställning:</h3>
         {cart.map((cart) => (
-          <li>{cart.name}</li>
+          <li>
+            <div>
+              {cart.name}, {cart.units}
+            </div>
+          </li>
         ))}
       </div>
     );
