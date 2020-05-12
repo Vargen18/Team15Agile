@@ -25,6 +25,10 @@ function App() {
       </Router>
       <MetaTags>
         <title>ICA Klingan</title>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+        ></link>
       </MetaTags>
     </div>
   );

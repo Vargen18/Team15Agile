@@ -4,6 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Form from "react-bootstrap/Form";
 import FormControl from "react-bootstrap/FormControl";
 import Button from "react-bootstrap/Button";
+import { Redirect } from "react-router-dom";
 
 class NavigationBar extends Component {
   render() {
@@ -17,10 +18,10 @@ class NavigationBar extends Component {
             <Nav.Link href="/handlare">Handlare</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
-        </Form>
+        <a href="/kassa">Gå till kassan</a>
+        <i class="material-icons-outlined"> {/* This should also redirect to the kassa */}
+          shopping_cart
+        </i>
       </Navbar>
     );
   }
