@@ -6,7 +6,7 @@ import Kund from "./Kund";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Order from "./Components/Order";
 import Hem from "./Components/Hem";
-import Kassa from "./Components/Kassa";
+import Kassa from "./Kassa";
 import NavigationBar from "./Components/NavigationBar";
 import "bootstrap/dist/css/bootstrap.min.css";
 
