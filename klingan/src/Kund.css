@@ -14,12 +14,20 @@
   background-color: palegreen;
   display: flex;
   align-items: center;
-  justify-content: top;
+  justify-content:  top;
   flex-direction: column;
 }
 
-.cart {
+.NavBar {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  align-items: left;
+  justify-content:  top;
+  flex-direction: column;
 }
+
+.cart{
+ display: flex;
+ flex-direction: row;  
+ justify-content: space-around;
+}
+

@@ -10,6 +10,7 @@ import { func } from "prop-types";
 import ShowProducts from "./Components/ShowProducts";
 import * as db from "./database/Database";
 import App from "./App";
+import ListGroup from "react-bootstrap/ListGroup";
 
 // Kund is the main component for the Kund page. Loads the products and keeps track of the customers shoppingcart.
 class Kund extends Component {
@@ -19,30 +20,23 @@ class Kund extends Component {
     this.removeProduct = this.removeProduct.bind(this);
     this.state = {
       cart: [],
-      category: true,
+      section: "Bröd",
     };
   }
 
   render() {
+
     return (
       <div className="Kund">
         <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
-        <button onClick={() => this.setState({ category: "Bröd" })}>
-          Bröd
-        </button>
-        <button onClick={() => this.setState({ category: "Mejeri" })}>
-          Mejeri
-        </button>
-        <button onClick={() => this.setState({ category: "Frukt och grönt" })}>
-          Frukt och grönt
-        </button>
-        <button onClick={() => this.setState({ category: "Fryst" })}>
-          Fryst
-        </button>
-        <button onClick={() => this.setState({ category: "Kött" })}>
-          Kött
-        </button>
+        <ul class="list-group list-group-horizontal">
+          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Bröd") ? " active" : "")} onClick={() => this.setState({ section: "Bröd" })}>Bröd</li>
+          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Mejeri") ? " active" : "")} onClick={() => this.setState({ section: "Mejeri" })}>Mejeri</li>
+          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Frukt och grönt") ? " active" : "")} onClick={() => this.setState({ section: "Frukt och grönt" })}>Frukt och grönt</li>
+          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Kött") ? " active" : "")} onClick={() => this.setState({ section: "Kött" })}>Kött</li>
+          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Fryst") ? " active" : "")} onClick={() => this.setState({ section: "Fryst" })}>Fryst</li>
+        </ul>
         <div className="cart">
           {this.ShowProduct()}
 
@@ -57,7 +51,7 @@ class Kund extends Component {
             ))}
           </div>
         </div>
-      </div>
+      </div >
     );
   }
 
@@ -72,15 +66,14 @@ class Kund extends Component {
 
   // Loads all the products in the database and binds the add and removeproduct functions to the current Kund.
   ShowProduct() {
-    var k = this.state.category;
+    var k = this.state.section;
     var productList = db.getProducts().filter((product) => {
-      return k == product.category;
+      return k == product.section;
     });
     return (
       <div>
-        <h1>{k}</h1>
         <ShowProducts
-          key={this.state.category}
+          key={this.state.section}
           productList={productList}
           addProd={this.addProduct.bind(this)}
           removeProd={this.removeProduct.bind(this)}
