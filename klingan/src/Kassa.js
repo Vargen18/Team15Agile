@@ -101,9 +101,11 @@ class Kassa extends Component {
 
             <Form.Group as={Row}>
               <Col sm={{ span: 8, offset: 2 }}>
-                <Button onClick={() => this.updateOrderList()}>
-                  Skicka Beställning
-                </Button>
+                <a href="/kund/bekraftelse">
+                  <Button onClick={() => this.updateOrderList()}>
+                    Skicka Beställning
+                  </Button>
+                </a>
               </Col>
             </Form.Group>
           </Form>

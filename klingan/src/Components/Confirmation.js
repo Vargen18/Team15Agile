@@ -8,6 +8,7 @@ function Confirmation() {
       <h3>Vi har mottagit din beställning och du kan nu stänga sidan.</h3>
       <h3>Nedan ser du din följesedel.</h3>
       {ShowCart()}
+      {ClearCart()}
     </div>
   );
 }
@@ -30,6 +31,11 @@ function ShowCart() {
       </div>
     );
   }
+}
+
+function ClearCart() {
+  const cart = [];
+  localStorage.setItem("cart", JSON.stringify(cart))
 }
 
 export default Confirmation;
