@@ -1,6 +1,6 @@
 import React from "react";
 
-//Function that is used for rendering the "Orderbekräftelse sidan".
+//Function that is used for rendering "Orderbekräftelse-sidan".
 function Confirmation() {
   return (
     <div className="Handlare">
@@ -8,7 +8,8 @@ function Confirmation() {
       <h3>Vi har mottagit din beställning och du kan nu stänga sidan.</h3>
       <h3>Nedan ser du din följesedel.</h3>
       {ShowCart()}
-      {ClearCart()}
+      {ClearCart()}{" "}
+      {/* We need to clear the cart so the customer gets to start fresh on a new order*/}
     </div>
   );
 }
@@ -21,7 +22,7 @@ function ShowCart() {
     return (
       <div>
         <h3>Kundens beställning:</h3>
-        {cart.map((cart) => (
+        {cart.map(cart => (
           <li>
             <div>
               {cart.name}, {cart.units}
@@ -35,7 +36,7 @@ function ShowCart() {
 
 function ClearCart() {
   const cart = [];
-  localStorage.setItem("cart", JSON.stringify(cart))
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 export default Confirmation;

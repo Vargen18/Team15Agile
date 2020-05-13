@@ -11,10 +11,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Order from "./Components/Order";
 
+//A Component that lets you input your information via forms and confirm your order.
 class Kassa extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      //These references are needed in order to get the values from the forms.
       nameRef: React.createRef(),
       mailRef: React.createRef(),
       phoneRef: React.createRef(),

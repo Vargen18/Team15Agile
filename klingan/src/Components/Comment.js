@@ -7,7 +7,7 @@ class Comment extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      comment: props.comment,
+      comment: props.comment
     };
   }
 

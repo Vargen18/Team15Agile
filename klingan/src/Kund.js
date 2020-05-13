@@ -126,8 +126,4 @@ class Kund extends Component {
   }
 }
 
-function OpenShoppingKart() {
-  alert("ShoppingKart");
-}
-
 export default Kund;

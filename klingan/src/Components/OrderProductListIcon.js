@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
-// Class that holds the name of a product and can render that name, without any real formatting.
+// Class that holds a product and can render the name of that product, as well as the amount.
 // Made to be used for the product list component.
-// Param: name
+// Param: Product
 class OrderProductListIcon extends Component {
   constructor(props) {
     super(props);
@@ -12,12 +12,12 @@ class OrderProductListIcon extends Component {
   render() {
     return (
       <div>
-        <span>{this.state.product.name} Mängd: {this.state.product.units}</span>
+        <span>
+          {this.state.product.name} Mängd: {this.state.product.units}
+        </span>
       </div>
     );
   }
 }
-
-// Mängd ska hämta mängden från state.product.amount typ. Ska dynamiskt se om de är st eller kg
 
 export default OrderProductListIcon;

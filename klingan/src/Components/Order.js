@@ -6,15 +6,15 @@ import Comment from "./Comment";
 
 // A class that holds the CustomerInformation aswell as a ProductList for a specific Order.
 // To be displayed for the store when they plan to finish or just check on the order.
-// Customer information displayed first followed by the list of products as specified by the mockups.
-// Param: ProductList, CustomerInformation.
+// Customer information displayed first followed by comment followed by the list of products as specified by the mockups.
+// Param: id, ProductList, customer, comment.
 class Order extends Component {
-  
   constructor(props) {
     super(props);
     this.state = {
       id: props.id,
-      productList: db.getOrder(parseInt(props.match.params.id)).props.productList,
+      productList: db.getOrder(parseInt(props.match.params.id)).props
+        .productList,
       customer: db.getOrder(parseInt(props.match.params.id)).props.customer,
       comment: db.getOrder(parseInt(props.match.params.id)).props.comment
     };
