@@ -13,15 +13,21 @@ class OrderList extends Component {
   }
 
   render() {
-    return (
-      <ListGroup>
-        {this.state.orders.map((order) => (
-          <ListGroup.Item action href={`/handlare/order/${order.id}`}>
-            <OrderListIcon order={order} />
-          </ListGroup.Item>
-        ))}
-      </ListGroup>
-    );
+    if (this.state.orders != null) {
+      console.log("OrderList state orders: ");
+      console.log(this);
+      return (
+        <ListGroup>
+          {this.state.orders.props.orders.map(order => (
+            <ListGroup.Item action href={`/handlare/order/${order.id}`}>
+              <OrderListIcon order={order} />
+            </ListGroup.Item>
+          ))}
+        </ListGroup>
+      );
+    } else {
+      return <p1>Det finns inga ordrar</p1>;
+    }
   }
 }
 

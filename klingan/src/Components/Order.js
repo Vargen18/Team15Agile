@@ -9,16 +9,19 @@ import Comment from "./Comment";
 // Customer information displayed first followed by the list of products as specified by the mockups.
 // Param: ProductList, CustomerInformation.
 class Order extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {
-      productList: db.getOrder(parseInt(props.match.params.id)).order.products,
-      customer: db.getOrder(parseInt(props.match.params.id)).order.customer,
-      comment: db.getOrder(parseInt(props.match.params.id)).order.comment,
+      id: props.id,
+      productList: db.getOrder(parseInt(props.match.params.id)).props.productList,
+      customer: db.getOrder(parseInt(props.match.params.id)).props.customer,
+      comment: db.getOrder(parseInt(props.match.params.id)).props.comment
     };
   }
 
   render() {
+    console.log(this.id)
     return (
       <div>
         <CustomerInformation customer={this.state.customer} />

@@ -9,11 +9,13 @@ class OrderListIcon extends Component {
   }
 
   render() {
+    console.log("OrderlistIcon this:");
+    console.log(this);
     return (
       <React.Fragment>
         <span>
-          {this.state.order.order.customer.name}:{" "}
-          {this.state.order.order.products.length} produkter
+          {this.state.order.props.customer.name}:{" "}
+          {this.state.order.props.productList.length} produkter
         </span>
       </React.Fragment>
     );
