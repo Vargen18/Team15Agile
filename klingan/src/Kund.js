@@ -19,7 +19,7 @@ class Kund extends Component {
     this.removeProduct = this.removeProduct.bind(this);
     this.state = {
       cart: [],
-      category: "Mat",
+      category: true,
     };
   }
 
@@ -28,11 +28,21 @@ class Kund extends Component {
       <div className="Kund">
         <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
-        <button onClick={() => this.setState({ category: "Mat" })}>Mat</button>
-        <button onClick={() => this.setState({ category: "Dryck" })}>
-          Dryck
+        <button onClick={() => this.setState({ category: "Bröd" })}>
+          Bröd
         </button>
-        <h3>{this.state.category}</h3>
+        <button onClick={() => this.setState({ category: "Mejeri" })}>
+          Mejeri
+        </button>
+        <button onClick={() => this.setState({ category: "Frukt och grönt" })}>
+          Frukt och grönt
+        </button>
+        <button onClick={() => this.setState({ category: "Fryst" })}>
+          Fryst
+        </button>
+        <button onClick={() => this.setState({ category: "Kött" })}>
+          Kött
+        </button>
         <div className="cart">
           {this.ShowProduct()}
 
