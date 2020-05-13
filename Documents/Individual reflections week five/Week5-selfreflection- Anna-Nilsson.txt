@@ -1,0 +1,11 @@
+What do I want to learn or understand better?
+I want to continue to learn more about CSS, specifically bootstrap and how it works together with react. This will as always be done by reading documentation. 
+
+
+How can I help someone else, or the entire team, to learn something new?/ what is my contribution towards the team’s use of Scrum?
+I have helped the group, mostly the smaller group I have programmed with, find new resources, documentation and good options for CSS. These have also been linked so that the entire group can take part of them.  
+
+
+what is my contribution towards the team’s deliveries? 
+
+I have coded CSS for several elements in the application together with my smaller programming group. I have also helped structure user stories. 
