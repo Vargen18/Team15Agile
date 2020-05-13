@@ -9,8 +9,6 @@ class OrderListIcon extends Component {
   }
 
   render() {
-    console.log("OrderlistIcon this:");
-    console.log(this);
     return (
       <React.Fragment>
         <span>

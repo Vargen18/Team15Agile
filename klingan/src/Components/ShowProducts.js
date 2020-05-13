@@ -11,9 +11,8 @@ class ShowProducts extends Component {
       kund: props.kund,
       units: props.units,
       addProd: props.addProd,
-      removeProd: props.removeProd,
+      removeProd: props.removeProd
     };
-    console.log(this.state);
   }
 
   render() {

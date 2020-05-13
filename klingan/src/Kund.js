@@ -15,7 +15,7 @@ class Kund extends Component {
     this.addProduct = this.addProduct.bind(this);
     this.removeProduct = this.removeProduct.bind(this);
     this.state = {
-      cart: [],
+      cart: []
     };
   }
 
@@ -27,7 +27,7 @@ class Kund extends Component {
           {this.ShowProduct()}
 
           <div className="ShoppingCart">
-            {this.state.cart.map((product) => (
+            {this.state.cart.map(product => (
               <Product
                 name={product.name}
                 url={product.url}
@@ -124,14 +124,6 @@ class Kund extends Component {
   componentDidMount() {
     this.hydrateStateWithLocalStorage();
   }
-}
-
-function ShoppingKartButton() {
-  return (
-    <i class="material-icons-outlined" onClick={OpenShoppingKart}>
-      shopping_cart
-    </i>
-  );
 }
 
 function OpenShoppingKart() {

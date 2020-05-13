@@ -14,8 +14,6 @@ class OrderList extends Component {
 
   render() {
     if (this.state.orders != null) {
-      console.log("OrderList state orders: ");
-      console.log(this);
       return (
         <ListGroup>
           {this.state.orders.props.orders.map(order => (

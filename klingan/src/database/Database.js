@@ -49,33 +49,10 @@ export function getProducts() {
 }
 
 export function getOrders() {
-  const orderList = JSON.parse(localStorage.getItem("orderList"));
-  console.log("db.getOrders localStorage orderList: ");
-  console.log(orderList);
   return JSON.parse(localStorage.getItem("orderList"));
-  /*
-    {
-      id: 0,
-      order: {
-        customer: getCustomer(),
-        products: getProducts(),
-        comment: "Ingen ekologisk skit!",
-      },
-    },
-    {
-      id: 1,
-      order: {
-        customer: getCustomer2(),
-        products: getProducts(),
-        comment: "Mucho ecologico por favoro!",
-      },
-    },
-    */
 }
 
 export function getOrder(i) {
-  console.log("i COCK: " + i);
-  console.log(getOrders().props.orders[i]);
   return getOrders().props.orders[i];
 }
 

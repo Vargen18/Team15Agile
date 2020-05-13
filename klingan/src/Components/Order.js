@@ -21,7 +21,6 @@ class Order extends Component {
   }
 
   render() {
-    console.log(this.id)
     return (
       <div>
         <CustomerInformation customer={this.state.customer} />
