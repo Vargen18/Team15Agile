@@ -10,29 +10,8 @@ function Handlare() {
     <div className="Handlare">
       <h1>Handlare</h1>
       <OrderList orders={db.getOrders()} />
-      {ShowCart()}
     </div>
   );
-}
-
-function ShowCart() {
-  const cart = JSON.parse(localStorage.getItem("cart"));
-  if (cart == null) {
-    return null;
-  } else {
-    return (
-      <div>
-        <h3>Kundens beställning:</h3>
-        {cart.map((cart) => (
-          <li>
-            <div>
-              {cart.name}, {cart.units}
-            </div>
-          </li>
-        ))}
-      </div>
-    );
-  }
 }
 
 export default Handlare;

@@ -6,13 +6,13 @@ import React, { Component } from "react";
 class OrderProductListIcon extends Component {
   constructor(props) {
     super(props);
-    this.state = { product: props.name };
+    this.state = { product: props.product };
   }
 
   render() {
     return (
       <div>
-        <span>{this.state.product} Mängd:</span>
+        <span>{this.state.product.name} Mängd: {this.state.product.units}</span>
       </div>
     );
   }

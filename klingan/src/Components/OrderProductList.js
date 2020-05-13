@@ -19,7 +19,7 @@ class OrderProductList extends Component {
       <ListGroup>
         {this.state.products.map((product) => (
           <ListGroup.Item>
-            <OrderProductListIcon name={product.name} />
+            <OrderProductListIcon product={product} />
           </ListGroup.Item>
         ))}
       </ListGroup>

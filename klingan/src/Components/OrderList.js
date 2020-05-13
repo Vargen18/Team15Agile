@@ -19,7 +19,7 @@ class OrderList extends Component {
       return (
         <ListGroup>
           {this.state.orders.props.orders.map(order => (
-            <ListGroup.Item action href={`/handlare/order/${order.id}`}>
+            <ListGroup.Item action href={`/handlare/order/${order.props.id}`}>
               <OrderListIcon order={order} />
             </ListGroup.Item>
           ))}
