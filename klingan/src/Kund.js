@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import HelloWorld from "./HelloWorld";
 import "./App.css";
 import "./Kund.css";
 import ReactDOM from "react-dom";
@@ -29,78 +28,27 @@ class Kund extends Component {
       <div className="Kund">
         <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
-        <div className="menu">
-          <ul class="list-group">
-            <li
-              class={
-                "list-group-item list-group-item-action" +
-                (this.state.section == "Bröd" ? " active" : "")
-              }
-              onClick={() => this.setState({ section: "Bröd" })}
-            >
-              Bröd
-            </li>
-            <li
-              class={
-                "list-group-item list-group-item-action" +
-                (this.state.section == "Mejeri" ? " active" : "")
-              }
-              onClick={() => this.setState({ section: "Mejeri" })}
-            >
-              Mejeri
-            </li>
-            <li
-              class={
-                "list-group-item list-group-item-action" +
-                (this.state.section == "Frukt och grönt" ? " active" : "")
-              }
-              onClick={() => this.setState({ section: "Frukt och grönt" })}
-            >
-              Frukt och grönt
-            </li>
-            <li
-              class={
-                "list-group-item list-group-item-action" +
-                (this.state.section == "Kött" ? " active" : "")
-              }
-              onClick={() => this.setState({ section: "Kött" })}
-            >
-              Kött
-            </li>
-            <li
-              class={
-                "list-group-item list-group-item-action" +
-                (this.state.section == "Fryst" ? " active" : "")
-              }
-              onClick={() => this.setState({ section: "Fryst" })}
-            >
-              Fryst
-            </li>
-          </ul>
-        </div>
+        {this.CategoryBar()}
         <div className="cart">
           {this.ShowProduct()}
-
-          <div className="ShoppingCart">
-            {this.state.cart.map((product) => (
-              <Product
-                name={product.name}
-                url={product.url}
-                key={product.key}
-                units={product.units}
-              />
-            ))}
-          </div>
+          {this.ShoppingKart()}
         </div>
       </div>
     );
   }
 
-  ChangeNrProducts(product) {
+  // Displays the shopping cart with the selected products taken from this.state.cart.
+  ShoppingKart() {
     return (
-      <div>
-        <button onClick={() => this.addProduct(product)}>+</button>
-        <button onClick={() => this.removeProduct(product)}>-</button>
+      <div className="ShoppingCart">
+        {this.state.cart.map((product) => (
+          <Product
+            name={product.name}
+            url={product.url}
+            key={product.key}
+            units={product.units}
+          />
+        ))}
       </div>
     );
   }
@@ -123,10 +71,36 @@ class Kund extends Component {
     );
   }
 
-  getCartItems() {
-    return <div class="Cart">{this.state.cart}</div>;
+  // Assembles all the category buttons and align them nicely to the left.
+  CategoryBar() {
+    return (
+      <div className="menu">
+        <ul class="list-group">
+          {this.CategoryButton("Bröd")}
+          {this.CategoryButton("Mejeri")}
+          {this.CategoryButton("Frukt och grönt")}
+          {this.CategoryButton("Kött")}
+          {this.CategoryButton("Fryst")}
+        </ul>
+      </div>);
   }
 
+  // Loads a button for selecting product category. Then only the corresponding products are shown.
+  // The current category is highlighted through the " active" string.
+  CategoryButton(category) {
+    return (
+      <li
+        class={
+          "list-group-item list-group-item-action" +
+          (this.state.section == category ? " active" : "")
+        }
+        onClick={() => this.setState({ section: category })}
+      >
+        {category}
+      </li>);
+  }
+
+  // Adds a product from the product gallery to the shopping kart.
   addProduct(Product) {
     let i = this.productExists(Product);
     if (i == -1) {
@@ -140,6 +114,7 @@ class Kund extends Component {
     localStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
 
+  // Checks whether a product exists in the current kart or not. Used in removeProduct().
   productExists(product) {
     for (let i = 0; i < this.state.cart.length; i++) {
       if (this.state.cart[i].name == product.name) {
@@ -149,6 +124,7 @@ class Kund extends Component {
     return -1;
   }
 
+  // Remove button in the product gallery fro removing products from the kart.
   removeProduct(Product) {
     let i = this.productExists(Product);
     if (i > -1) {
@@ -163,7 +139,7 @@ class Kund extends Component {
     localStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
 
-  hydrateStateWithLocalStorage() {
+  componentDidMount() {
     // for all items in state
     for (let id in this.state) {
       // if the key exists in localStorage
@@ -182,22 +158,6 @@ class Kund extends Component {
       }
     }
   }
-
-  componentDidMount() {
-    this.hydrateStateWithLocalStorage();
-  }
-}
-
-function ShoppingKartButton() {
-  return (
-    <i class="material-icons-outlined" onClick={OpenShoppingKart}>
-      shopping_cart
-    </i>
-  );
-}
-
-function OpenShoppingKart() {
-  alert("ShoppingKart");
 }
 
 export default Kund;
