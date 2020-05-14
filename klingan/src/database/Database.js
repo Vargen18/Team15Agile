@@ -23,7 +23,7 @@ export function getProducts() {
       section: "Bröd",
       name: "Knäckebröd",
       url:
-        "https://lh3.googleusercontent.com/proxy/zbPCsbufxGnP6z8Qd0om4IVYnpGz1sVdnKcX65-CXZPQBLiaQwQANsSiN0cdw7E2OvzvaNCobyDihOPBnUTkfgTRQqxvtuY5Zvcx9YOghVuKCji3KyELrmE3wL2sZM2YAkY8InD_sQ",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Knaeckebroed.jpg",
     },
     {
       id: 9,
@@ -37,7 +37,7 @@ export function getProducts() {
       section: "Frukt och grönt",
       name: "Spenat",
       url:
-        "https://lh3.googleusercontent.com/proxy/n9amMQQyMOtSRInmKChYWQbotkaiTYxSf8A34h7ig8FZgR79NTV8fTyqQLV-Tp0E4ZVukUXayWGVE1zqK6XlIIkv5_LwkLZovhxDchZ2jZr7TGcW2OAliQvX4M7yogY27UT8UkBs0EY",
+        "https://upload.wikimedia.org/wikipedia/commons/3/36/Spinach_produce-1.jpg",
     },
     {
       id: 11,
@@ -51,7 +51,7 @@ export function getProducts() {
       section: "Fryst",
       name: "Ärtor",
       url:
-        "https://lh3.googleusercontent.com/proxy/PUFaBZezeHPjFxxWv9-1d28gavdOLm3t1ubJBWZMz-uKb2HDzgjnZXwI-88xbdGXmRXSFb29v1W2ystkCNUViK9mI4Mx60vnPpSnOwg4uAAp0vO2XjNliXr3NpYHSuHBkjg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Peas_in_pods_-_Studio.jpg",
     },
     {
       id: 13,

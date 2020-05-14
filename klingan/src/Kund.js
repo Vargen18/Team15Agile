@@ -28,8 +28,8 @@ class Kund extends Component {
       <div className="Kund">
         <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
-        {this.CategoryBar()}
         <div className="cart">
+          {this.CategoryBar()}
           {this.ShowProduct()}
           {this.ShoppingKart()}
         </div>
@@ -40,7 +40,8 @@ class Kund extends Component {
   // Displays the shopping cart with the selected products taken from this.state.cart.
   ShoppingKart() {
     return (
-      <div className="ShoppingCart">
+      <div class="card border-secondary mb-3" style={{ width: "13.193rem" }}>
+        <div class="card-header"><h5>Varukorg</h5></div>
         {this.state.cart.map((product) => (
           <Product
             name={product.name}

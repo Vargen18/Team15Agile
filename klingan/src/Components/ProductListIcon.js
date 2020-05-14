@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 // Class that holds the name of a product and can render that name, without any real formatting.
 // Made to be used for the product list component.
@@ -21,7 +23,7 @@ class ProductListIcon extends Component {
   }
 
   increaseClick() {
-    this.state.addProd({name : this.state.product.name, url: this.state.product.url, units: 1});
+    this.state.addProd({ name: this.state.product.name, url: this.state.product.url, units: 1 });
     //this.state.kund.addProduct(this.state.product);
   }
 
@@ -33,11 +35,13 @@ class ProductListIcon extends Component {
 
   render() {
     return (
-      <div className="Product">
-        <img src={this.state.picture} width="200" height="200" alt="new" />
-        <h3>{this.state.productName}</h3>
-        <button onClick={this.increaseClick}>Öka denna produkt</button>
-        <button onClick={this.decreaseClick}>Minska denna produkt</button>
+      <div class="card" style={{ width: "13rem" }}>
+        <img class="card-img-top" src={this.state.picture} alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">{this.state.productName}</h5>
+          <button type="button" class="btn btn-success btn-lg" onClick={this.increaseClick}>+</button>
+          <button type="button" class="btn btn-danger btn-lg" onClick={this.decreaseClick}>-</button>
+        </div>
       </div>
     );
   }
