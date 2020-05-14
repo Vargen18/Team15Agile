@@ -41,7 +41,9 @@ class Kund extends Component {
   ShoppingKart() {
     return (
       <div class="card border-secondary mb-3" style={{ width: "13.193rem" }}>
-        <div class="card-header"><h5>Varukorg</h5></div>
+        <div class="card-header">
+          <h5>Varukorg</h5>
+        </div>
         {this.state.cart.map((product) => (
           <Product
             name={product.name}
@@ -58,7 +60,11 @@ class Kund extends Component {
   ShowProduct() {
     var k = this.state.section;
     var productList = db.getProducts().filter((product) => {
-      return k == product.section;
+      if (k == "Alla") {
+        return true;
+      } else {
+        return k == product.section;
+      }
     });
     return (
       <div>
@@ -77,13 +83,15 @@ class Kund extends Component {
     return (
       <div className="menu">
         <ul class="list-group">
+          {this.CategoryButton("Alla")}
           {this.CategoryButton("Bröd")}
           {this.CategoryButton("Mejeri")}
           {this.CategoryButton("Frukt och grönt")}
           {this.CategoryButton("Kött")}
           {this.CategoryButton("Fryst")}
         </ul>
-      </div>);
+      </div>
+    );
   }
 
   // Loads a button for selecting product category. Then only the corresponding products are shown.
@@ -98,7 +106,8 @@ class Kund extends Component {
         onClick={() => this.setState({ section: category })}
       >
         {category}
-      </li>);
+      </li>
+    );
   }
 
   // Adds a product from the product gallery to the shopping kart.
