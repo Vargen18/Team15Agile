@@ -36,7 +36,7 @@ class ProductListIcon extends Component {
   render() {
     return (
       <div class="card" style={{ width: "13rem" }}>
-        <img class="card-img-top" src={this.state.picture} alt="Card image cap" />
+        <img class="card-img-top" src={this.state.picture} alt="Card image cap" height="200px" />
         <div class="card-body">
           <h5 class="card-title">{this.state.productName}</h5>
           <button type="button" class="btn btn-success btn-lg" onClick={this.increaseClick}>+</button>
