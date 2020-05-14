@@ -25,18 +25,59 @@ class Kund extends Component {
   }
 
   render() {
-
     return (
       <div className="Kund">
         <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
-        <ul class="list-group list-group-horizontal">
-          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Bröd") ? " active" : "")} onClick={() => this.setState({ section: "Bröd" })}>Bröd</li>
-          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Mejeri") ? " active" : "")} onClick={() => this.setState({ section: "Mejeri" })}>Mejeri</li>
-          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Frukt och grönt") ? " active" : "")} onClick={() => this.setState({ section: "Frukt och grönt" })}>Frukt och grönt</li>
-          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Kött") ? " active" : "")} onClick={() => this.setState({ section: "Kött" })}>Kött</li>
-          <li class={"list-group-item list-group-item-action" + ((this.state.section == "Fryst") ? " active" : "")} onClick={() => this.setState({ section: "Fryst" })}>Fryst</li>
-        </ul>
+        <div className="menu">
+          <ul class="list-group">
+            <li
+              class={
+                "list-group-item list-group-item-action" +
+                (this.state.section == "Bröd" ? " active" : "")
+              }
+              onClick={() => this.setState({ section: "Bröd" })}
+            >
+              Bröd
+            </li>
+            <li
+              class={
+                "list-group-item list-group-item-action" +
+                (this.state.section == "Mejeri" ? " active" : "")
+              }
+              onClick={() => this.setState({ section: "Mejeri" })}
+            >
+              Mejeri
+            </li>
+            <li
+              class={
+                "list-group-item list-group-item-action" +
+                (this.state.section == "Frukt och grönt" ? " active" : "")
+              }
+              onClick={() => this.setState({ section: "Frukt och grönt" })}
+            >
+              Frukt och grönt
+            </li>
+            <li
+              class={
+                "list-group-item list-group-item-action" +
+                (this.state.section == "Kött" ? " active" : "")
+              }
+              onClick={() => this.setState({ section: "Kött" })}
+            >
+              Kött
+            </li>
+            <li
+              class={
+                "list-group-item list-group-item-action" +
+                (this.state.section == "Fryst" ? " active" : "")
+              }
+              onClick={() => this.setState({ section: "Fryst" })}
+            >
+              Fryst
+            </li>
+          </ul>
+        </div>
         <div className="cart">
           {this.ShowProduct()}
 
@@ -51,7 +92,7 @@ class Kund extends Component {
             ))}
           </div>
         </div>
-      </div >
+      </div>
     );
   }
 
