@@ -1,0 +1,11 @@
+What do I want to learn or understand better?
+I want to learn more about how we store data in local storage. I also want to dive deeper into Bootstrap as i find it really interesting. 
+
+
+How can I help someone else, or the entire team, to learn something new?/ what is my contribution towards the team’s use of Scrum?
+
+My contribution towards the teams use of scrum has been actively participating on the team meetings and partly pushing to keep the group on track and to make sure we move forward. 
+
+what is my contribution towards the team’s deliveries? 
+
+I have pair-programmed to provide a solution for an user story. This providing more value to our client. 
