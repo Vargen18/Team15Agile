@@ -1,6 +1,12 @@
 .Kund {
   text-align: center;
 }
+.menu {
+  background-color: #fff;
+  display: inline;
+  float: left;
+  flex-direction: column;
+}
 
 .material-icons-outlined {
   border: 2px solid gray;
@@ -14,13 +20,25 @@
   background-color: palegreen;
   display: flex;
   align-items: center;
-  justify-content:  top;
+  justify-content: top;
   flex-direction: column;
 }
 
-.cart{
- display: flex;
- flex-direction: row;  
- justify-content: space-around;
+.NavBar {
+  display: flex;
+  align-items: left;
+  justify-content: top;
+  flex-direction: column;
 }
 
+.cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.width {
+  display: block; 
+  width: 800px; 
+  padding-left: 0px;
+}
