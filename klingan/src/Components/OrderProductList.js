@@ -17,13 +17,15 @@ class OrderProductList extends Component {
   render() {
     let sorted = sorter.sortOrder(this.state.products);
     let temp = [];
+    console.log(sorted);
+    console.log(this.state.products);
     for (let section of db.getSections()) {
       let list = [];
       for (let product of sorted) {
         if (section === product.section) {
           list.push(
             <ListGroup.Item>
-              <OrderProductListIcon name={product.name} />
+              <OrderProductListIcon product={product} />
             </ListGroup.Item>
           );
         }

@@ -6,7 +6,9 @@ import Kund from "./Kund";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Order from "./Components/Order";
 import Hem from "./Components/Hem";
+import Kassa from "./Kassa";
 import NavigationBar from "./Components/NavigationBar";
+import Confirmation from "./Components/Confirmation";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 //Main App function that handles routing between pages.
@@ -18,11 +20,17 @@ function App() {
       <Router>
         <Route path="/handlare" exact component={Handlare} />
         <Route path="/kund" exact component={Kund} />
+        <Route path="/kund/bekraftelse" exact component={Confirmation} />
         <Route path="/handlare/order/:id" component={Order} />
+        <Route path="/kassa" component={Kassa} />
         <Route path="/" exact component={Hem} />
       </Router>
       <MetaTags>
         <title>ICA Klingan</title>
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+        ></link>
       </MetaTags>
     </div>
   );

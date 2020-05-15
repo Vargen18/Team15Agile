@@ -85,14 +85,11 @@ export function getProducts() {
 }
 
 export function getOrders() {
-  return [
-    { id: 0, order: { customer: getCustomer(), products: getProducts() } },
-    { id: 1, order: { customer: getCustomer2(), products: getProducts() } },
-  ];
+  return JSON.parse(localStorage.getItem("orderList"));
 }
 
 export function getOrder(i) {
-  return getOrders()[i];
+  return getOrders().props.orders[i];
 }
 
 export function getCustomer() {

@@ -1,0 +1,21 @@
+Self-evaluation 
+7/5 – 2020
+Oliver Karmetun
+
+What do I want to learn or understand better?:
+I have gotten a better understanding of one way to get persistence within the website using local storage. I want to discuss with the group whether it is worth making some more realistic database. 
+
+How can I help someone else, or the entire team, to learn something new?: 
+I will continue to assist with what I know regarding grocery stores and 
+online implementations of them in order to help improve our prioritizing. 
+I will also keep in contact with our customer in order to get their input. I will try to push focusing on things that offer value for our customer. 
+
+
+What is my contribution towards the team’s use of Scrum?:
+I will check with the stakeholder during the weekend to see if reprioritization of our user stories is necessary. We brought up on the meeting on Friday that this should be done on a regular basis on the weekends so that the sprint can be planned differently if necessary. 
+
+What is my contribution towards the team’s deliveries?: 
+I merged 2 of the last weeks branches before the meeting with the team so that everyone could start with the work from an updated master branch. 
+I have been working together with Johannes and Anna in 
+order improve the design of our website.
+As usual, we worked only on one computer, so commits are between all of us. We have discussed whether it was a good idea to focus on this and concluded that without it the site can be very hard to use for the targeted audience.  

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
 import "./Kund.css";
-import ReactDOM from "react-dom";
-import Handlare from "./Handlare";
 import Product from "./Product";
 import { getProducts } from "./database/Database";
 import { func } from "prop-types";
@@ -28,9 +26,8 @@ class Kund extends Component {
   render() {
     return (
       <div className="Kund">
-        <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
-        <div className="cart">
+        <div className="cart">         
           {this.CategoryBar()}
           <div className="width">
             {this.ShowProduct()}
@@ -138,7 +135,7 @@ class Kund extends Component {
     return -1;
   }
 
-  // Remove button in the product gallery fro removing products from the kart.
+  
   removeProduct(Product) {
     let i = this.productExists(Product);
     if (i > -1) {

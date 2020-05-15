@@ -6,7 +6,7 @@ import Card from "react-bootstrap/Card";
 // Also buttons for increasing/decresing the number of products in the shopping cart.
 // Uses the Button and Card bootstrap framworks.
 // Made to be used for the product list component.
-// Param: name, url, units, addProd, removeProd
+// Param: Product, name, url, units, addProd, removeProd
 class ProductListIcon extends Component {
   constructor(props) {
     super(props);
@@ -17,7 +17,7 @@ class ProductListIcon extends Component {
       units: props.units,
       kund: props.kund,
       addProd: props.addProd,
-      removeProd: props.removeProd,
+      removeProd: props.removeProd
     };
 
     this.increaseClick = this.increaseClick.bind(this);
@@ -25,14 +25,15 @@ class ProductListIcon extends Component {
   }
 
   increaseClick() {
-    this.state.addProd({ name: this.state.product.name, url: this.state.product.url, units: 1 });
-    //this.state.kund.addProduct(this.state.product);
+    this.state.addProd({
+      name: this.state.product.name,
+      url: this.state.product.url,
+      units: 1
+    });
   }
 
   decreaseClick() {
     this.state.removeProd(this.state.product);
-
-    //this.state.kund.addProduct(this.state.product);
   }
 
   render() {
