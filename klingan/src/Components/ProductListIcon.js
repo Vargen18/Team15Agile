@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-// Class that holds the name of a product and can render that name, without any real formatting.
+// Class that provides a card for a product containing the picture and name.
+// Also buttons for increasing/decresing the number of products in the shopping cart.
+// Uses the Button and Card bootstrap framworks.
 // Made to be used for the product list component.
 // Param: name, url, units, addProd, removeProd
 class ProductListIcon extends Component {

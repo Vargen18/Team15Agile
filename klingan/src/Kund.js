@@ -11,7 +11,9 @@ import * as db from "./database/Database";
 import App from "./App";
 import ListGroup from "react-bootstrap/ListGroup";
 
-// Kund is the main component for the Kund page. Loads the products and keeps track of the customers shoppingcart.
+// Kund is the main component for the Kund page
+// Loads the products and keeps track of the customers shoppingcart.
+// Also provides a navigation bar for all the product categories.
 class Kund extends Component {
   constructor(props) {
     super(props);
@@ -122,7 +124,7 @@ class Kund extends Component {
       this.state.cart[i].units += 1;
       this.setState(this.state);
     }
-    // update localStorage
+    // updates localStorage for the shopping cart after a product has been added.
     localStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
 
@@ -147,7 +149,7 @@ class Kund extends Component {
       }
     }
     this.setState(this.state);
-    // update localStorage
+    // update localStorage for the shopping cart after a product has been removed.
     localStorage.setItem("cart", JSON.stringify(this.state.cart));
   }
 
