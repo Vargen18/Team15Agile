@@ -1,9 +1,6 @@
 import React, { Component } from "react";
-import HelloWorld from "./HelloWorld";
 import "./App.css";
 import "./Kund.css";
-import ReactDOM from "react-dom";
-import Handlare from "./Handlare";
 import Product from "./Product";
 import { getProducts } from "./database/Database";
 import { func } from "prop-types";
@@ -18,21 +15,19 @@ class Kund extends Component {
     this.addProduct = this.addProduct.bind(this);
     this.removeProduct = this.removeProduct.bind(this);
     this.state = {
-      cart: [],
+      cart: []
     };
   }
 
   render() {
     return (
       <div className="Kund">
-        <a href="/handlare">Gå till Handlare</a>
         <h1>Kund</h1>
         <div className="cart">
           {this.ShowProduct()}
-      
 
           <div className="ShoppingCart">
-            {this.state.cart.map((product) => (
+            {this.state.cart.map(product => (
               <Product
                 name={product.name}
                 url={product.url}
@@ -40,7 +35,6 @@ class Kund extends Component {
                 units={product.units}
               />
             ))}
-            
           </div>
         </div>
       </div>
@@ -50,12 +44,8 @@ class Kund extends Component {
   ChangeNrProducts(product) {
     return (
       <div>
-        <button onClick={() => this.addProduct(product)}>
-          +
-      </button>
-        <button onClick={() => this.removeProduct(product)}>
-          -
-      </button>
+        <button onClick={() => this.addProduct(product)}>+</button>
+        <button onClick={() => this.removeProduct(product)}>-</button>
       </div>
     );
   }
@@ -81,7 +71,6 @@ class Kund extends Component {
       this.state.cart.push(Product);
       this.setState(this.state);
     } else {
-
       this.state.cart[i].units += 1;
       this.setState(this.state);
     }
@@ -98,7 +87,6 @@ class Kund extends Component {
     return -1;
   }
 
-  
   removeProduct(Product) {
     let i = this.productExists(Product);
     if (i > -1) {
@@ -136,18 +124,6 @@ class Kund extends Component {
   componentDidMount() {
     this.hydrateStateWithLocalStorage();
   }
-}
-
-function ShoppingKartButton() {
-  return (
-    <i class="material-icons-outlined" onClick={OpenShoppingKart}>
-      shopping_cart
-    </i>
-  );
-}
-
-function OpenShoppingKart() {
-  alert("ShoppingKart");
 }
 
 export default Kund;

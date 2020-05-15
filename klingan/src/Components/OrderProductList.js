@@ -16,13 +16,13 @@ class OrderProductList extends Component {
   render() {
     return (
       <div className="Handlare">
-      <ListGroup>
-        {this.state.products.map((product) => (
-          <ListGroup.Item>
-            <OrderProductListIcon name={product.name} />
-          </ListGroup.Item>
-        ))}
-      </ListGroup>
+        <ListGroup>
+          {this.state.products.map(product => (
+            <ListGroup.Item>
+              <OrderProductListIcon product={product} />
+            </ListGroup.Item>
+          ))}
+        </ListGroup>
       </div>
     );
   }

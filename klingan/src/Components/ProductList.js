@@ -18,22 +18,18 @@ class ProductList extends Component {
   render() {
     return (
       <div class="productList">
-        {this.state.products.map((product) => (
-            <ProductListIcon
-              product={product}
-              name={product.name}
-              url={product.url}
-              units={product.units}
-              addProd={this.state.addProd}
-              removeProd={this.state.removeProd}
-        
-            />))}
-            
+        {this.state.products.map(product => (
+          <ProductListIcon
+            product={product}
+            name={product.name}
+            url={product.url}
+            units={product.units}
+            addProd={this.state.addProd}
+            removeProd={this.state.removeProd}
+          />
+        ))}
       </div>
-        
-        
-        
-        );
-        }
+    );
+  }
 }
 export default ProductList;
