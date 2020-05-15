@@ -16,6 +16,7 @@ class ProductListIcon extends Component {
       picture: props.url,
       units: props.units,
       kund: props.kund,
+      section: props.section,
       addProd: props.addProd,
       removeProd: props.removeProd
     };
@@ -28,7 +29,8 @@ class ProductListIcon extends Component {
     this.state.addProd({
       name: this.state.product.name,
       url: this.state.product.url,
-      units: 1
+      units: 1,
+      section: this.state.section
     });
   }
 

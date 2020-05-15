@@ -24,6 +24,7 @@ class ProductList extends Component {
             name={product.name}
             url={product.url}
             units={product.units}
+            section={product.section}
             addProd={this.state.addProd}
             removeProd={this.state.removeProd}
           />

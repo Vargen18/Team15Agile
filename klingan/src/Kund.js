@@ -51,6 +51,7 @@ class Kund extends Component {
             url={product.url}
             key={product.key}
             units={product.units}
+            section={product.section}
           />
         ))}
       </div>
