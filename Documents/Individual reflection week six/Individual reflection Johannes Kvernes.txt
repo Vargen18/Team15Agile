@@ -1,0 +1,33 @@
+Individual reflection week 5 by Johannes Kvernes
+
+What do I want to learn or understand better?
+(A) What have I learned?
+This sprint I have not learned anything new as there were more important things to focus on.
+(B) What do I want to learn?
+As next sprint is the last one, learning something new will not be as beneficial as correcting previous faults, improving the code and implementing those last features, as these would likely generate the most value for the client. There will of course always be things to learn, (for me, probably scrum things) but right now those things are very small.
+(A -> B) How do I learn it?
+I could perhaps look through the slides one more time.
+
+How can I help someone else, or the entire team, to learn something new?
+(A) What have I done to help the team?
+I have come up with ideas on to improve the code, and found bugs.
+(B) What do I want to do to help someone learn something new?
+I can give those who need it some pointers.
+(A -> B) How do I want to help someone else learn something new?
+Apply my programming knowledge.
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+This sprint, I have kept the Trello board updated and tidy. I also spoke up more and gave my opinions.
+(B) What do I want to contribute with?
+Keep the Trello board updated as usual. I also want to make sure we follow what we have decided previously, such as the social contract and similar.
+(A -> B) How can I accomplish that?
+Read through our documents and point people in the right direction if they deviate from what has been decided.
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+I have coded (the high value generation user stories I mentioned last sprint), and written part of the team reflection.
+(B) What do I want to contribute with?
+I would like to improve the structure of the code, as it is inconsistent on different pages. If this is prioritized by the client I will definitely do that, otherwise I will implement another user story.
+(A -> B) How can I contribute?
+Code a bunch.
