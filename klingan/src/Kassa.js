@@ -11,6 +11,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Order from "./Components/Order";
 
+//TODO import ShowCart någonstns ifrån, behöver inte vara här
+
 //A Component that lets you input your information via forms and confirm your order.
 class Kassa extends Component {
   constructor(props) {
@@ -97,6 +99,8 @@ class Kassa extends Component {
     );
   }
 
+
+  // Hämtar varukorgen och all ifylld info och skapar en ny order med unikt id efter senaste ordern
   CreateOrder() {
     const orderList = JSON.parse(localStorage.getItem("orderList"));
     var maxId;
@@ -118,12 +122,14 @@ class Kassa extends Component {
     );
   }
 
+  // Hämtar orderlisten om det finns någon, annars skapar en ny tom
   getOrderList() {
     const orderList = db.getOrders();
     if (orderList != null) return orderList;
     else return <OrderList orders={[]} />;
   }
 
+  // Hämtar orderlisten, skapar kundens nya order och lägger till den in orderlisten
   updateOrderList() {
     const orderList = this.getOrderList();
     const order = this.CreateOrder();
