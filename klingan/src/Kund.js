@@ -30,7 +30,9 @@ class Kund extends Component {
         <h1>Kund</h1>
         <div className="cart">
           {this.CategoryBar()}
-          {this.ShowProduct()}
+          <div className="width">
+            {this.ShowProduct()}
+          </div>
           {this.ShoppingKart()}
         </div>
       </div>
