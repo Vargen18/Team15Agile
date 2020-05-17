@@ -1,0 +1,31 @@
+What do I want to learn or understand better?
+(A) What have I learned?
+Not too much, though I do have a slightly better understanding of forms and Refs. I guess I have also learned not to delay writing the weekly reflection, as it is easy to completely forget to do it or forget what you even did that week. 
+(B) What do I want to learn?
+Seeing how the next sprint is the last one, the most optimal thing to do when it comes to providing value to the customer would seem to be to leverage all that we've learned so far into as massive improvements as possible. That being said, I'm personally a bit bothered by not know how to override bootstrap's rulesets, so ideally that's something I can learn without too much effort. 
+(A -> B) How do I learn it?
+When it comes to bootstrap, I think this is a relatively basic issue that I should be able to understand either through checking the documentation or searching stackoverflow. 
+
+How can I help someone else, or the entire team, to learn something new?
+(A) What have I done to help the team?
+I would like to believe that I have helped the team be more strict when it comes to the code review. 
+(B) What do I want to do to help someone learn something new?
+If some new bugs pop up or are discovered this week I could show those who are not aware that there is a great debugging extension for VScode. I honestly don't know of anything major I could contribute in this field at the moment. 
+(A -> B) How do I want to help someone else learn something new?
+Simply inform them that there are great tools for debugging if it becomes necessary to do so. 
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+I don't feel like I've done too much out of the ordinary this week when it comes to scrum. I guess you could perhaps count the code review stuff, but other than that it's mostly been to attend the scrum meetings and work like normal. 
+(B) What do I want to contribute with?
+Since next week is the last one to work on the product, I think it would be a good move to really lay out what will provide the most value to the customer and make sure we have a good plan on Monday. 
+(A -> B) How can I accomplish that?
+Make sure that we do in fact set up a proper plan on Monday. 
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+I have (together with Adam and Oliver) finished the "Som kund vill jag kunna skicka in min beställning med min varukorg och info" user story. 
+(B) What do I want to contribute with?
+Just keep going ham on coding, and also trying to make sure the code quality doesn't take a dive just because it's the last week. 
+(A -> B) How can I contribute?
+Make sure I do my part when it comes to code quality, and also properly do code reviews. 
