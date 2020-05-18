@@ -39,6 +39,7 @@ class Kund extends Component {
 
   // Displays the shopping cart with the selected products taken from this.state.cart.
   ShoppingKart() {
+    var i = new Date().getTime();
     return (
       <div class="card border-secondary mb-3" style={{ width: "13.193rem" }}>
         <div class="card-header">
@@ -52,7 +53,7 @@ class Kund extends Component {
             units={product.units}
             section={product.section}
             comment={product.comment}
-            key={product.key}
+            key={product.name + product.comment + i}
             checked={product.checked}
             removeProd={this.removeProduct.bind(this)}
             addProd={this.addProduct.bind(this)}
