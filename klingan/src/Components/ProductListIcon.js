@@ -69,20 +69,9 @@ class ProductListIcon extends Component {
         </Form>
         <div class="card-body">
           <h5 class="card-title">{this.state.productName}</h5>
-          <button
-            type="button"
-            class="btn btn-success btn-lg"
-            onClick={this.increaseClick}
-          >
-            +
-          </button>
-          <button
-            type="button"
-            class="btn btn-danger btn-lg"
-            onClick={this.decreaseClick}
-          >
-            -
-          </button>
+          <Button type="button" onClick={this.increaseClick}>
+            Lägg till
+          </Button>
         </div>
         <Form>
           <Form.Check

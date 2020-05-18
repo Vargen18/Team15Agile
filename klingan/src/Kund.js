@@ -125,6 +125,7 @@ class Kund extends Component {
       this.setState(this.state);
     } else {
       this.state.cart[i].units += 1;
+      this.state.cart[i].replacementProduct = Product.checked;
       this.setState(this.state);
     }
     // updates localStorage for the shopping cart after a product has been added.

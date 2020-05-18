@@ -56,17 +56,18 @@ class Product extends React.Component {
           <h5 class="card-title">{this.state.replacementProduct}</h5>
           <button
             type="button"
-            class="btn btn-success btn-lg"
-            onClick={this.increaseClick}
-          >
-            +
-          </button>
-          <button
-            type="button"
             class="btn btn-danger btn-lg"
             onClick={this.decreaseClick}
           >
             -
+          </button>
+          <button
+            type="button"
+            class="btn btn-success btn-lg"
+            onClick={this.increaseClick}
+            height="200px"
+          >
+            +
           </button>
         </div>
       </div>
