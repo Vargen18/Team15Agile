@@ -27,7 +27,6 @@ class ProductList extends Component {
             section={product.section}
             addProd={this.state.addProd}
             removeProd={this.state.removeProd}
-            comment={this.state.comment}
           />
         ))}
       </div>
