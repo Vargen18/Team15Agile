@@ -38,6 +38,7 @@ class ProductListIcon extends Component {
       section: this.state.section,
       comment: this.state.sortRef.current.value,
     });
+    this.state.sortRef.current.value = "";
   }
 
   decreaseClick() {
@@ -58,7 +59,7 @@ class ProductListIcon extends Component {
             <Col sm={10}>
               <Form.Control
                 type="sort"
-                placeholder="Specifik sort"
+                placeholder="Sort, vikt, önskemål"
                 ref={this.state.sortRef}
               />
             </Col>
