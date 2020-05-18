@@ -4,13 +4,13 @@ import "./Handlare.css";
 import "./Product.css";
 
 class Product extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
       product: props.product,
       addProd: props.addProd,
       removeProd: props.removeProd,
+      comment: props.comment,
     };
 
     this.increaseClick = this.increaseClick.bind(this);
@@ -33,9 +33,15 @@ class Product extends React.Component {
   render() {
     return (
       <div class="card mb-3" style={{ width: "13rem" }}>
-        <img class="card-img-top" src={this.props.url} alt="Card image cap" height="200px" />
+        <img
+          class="card-img-top"
+          src={this.props.url}
+          alt="Card image cap"
+          height="200px"
+        />
         <div class="card-body">
           <h5 class="card-title">{this.props.name}</h5>
+          <h5 class="card-title">{this.props.comment}</h5>
           <h5 class="card-title">{this.props.units}</h5>
           <button
             type="button"
@@ -59,7 +65,7 @@ class Product extends React.Component {
 
 export default Product;
 
- // onClick={this.decreaseClick}
+// onClick={this.decreaseClick}
 
 /*
 
