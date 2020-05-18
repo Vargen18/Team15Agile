@@ -146,11 +146,13 @@ function ShowCart() {
       <div>
         <h3>Din beställning:</h3>
         {cart.map((cart) => (
-          <li>
-            <div>
-              {cart.name}, {cart.comment}, {cart.units},
-            </div>
-          </li>
+          <ul class="articles">
+            <li>
+              <div>
+                {cart.name}, {cart.comment}, {cart.units},
+              </div>
+            </li>
+          </ul>
         ))}
       </div>
     );
