@@ -53,6 +53,7 @@ class Kund extends Component {
             section={product.section}
             comment={product.comment}
             key={product.key}
+            checked={product.checked}
             removeProd={this.removeProduct.bind(this)}
             addProd={this.addProduct.bind(this)}
           />

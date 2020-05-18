@@ -24,6 +24,7 @@ class ProductListIcon extends Component {
       addProd: props.addProd,
       removeProd: props.removeProd,
       sortRef: React.createRef(),
+      checked: React.createRef()
     };
 
     this.increaseClick = this.increaseClick.bind(this);
@@ -31,12 +32,14 @@ class ProductListIcon extends Component {
   }
 
   increaseClick() {
+    console.log(this.state.checked);
     this.state.addProd({
       name: this.state.product.name,
       url: this.state.product.url,
       units: 1,
       section: this.state.section,
       comment: this.state.sortRef.current.value,
+      checked: this.state.checked.current.value
     });
     this.state.sortRef.current.value = "";
   }
@@ -82,6 +85,12 @@ class ProductListIcon extends Component {
             -
           </button>
         </div>
+        <Form>
+          <Form.Check
+            label="Acceptera ersättningsvara"
+            ref={this.state.checked}
+          />
+        </Form>
       </div>
     );
   }
