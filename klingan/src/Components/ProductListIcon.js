@@ -56,7 +56,7 @@ class ProductListIcon extends Component {
         />
         <Form>
           <Form.Group as={Row} controlId="formHorizontalNamn">
-            <Col sm={10}>
+            <Col>
               <Form.Control
                 type="sort"
                 placeholder="Sort, vikt, önskemål"
