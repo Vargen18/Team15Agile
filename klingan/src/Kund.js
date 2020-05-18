@@ -27,11 +27,9 @@ class Kund extends Component {
     return (
       <div className="Kund">
         <h1>Kund</h1>
-        <div className="cart">         
+        <div className="cart">
           {this.CategoryBar()}
-          <div className="width">
-            {this.ShowProduct()}
-          </div>
+          <div className="width">{this.ShowProduct()}</div>
           {this.ShoppingKart()}
         </div>
       </div>
@@ -52,6 +50,7 @@ class Kund extends Component {
             key={product.key}
             units={product.units}
             section={product.section}
+            comment={product.comment}
           />
         ))}
       </div>
@@ -136,7 +135,6 @@ class Kund extends Component {
     return -1;
   }
 
-  
   removeProduct(Product) {
     let i = this.productExists(Product);
     if (i > -1) {

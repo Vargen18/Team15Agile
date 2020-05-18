@@ -36,6 +36,7 @@ class ProductListIcon extends Component {
       url: this.state.product.url,
       units: 1,
       section: this.state.section,
+      comment: this.state.sortRef.current.value,
     });
   }
 
