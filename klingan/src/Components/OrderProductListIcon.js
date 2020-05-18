@@ -13,7 +13,8 @@ class OrderProductListIcon extends Component {
     return (
       <div>
         <span>
-          {this.state.product.name} Mängd: {this.state.product.units}
+          {this.state.product.name}, ({this.state.product.comment}) Mängd:{" "}
+          {this.state.product.units}
         </span>
       </div>
     );
