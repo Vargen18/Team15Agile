@@ -133,12 +133,13 @@ class Kund extends Component {
   productExists(product) {
     for (let i = 0; i < this.state.cart.length; i++) {
       if (this.state.cart[i].name == product.name) {
-        return i;
+        if (this.state.cart[i].comment == product.comment) {
+          return i;
+        }
       }
     }
     return -1;
   }
-
 
   removeProduct(Product) {
     let i = this.productExists(Product);

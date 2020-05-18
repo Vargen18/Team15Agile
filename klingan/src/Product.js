@@ -23,6 +23,7 @@ class Product extends React.Component {
       url: this.props.url,
       units: 1,
       section: this.props.section,
+      comment: this.state.comment,
     });
   }
 
