@@ -1,0 +1,13 @@
+Self-evaluation 
+15/5 – 2020
+Oliver Karmetun
+
+What do I want to learn or understand better?:
+Right now, we are unsure of what the stakeholder wants us to focus on for the last week. I will talk with her during the weekend in order to clear these things up. 
+
+What is my contribution towards the team’s use of Scrum?:
+I reorganized the user stories with the feedback from our stakeholder during the last weekend. I will check with the stakeholder during the weekend again to see what user stories we should focus on for the last week.
+
+What is my contribution towards the team’s deliveries?: 
+I have been working with Samuel and Adam in order to enable sending an order to the store page. I also helped another group who was stuck with showing all products. 
+We did a mixture of programming alone and together. 
