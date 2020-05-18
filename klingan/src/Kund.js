@@ -5,6 +5,7 @@ import Product from "./Product";
 import { getProducts } from "./database/Database";
 import { func } from "prop-types";
 import ShowProducts from "./Components/ShowProducts";
+import ProductListIcon from "./Components/ProductListIcon";
 import * as db from "./database/Database";
 import App from "./App";
 import ListGroup from "react-bootstrap/ListGroup";
@@ -45,12 +46,15 @@ class Kund extends Component {
         </div>
         {this.state.cart.map((product) => (
           <Product
+            product={product}
             name={product.name}
             url={product.url}
-            key={product.key}
             units={product.units}
             section={product.section}
             comment={product.comment}
+            key={product.key}
+            removeProd={this.removeProduct.bind(this)}
+            addProd={this.addProduct.bind(this)}
           />
         ))}
       </div>
@@ -134,6 +138,7 @@ class Kund extends Component {
     }
     return -1;
   }
+
 
   removeProduct(Product) {
     let i = this.productExists(Product);
