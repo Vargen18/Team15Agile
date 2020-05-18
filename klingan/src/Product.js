@@ -12,15 +12,18 @@ class Product extends React.Component {
       removeProd: props.removeProd,
       comment: props.comment,
       checked: props.checked,
-      kk: "Hej"
+      replacementProduct: props.checked
+        ? "Ersättningsvara tillåts"
+        : "Ersättningsvara tillåts ej",
     };
 
     this.increaseClick = this.increaseClick.bind(this);
     this.decreaseClick = this.decreaseClick.bind(this);
 
-    //const replacementProduct = (props.checked ? "Ersättningsvara tillåts" : "Ersättningsvara tillåts ej");
+    const replacementProduct = props.checked
+      ? "Ersättningsvara tillåts"
+      : "Ersättningsvara tillåts ej";
   }
-
 
   increaseClick() {
     this.state.addProd({
@@ -37,7 +40,7 @@ class Product extends React.Component {
   }
 
   render() {
-    console.log(this.state);
+    console.log(this.state.checked);
     return (
       <div class="card mb-3" style={{ width: "13rem" }}>
         <img
@@ -50,7 +53,7 @@ class Product extends React.Component {
           <h5 class="card-title">{this.props.name}</h5>
           <h5 class="card-title">{this.props.comment}</h5>
           <h5 class="card-title">{this.props.units}</h5>
-          <h5 class="card-title">{this.state.kk}</h5>
+          <h5 class="card-title">{this.state.replacementProduct}</h5>
           <button
             type="button"
             class="btn btn-success btn-lg"
