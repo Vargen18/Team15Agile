@@ -88,6 +88,7 @@ class Kund extends Component {
 
   // Assembles all the category buttons and align them nicely to the left.
   CategoryBar() {
+    console.log(db.getSections().length);
     return (
       <div className="menu">
         <ul class="list-group">
@@ -122,8 +123,6 @@ class Kund extends Component {
 
   // Adds a product from the product gallery to the shopping kart.
   addProduct(Product) {
-    getExcel();
-
     let i = this.productExists(Product);
     if (i == -1) {
       this.state.cart.push(Product);

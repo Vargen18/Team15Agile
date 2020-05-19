@@ -1,11 +1,8 @@
-import xlsxFile from "read-excel-file";
-
 function getExcel() {
+  const xlsxFile = require("read-excel-file/node");
   console.log("Här");
-  xlsxFile("./Varudata").then((rows) => {
+  xlsxFile("./Varudata.xlsx").then((rows) => {
     console.log(rows);
     console.table(rows);
   });
 }
-
-export default getExcel;
