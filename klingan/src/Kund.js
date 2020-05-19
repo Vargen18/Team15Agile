@@ -20,7 +20,7 @@ class Kund extends Component {
     this.removeProduct = this.removeProduct.bind(this);
     this.state = {
       cart: [],
-      section: "Bröd",
+      section: "Alla",
     };
   }
 
@@ -91,11 +91,13 @@ class Kund extends Component {
       <div className="menu">
         <ul class="list-group">
           {this.CategoryButton("Alla")}
+          {db.getSections().map((section) => this.CategoryButton(section))}
+          {/* {this.CategoryButton("Alla")}
           {this.CategoryButton("Bröd")}
           {this.CategoryButton("Mejeri")}
           {this.CategoryButton("Frukt och grönt")}
           {this.CategoryButton("Kött")}
-          {this.CategoryButton("Fryst")}
+          {this.CategoryButton("Fryst")} */}
         </ul>
       </div>
     );
