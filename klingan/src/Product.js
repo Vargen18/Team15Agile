@@ -40,7 +40,6 @@ class Product extends React.Component {
   }
 
   render() {
-    console.log(this.state.checked);
     return (
       <div class="card mb-3" style={{ width: "13rem" }}>
         <img

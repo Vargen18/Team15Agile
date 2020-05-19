@@ -9,6 +9,7 @@ import ProductListIcon from "./Components/ProductListIcon";
 import * as db from "./database/Database";
 import App from "./App";
 import ListGroup from "react-bootstrap/ListGroup";
+import getExcel from "./database/ExcelLoader";
 
 // Kund is the main component for the Kund page
 // Loads the products and keeps track of the customers shoppingcart.
@@ -121,6 +122,8 @@ class Kund extends Component {
 
   // Adds a product from the product gallery to the shopping kart.
   addProduct(Product) {
+    getExcel();
+
     let i = this.productExists(Product);
     if (i == -1) {
       this.state.cart.push(Product);
