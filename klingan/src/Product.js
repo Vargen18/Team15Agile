@@ -45,7 +45,7 @@ class Product extends React.Component {
         <div class="card-body">
           <h5 class="card-title">{this.props.name}</h5>
           <h5 class="card-title">{this.props.comment}</h5>
-          <h5 class="card-title">{this.props.units}</h5>
+          <h5 class="card-title">{"Antal: " + this.props.units}</h5>
           <h5 class="card-title">{this.state.replacementProduct}</h5>
           <button
             type="button"
