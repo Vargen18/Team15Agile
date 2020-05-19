@@ -32,6 +32,7 @@ class Product extends React.Component {
       units: 1,
       section: this.props.section,
       comment: this.state.comment,
+      checked: this.state.checked,
     });
   }
 

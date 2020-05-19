@@ -8,7 +8,8 @@ export function sortOrder(products) {
   let productGroups = db.getProductGroups();
   let sorted = [];
   for (let i = 0; i < productGroups.length; i++) {
-    let productGroup = productGroups[i];
+    let productGroup = productGroups[i].name;
+    console.log(productGroup);
     for (let j = 0; j < products.length; j++) {
       let product = products[j];
       if (product.name === productGroup) {
