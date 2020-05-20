@@ -19,7 +19,7 @@ class Product extends React.Component {
       checked: props.checked,
       replacementProduct: props.checked
         ? "Ersättningsvara tillåts"
-        : "Ersättningsvara tillåts ej",
+        : "Ersättningsvara tillåts ej"
     };
 
     this.increaseClick = this.increaseClick.bind(this);

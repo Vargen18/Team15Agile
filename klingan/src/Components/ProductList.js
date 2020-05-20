@@ -3,7 +3,7 @@ import ProductListIcon from "./ProductListIcon";
 import "../productList.css";
 
 // A class that is used to display clickable products in a list, to be used for the main browse window.
-// Param: list of products.
+// Param: list of products, kund, addProd, removeProd
 class ProductList extends Component {
   constructor(props) {
     super(props);

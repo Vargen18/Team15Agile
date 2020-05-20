@@ -9,7 +9,6 @@ import ProductListIcon from "./Components/ProductListIcon";
 import * as db from "./database/Database";
 import App from "./App";
 import ListGroup from "react-bootstrap/ListGroup";
-import getExcel from "./database/ExcelLoader";
 
 // Kund is the main component for the Kund page
 // Loads the products and keeps track of the customers shoppingcart.
@@ -39,6 +38,7 @@ class Kund extends Component {
   }
 
   // Displays the shopping cart with the selected products taken from this.state.cart.
+  // Date is used as key to force react to update products
   ShoppingKart() {
     var i = new Date().getTime();
     return (
