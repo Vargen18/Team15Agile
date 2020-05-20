@@ -31,6 +31,7 @@ class ProductListIcon extends Component {
     this.decreaseClick = this.decreaseClick.bind(this);
   }
 
+  //Adds another product/unit to the cart.
   increaseClick() {
     this.state.addProd({
       name: this.state.product.name,
@@ -43,6 +44,7 @@ class ProductListIcon extends Component {
     this.state.sortRef.current.value = "";
   }
 
+  //Removes a product from the cart.
   decreaseClick() {
     this.state.removeProd(this.state.product);
   }
@@ -50,25 +52,19 @@ class ProductListIcon extends Component {
   render() {
     return (
       <div class="card" style={{ width: "13rem" }}>
-        <img
-          class="card-img-top"
-          src={this.state.picture}
-          alt="Card image cap"
-          height="200px"
-        />
-        <Form>
-          <Form.Group as={Row} controlId="formHorizontalNamn">
-            <Col>
-              <Form.Control
-                type="sort"
-                placeholder="Sort, vikt, önskemål"
-                ref={this.state.sortRef}
-              />
-            </Col>
-          </Form.Group>
-        </Form>
         <div class="card-body">
           <h5 class="card-title">{this.state.productName}</h5>
+          <Form>
+            <Form.Group as={Row} controlId="formHorizontalNamn">
+              <Col>
+                <Form.Control
+                  type="sort"
+                  placeholder="Sort, vikt, önskemål"
+                  ref={this.state.sortRef}
+                />
+              </Col>
+            </Form.Group>
+          </Form>
           <Button type="button" onClick={this.increaseClick}>
             Lägg till
           </Button>

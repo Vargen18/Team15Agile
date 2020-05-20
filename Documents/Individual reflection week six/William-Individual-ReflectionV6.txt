@@ -1,0 +1,26 @@
+William  Individual reflection – week 6
+	
+
+	What do I want to learn or understand better?
+	  A:This week, I have learned a lot about how to work with CSS and bootstrap.
+	  B:Next week, I would like to understand what the customer wants to tailor our project towards what actually makes value for our customer.
+	  A->B: By communicating with our client and to help our PO Oliver.
+	
+
+	How can I help someone else, or the entire team, to learn something new?
+	  A: This week, I wrote the code to show products from a certain category from a category list.
+	  B: Next week, I want to contribute with my skills in making sure we really do what the customer wants this last coding week.
+	  A->B: Making my voice heard early on during our first daily scrum to make sure everyone in the team understands this.
+	
+
+	What is my contribution towards the team’s use of Scrum?
+	A: This week, I believe I have been a big part in creating a good DoD and developing our code reviewing structure.
+	B: Next week, I would like to learn more about how scrum is used in the end of a project.
+	A->B: By searching the web and watching informative video tutorials about scrum.
+	
+
+	What is my contribution towards the team’s deliveries?
+	   A: This week, I fixed the category selection menu.
+	   B: Next week, I do not really know since we have not had our final sprint review with our client. The plan is that the client will then tell us what they want for our last week of coding.
+	   A->B: I will wait until Monday and when I know what to do I will contribute to the final product the best way I can.
+

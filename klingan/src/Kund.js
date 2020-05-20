@@ -9,6 +9,7 @@ import ProductListIcon from "./Components/ProductListIcon";
 import * as db from "./database/Database";
 import App from "./App";
 import ListGroup from "react-bootstrap/ListGroup";
+import getExcel from "./database/ExcelLoader";
 
 // Kund is the main component for the Kund page
 // Loads the products and keeps track of the customers shoppingcart.
@@ -87,6 +88,7 @@ class Kund extends Component {
 
   // Assembles all the category buttons and align them nicely to the left.
   CategoryBar() {
+    console.log(db.getSections().length);
     return (
       <div className="menu">
         <ul class="list-group">
@@ -147,6 +149,7 @@ class Kund extends Component {
     return -1;
   }
 
+  // Removes one unit of a product from the cart, if there is only one, remove the card.
   removeProduct(Product) {
     let i = this.productExists(Product);
     if (i > -1) {

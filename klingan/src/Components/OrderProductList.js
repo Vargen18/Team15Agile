@@ -22,7 +22,7 @@ class OrderProductList extends Component {
     console.log(this.state.products);
     for (let productGroup of db.getProductGroups()) {
       for (let product of sorted) {
-        if (productGroup === product.name) {
+        if (productGroup.name === product.name) {
           temp.push(
             <ListGroup.Item>
               <OrderProductListIcon product={product} />
