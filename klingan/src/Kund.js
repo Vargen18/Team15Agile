@@ -9,7 +9,6 @@ import ProductListIcon from "./Components/ProductListIcon";
 import * as db from "./database/Database";
 import App from "./App";
 import ListGroup from "react-bootstrap/ListGroup";
-import getExcel from "./database/ExcelLoader";
 
 // Kund is the main component for the Kund page
 // Loads the products and keeps track of the customers shoppingcart.
@@ -21,7 +20,7 @@ class Kund extends Component {
     this.removeProduct = this.removeProduct.bind(this);
     this.state = {
       cart: [],
-      section: "Alla"
+      section: "Alla",
     };
   }
 
@@ -46,7 +45,7 @@ class Kund extends Component {
         <div class="card-header">
           <h5>Varukorg</h5>
         </div>
-        {this.state.cart.map(product => (
+        {this.state.cart.map((product) => (
           <Product
             product={product}
             name={product.name}
@@ -67,7 +66,7 @@ class Kund extends Component {
   // Loads all the products in the database and binds the add and removeproduct functions to the current Kund.
   ShowProduct() {
     var k = this.state.section;
-    var productList = db.getProducts().filter(product => {
+    var productList = db.getProducts().filter((product) => {
       if (k == "Alla") {
         return true;
       } else {
@@ -93,7 +92,7 @@ class Kund extends Component {
       <div className="menu">
         <ul class="list-group">
           {this.CategoryButton("Alla")}
-          {db.getSections().map(section => this.CategoryButton(section))}
+          {db.getSections().map((section) => this.CategoryButton(section))}
           {/* {this.CategoryButton("Alla")}
           {this.CategoryButton("Bröd")}
           {this.CategoryButton("Mejeri")}
