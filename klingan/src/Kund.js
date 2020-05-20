@@ -38,6 +38,7 @@ class Kund extends Component {
   }
 
   // Displays the shopping cart with the selected products taken from this.state.cart.
+  // Date is used as key to force react to update products
   ShoppingKart() {
     var i = new Date().getTime();
     return (

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-// Class that holds a product and can render the name of that product, as well as the amount.
+// Class that holds a product and can render the name of that product, as well as the amount and whether replacement is accepted
 // Made to be used for the product list component.
 // Param: Product
 class OrderProductListIcon extends Component {
