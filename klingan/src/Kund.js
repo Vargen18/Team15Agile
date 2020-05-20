@@ -5,9 +5,11 @@ import Product from "./Product";
 import { getProducts } from "./database/Database";
 import { func } from "prop-types";
 import ShowProducts from "./Components/ShowProducts";
+import ProductListIcon from "./Components/ProductListIcon";
 import * as db from "./database/Database";
 import App from "./App";
 import ListGroup from "react-bootstrap/ListGroup";
+import getExcel from "./database/ExcelLoader";
 
 // Kund is the main component for the Kund page
 // Loads the products and keeps track of the customers shoppingcart.
@@ -19,7 +21,7 @@ class Kund extends Component {
     this.removeProduct = this.removeProduct.bind(this);
     this.state = {
       cart: [],
-      section: "Bröd",
+      section: "Alla",
     };
   }
 
@@ -27,11 +29,9 @@ class Kund extends Component {
     return (
       <div className="Kund">
         <h1>Kund</h1>
-        <div className="cart">         
+        <div className="cart">
           {this.CategoryBar()}
-          <div className="width">
-            {this.ShowProduct()}
-          </div>
+          <div className="width">{this.ShowProduct()}</div>
           {this.ShoppingKart()}
         </div>
       </div>
@@ -40,6 +40,7 @@ class Kund extends Component {
 
   // Displays the shopping cart with the selected products taken from this.state.cart.
   ShoppingKart() {
+    var i = new Date().getTime();
     return (
       <div class="card border-secondary mb-3" style={{ width: "13.193rem" }}>
         <div class="card-header">
@@ -47,11 +48,16 @@ class Kund extends Component {
         </div>
         {this.state.cart.map((product) => (
           <Product
+            product={product}
             name={product.name}
             url={product.url}
-            key={product.key}
             units={product.units}
             section={product.section}
+            comment={product.comment}
+            key={product.name + product.comment + i}
+            checked={product.checked}
+            removeProd={this.removeProduct.bind(this)}
+            addProd={this.addProduct.bind(this)}
           />
         ))}
       </div>
@@ -82,15 +88,18 @@ class Kund extends Component {
 
   // Assembles all the category buttons and align them nicely to the left.
   CategoryBar() {
+    console.log(db.getSections().length);
     return (
       <div className="menu">
         <ul class="list-group">
           {this.CategoryButton("Alla")}
+          {db.getSections().map((section) => this.CategoryButton(section))}
+          {/* {this.CategoryButton("Alla")}
           {this.CategoryButton("Bröd")}
           {this.CategoryButton("Mejeri")}
           {this.CategoryButton("Frukt och grönt")}
           {this.CategoryButton("Kött")}
-          {this.CategoryButton("Fryst")}
+          {this.CategoryButton("Fryst")} */}
         </ul>
       </div>
     );
@@ -119,7 +128,9 @@ class Kund extends Component {
       this.state.cart.push(Product);
       this.setState(this.state);
     } else {
+      var k = new Date().getTime();
       this.state.cart[i].units += 1;
+      this.state.cart[i].checked = Product.checked;
       this.setState(this.state);
     }
     // updates localStorage for the shopping cart after a product has been added.
@@ -130,13 +141,15 @@ class Kund extends Component {
   productExists(product) {
     for (let i = 0; i < this.state.cart.length; i++) {
       if (this.state.cart[i].name == product.name) {
-        return i;
+        if (this.state.cart[i].comment == product.comment) {
+          return i;
+        }
       }
     }
     return -1;
   }
 
-  
+  // Removes one unit of a product from the cart, if there is only one, remove the card.
   removeProduct(Product) {
     let i = this.productExists(Product);
     if (i > -1) {

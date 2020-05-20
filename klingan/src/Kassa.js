@@ -22,7 +22,7 @@ class Kassa extends Component {
       nameRef: React.createRef(),
       mailRef: React.createRef(),
       phoneRef: React.createRef(),
-      commentRef: React.createRef()
+      commentRef: React.createRef(),
     };
   }
 
@@ -99,7 +99,6 @@ class Kassa extends Component {
     );
   }
 
-
   // Hämtar varukorgen och all ifylld info och skapar en ny order med unikt id efter senaste ordern
   CreateOrder() {
     const orderList = JSON.parse(localStorage.getItem("orderList"));
@@ -114,7 +113,7 @@ class Kassa extends Component {
         customer={{
           name: this.state.nameRef.current.value,
           mail: this.state.mailRef.current.value,
-          telefon: this.state.phoneRef.current.value
+          telefon: this.state.phoneRef.current.value,
         }}
         comment={this.state.commentRef.current.value}
         id={maxId + 1}
@@ -146,12 +145,14 @@ function ShowCart() {
     return (
       <div>
         <h3>Din beställning:</h3>
-        {cart.map(cart => (
-          <li>
-            <div>
-              {cart.name}, {cart.units}
-            </div>
-          </li>
+        {cart.map((cart) => (
+          <ul class="articles">
+            <li>
+              <div>
+                {cart.name}, {cart.comment}, {cart.units},
+              </div>
+            </li>
+          </ul>
         ))}
       </div>
     );

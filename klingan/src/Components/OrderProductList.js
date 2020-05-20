@@ -6,12 +6,13 @@ import ListGroup from "react-bootstrap/ListGroup";
 import * as db from "../database/Database";
 
 // A class that holds a list of products, to be used in the Order component.
-// The products are sorted and displayed per section.
+// The products are sorted and displayed per productGroup.
 // Param: list of products.
 class OrderProductList extends Component {
   constructor(props) {
     super(props);
     this.state = { products: props.products };
+    console.log(this.state.products);
   }
 
   render() {
@@ -19,24 +20,22 @@ class OrderProductList extends Component {
     let temp = [];
     console.log(sorted);
     console.log(this.state.products);
-    for (let section of db.getSections()) {
-      let list = [];
+    for (let productGroup of db.getProductGroups()) {
       for (let product of sorted) {
-        if (section === product.section) {
-          list.push(
+        if (productGroup.name === product.name) {
+          temp.push(
             <ListGroup.Item>
               <OrderProductListIcon product={product} />
             </ListGroup.Item>
           );
         }
       }
-      if (list.length !== 0) {
-        temp.push(<h3>{section}</h3>);
-        temp.push(<ListGroup>{list}</ListGroup>);
-      }
     }
-
-    return <div className="Handlare">{temp}</div>;
+    return (
+      <div className="Handlare">
+        <ListGroup>{temp}</ListGroup>
+      </div>
+    );
   }
 }
 

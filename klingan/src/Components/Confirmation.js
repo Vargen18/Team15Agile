@@ -22,10 +22,10 @@ function ShowCart() {
     return (
       <div>
         <h3>Kundens beställning:</h3>
-        {cart.map(cart => (
+        {cart.map((cart) => (
           <li>
             <div>
-              {cart.name}, {cart.units}
+              {cart.name}, {cart.comment}, {cart.units}
             </div>
           </li>
         ))}
