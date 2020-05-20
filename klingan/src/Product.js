@@ -14,7 +14,7 @@ class Product extends React.Component {
       checked: props.checked,
       replacementProduct: props.checked
         ? "Ersättningsvara tillåts"
-        : "Ersättningsvara tillåts ej",
+        : "Ersättningsvara tillåts ej"
     };
 
     this.increaseClick = this.increaseClick.bind(this);
@@ -31,7 +31,7 @@ class Product extends React.Component {
       url: this.props.url,
       units: 1,
       section: this.props.section,
-      comment: this.state.comment,
+      comment: this.state.comment
     });
   }
 

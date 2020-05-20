@@ -11,14 +11,14 @@ class ProductList extends Component {
       products: props.products,
       kund: props.kund,
       addProd: props.addProd,
-      removeProd: props.removeProd,
+      removeProd: props.removeProd
     };
   }
 
   render() {
     return (
       <div class="productList">
-        {this.state.products.map((product) => (
+        {this.state.products.map(product => (
           <ProductListIcon
             product={product}
             name={product.name}

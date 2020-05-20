@@ -9,71 +9,71 @@ export function getProducts() {
       section: "Bröd",
       name: "Bröd hårt",
       url:
-        "https://bakeassetsprod.blob.core.windows.net/editorial/2016/01/Knadfritt-surdegsbrod.jpg",
+        "https://bakeassetsprod.blob.core.windows.net/editorial/2016/01/Knadfritt-surdegsbrod.jpg"
     },
     {
       id: 8,
       section: "Bröd",
       name: "Bröd mjukt",
       url:
-        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Knaeckebroed.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5a/Knaeckebroed.jpg"
     },
     {
       id: 9,
       section: "Mejeri",
       name: "Påläggsost",
       url:
-        "https://cdn.natmat.se/content/shopimages/large/54256-200063000000001735.jpg",
+        "https://cdn.natmat.se/content/shopimages/large/54256-200063000000001735.jpg"
     },
     {
       id: 10,
       section: "Frukt och grönt",
       name: "Apelsiner",
       url:
-        "https://upload.wikimedia.org/wikipedia/commons/3/36/Spinach_produce-1.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/36/Spinach_produce-1.jpg"
     },
     {
       id: 11,
       section: "Kött",
       name: "Kött fryst",
       url:
-        "https://vignette.wikia.nocookie.net/bacon/images/3/33/Buy_pork_streaky_bacon_from_online_butcher.jpg/revision/latest/scale-to-width-down/340?cb=20110507120600",
+        "https://vignette.wikia.nocookie.net/bacon/images/3/33/Buy_pork_streaky_bacon_from_online_butcher.jpg/revision/latest/scale-to-width-down/340?cb=20110507120600"
     },
     {
       id: 12,
       section: "Fryst",
       name: "Potatis fryst",
       url:
-        "https://upload.wikimedia.org/wikipedia/commons/1/11/Peas_in_pods_-_Studio.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/1/11/Peas_in_pods_-_Studio.jpg"
     },
     {
       id: 13,
       section: "Frukt och grönt",
       name: "Äpple",
       url:
-        "https://d2rfo6yapuixuu.cloudfront.net/h7a/hdd/8985445564446/07311042016953.jpg_1507668936582_master_axfood_400",
+        "https://d2rfo6yapuixuu.cloudfront.net/h7a/hdd/8985445564446/07311042016953.jpg_1507668936582_master_axfood_400"
     },
     {
       id: 14,
       section: "Mejeri",
       name: "Ägg",
       url:
-        "https://www.valio.se/sites/default/files/styles/list_small/public/field/image/product/mjolk_latt_eko_1.png?itok=JMxNE1NA",
+        "https://www.valio.se/sites/default/files/styles/list_small/public/field/image/product/mjolk_latt_eko_1.png?itok=JMxNE1NA"
     },
     {
       id: 15,
       section: "Fryst",
       name: "Bär fryst",
       url:
-        "https://assets.icanet.se/t_product_large_v1,f_auto/7318690118053.jpg",
+        "https://assets.icanet.se/t_product_large_v1,f_auto/7318690118053.jpg"
     },
     {
       id: 16,
       section: "Kött",
       name: "Gris",
       url:
-        "https://melins.se/wp-content/uploads/2018/01/skinka-skivad-20181102-097A4515.jpg",
-    },
+        "https://melins.se/wp-content/uploads/2018/01/skinka-skivad-20181102-097A4515.jpg"
+    }
   ];
 }
 
@@ -109,7 +109,7 @@ export function getProductGroups() {
     "Ägg",
     "Kött fryst",
     "Påläggsost",
-    "Bröd mjukt",
+    "Bröd mjukt"
   ];
 }
 //Innan du frågar, ja de finns två "Äpple"

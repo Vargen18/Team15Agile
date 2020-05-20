@@ -22,10 +22,14 @@ function ShowCart() {
     return (
       <div>
         <h3>Kundens beställning:</h3>
-        {cart.map((cart) => (
+        {cart.map(cart => (
           <li>
             <div>
-              {cart.name}, {(cart.comment) == "" ? "-" : (this.cart.comment)}, {cart.units}, {(cart.checked) ? "Ersättningsvara tillåts" : "Ersättningsvara tillåts ej"}
+              {cart.name}, {cart.comment == "" ? "-" : this.cart.comment},{" "}
+              {cart.units},{" "}
+              {cart.checked
+                ? "Ersättningsvara tillåts"
+                : "Ersättningsvara tillåts ej"}
             </div>
           </li>
         ))}

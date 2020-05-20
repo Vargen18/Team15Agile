@@ -24,7 +24,7 @@ class ProductListIcon extends Component {
       addProd: props.addProd,
       removeProd: props.removeProd,
       sortRef: React.createRef(),
-      checked: React.createRef(),
+      checked: React.createRef()
     };
 
     this.increaseClick = this.increaseClick.bind(this);
@@ -38,7 +38,7 @@ class ProductListIcon extends Component {
       units: 1,
       section: this.state.section,
       comment: this.state.sortRef.current.value,
-      checked: this.state.checked.current.checked,
+      checked: this.state.checked.current.checked
     });
     this.state.sortRef.current.value = "";
   }

@@ -13,8 +13,12 @@ class OrderProductListIcon extends Component {
     return (
       <div>
         <span>
-          {this.state.product.name}, ({(this.state.product.comment) == "" ? "-" : (this.state.product.comment)}) Mängd:{" "}
-          {this.state.product.units}, {(this.state.product.checked) ? "Ersättningsvara tillåts" : "Ersättningsvara tillåts ej"}
+          {this.state.product.name}, (
+          {this.state.product.comment == "" ? "-" : this.state.product.comment})
+          Mängd: {this.state.product.units},{" "}
+          {this.state.product.checked
+            ? "Ersättningsvara tillåts"
+            : "Ersättningsvara tillåts ej"}
         </span>
       </div>
     );
