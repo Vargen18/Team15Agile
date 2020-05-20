@@ -149,7 +149,7 @@ function ShowCart() {
           <ul class="articles">
             <li>
               <div>
-                {cart.name}, {cart.comment}, {cart.units},
+                {cart.name}, {(cart.comment) == "" ? "-" : (this.cart.comment)}, {cart.units}, {(cart.checked) ? "Ersättningsvara tillåts" : "Ersättningsvara tillåts ej"}
               </div>
             </li>
           </ul>
