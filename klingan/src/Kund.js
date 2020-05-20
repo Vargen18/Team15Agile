@@ -149,6 +149,7 @@ class Kund extends Component {
     return -1;
   }
 
+  // Removes one unit of a product from the cart, if there is only one, remove the card.
   removeProduct(Product) {
     let i = this.productExists(Product);
     if (i > -1) {

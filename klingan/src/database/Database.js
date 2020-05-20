@@ -579,4 +579,3 @@ export function getProductGroups() {
   {"id":814,"name":"Cafe drycker"},
   {"id":815,"name":"Fastfood övrigt"}];
 }
-//Innan du frågar, ja de finns två "Äpple"

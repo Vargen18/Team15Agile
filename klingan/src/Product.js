@@ -3,6 +3,11 @@ import "./App.css";
 import "./Handlare.css";
 import "./Product.css";
 
+// Class that provides a card for a product containing the name, comment, information about amount and whether another product is accepted
+// Also button for adding product to cart
+// Uses the Button and Card bootstrap framworks.
+// Made to be used for the cart
+// Param: Product, addProd, removeProd, comment, checked (Whether checkbox was clicked or not in main browse window)
 class Product extends React.Component {
   constructor(props) {
     super(props);
@@ -19,12 +24,9 @@ class Product extends React.Component {
 
     this.increaseClick = this.increaseClick.bind(this);
     this.decreaseClick = this.decreaseClick.bind(this);
-
-    const replacementProduct = props.checked
-      ? "Ersättningsvara tillåts"
-      : "Ersättningsvara tillåts ej";
   }
 
+  //Adds another product/unit to the cart
   increaseClick() {
     this.state.addProd({
       name: this.props.name,
@@ -36,6 +38,7 @@ class Product extends React.Component {
     });
   }
 
+  //Removes the product/unit from the cart.
   decreaseClick() {
     this.state.removeProd(this.state.product);
   }
@@ -70,98 +73,3 @@ class Product extends React.Component {
 }
 
 export default Product;
-
-// onClick={this.decreaseClick}
-
-/*
-
-import React, { Component } from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import Form from "react-bootstrap/Form";
-import FormControl from "react-bootstrap/FormControl";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
-// Class that provides a card for a product containing the picture and name.
-// Also buttons for increasing/decresing the number of products in the shopping cart.
-// Uses the Button and Card bootstrap framworks.
-// Made to be used for the product list component.
-// Param: Product, name, url, units, addProd, removeProd
-class ProductListIcon extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      product: props.product,
-      productName: props.name,
-      picture: props.url,
-      units: props.units,
-      kund: props.kund,
-      section: props.section,
-      addProd: props.addProd,
-      removeProd: props.removeProd,
-      sortRef: React.createRef(),
-    };
-
-    this.increaseClick = this.increaseClick.bind(this);
-    this.decreaseClick = this.decreaseClick.bind(this);
-  }
-
-  increaseClick() {
-    this.state.addProd({
-      name: this.state.product.name,
-      url: this.state.product.url,
-      units: 1,
-      section: this.state.section,
-    });
-  }
-
-  decreaseClick() {
-    this.state.removeProd(this.state.product);
-  }
-
-  render() {
-    return (
-      <div class="card" style={{ width: "13rem" }}>
-        <img
-          class="card-img-top"
-          src={this.state.picture}
-          alt="Card image cap"
-          height="200px"
-        />
-        <Form>
-          <Form.Group as={Row} controlId="formHorizontalNamn">
-            <Col sm={10}>
-              <Form.Control
-                type="sort"
-                placeholder="Specifik sort"
-                ref={this.state.sortRef}
-              />
-            </Col>
-          </Form.Group>
-        </Form>
-        <div class="card-body">
-          <h5 class="card-title">{this.state.productName}</h5>
-          <button
-            type="button"
-            class="btn btn-success btn-lg"
-            onClick={this.increaseClick}
-          >
-            +
-          </button>
-          <button
-            type="button"
-            class="btn btn-danger btn-lg"
-            onClick={this.decreaseClick}
-          >
-            -
-          </button>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default ProductListIcon;
-
-*/

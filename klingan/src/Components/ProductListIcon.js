@@ -31,6 +31,7 @@ class ProductListIcon extends Component {
     this.decreaseClick = this.decreaseClick.bind(this);
   }
 
+  //Adds another product/unit to the cart.
   increaseClick() {
     this.state.addProd({
       name: this.state.product.name,
@@ -43,6 +44,7 @@ class ProductListIcon extends Component {
     this.state.sortRef.current.value = "";
   }
 
+  //Removes a product from the cart.
   decreaseClick() {
     this.state.removeProd(this.state.product);
   }
