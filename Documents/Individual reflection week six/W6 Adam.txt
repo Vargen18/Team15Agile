@@ -1,0 +1,9 @@
+﻿Everything is same as last week.
+
+
+(A) What have I contributed with?
+Created a checkout page, complete with everything that entails. It sends the order and clears the cart. The order shows up on the “handlare” page.
+(B) What do I want to contribute with?
+Try to tie up loose ends before the project ends
+(A -> B) How can I contribute?
+Discuss hard with the other team members what we want to fix and what gets left unfinished since the next week will be the last for project development.
