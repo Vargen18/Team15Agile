@@ -1,0 +1,16 @@
+﻿What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+Helped discuss the user stories and manage the trelloboard with acceptance criterias. Feel like everyone has been good at that so far. Contribute during the meetings.
+(B) What do I want to contribute with?
+The same as last week.
+(A -> B) How can I accomplish that?
+Keep on doing it.
+
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+We kept working on the shopping cart. Looks kinda okay now
+(B) What do I want to contribute with?
+Not sure for now, the next step would be to create some kind of checkout page
+(A -> B) How can I contribute?
+Figure out how to carry the cart forward. It is in localstorage so shouldnt be too hard
