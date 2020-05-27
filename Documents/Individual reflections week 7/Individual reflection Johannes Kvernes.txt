@@ -1,0 +1,37 @@
+﻿Individual reflection week 7 by Johannes Kvernes
+
+
+What do I want to learn or understand better?
+(A) What have I learned?
+This sprint I have gotten more comfortable with reviewing code and commenting on and accepting pull requests on github. I also looked through some slides to refresh my memory about agile practices.
+(B) What do I want to learn?
+If I were to have this project again, it would be fun to run the website on a server so that I could access it from anywhere and others could as well. This means I would have to learn how to set up a server and the communication between the server and the client.
+(A -> B) How do I learn it?
+I could do research online, and ask friends who have done this kind of thing.
+
+
+How can I help someone else, or the entire team, to learn something new?
+(A) What have I done to help the team?
+As this sprint was the last one, not much focus has been on learning new things, but in our discussions I have been as active as I could.
+(B) What do I want to do to help someone learn something new?
+In a future project, I believe I should be more active and speak more, which could help others in the group if I have answers to their questions.
+(A -> B) How do I want to help someone else learn something new?
+Apply my programming knowledge, or the knowledge that I’ve obtained about scrum and agile processes in this course.
+
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+I have made sure that we follow the rules in the contract and definition of done. Though this was not much work, as all team members are very reliable.
+(B) What do I want to contribute with?
+In a future project, I would like to have a more present role, perhaps as scrum master.
+(A -> B) How can I accomplish that?
+“Claim” scrum master as my role in the beginning of the project.
+
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+I have written part of the team reflection, and I have coded and reviewed a lot of code.
+(B) What do I want to contribute with?
+I think I have contributed with a good amount and quality to the deliveries, so I do not wish to make any changes to that. That is, I want to code a lot and write team reflections or other similar documents.
+(A -> B) How can I contribute?
+Code a lot and write team reflections or other similar documents. It’s just that easy.
