@@ -1,0 +1,9 @@
+What do I want to learn or understand better?
+In our final week we discussed how we needed a different database as well as a server to make the project run on its own. I would like to learn more about what kind of solutions there are and what types can be implemented into a project like ours. 
+
+How can I help someone else, or the entire team, to learn something new?/ what is my contribution towards the team’s use of Scrum?
+I have been active in the scrum meetings and helped bring discussions forward. 
+
+what is my contribution towards the team’s deliveries? 
+
+I helped formulate what needed to be said to the stakeholder, as in explained what we would have time to do and what they would see as most important to get done. I have also programmed in a pair, delivered code and so given value to the project.  
