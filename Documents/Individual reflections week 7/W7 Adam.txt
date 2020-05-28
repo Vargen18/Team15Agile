@@ -1,0 +1,25 @@
+﻿What do I want to learn or understand better?
+(A) What do I know now?
+A bit about reactjs and css
+(B) What do I want to learn?
+Maybe some server stuff. This project everything is handled locally
+(A -> B) How do I learn it?
+Maybe in a future course
+
+
+What is my contribution towards the team's use of Scrum?
+(A) What have I contributed with?
+This week we didn’t choose any new user stories to do since it is the last week
+(B) What do I want to contribute with?
+Finishing up the project
+(A -> B) How can I accomplish that?
+Keep on trucking.
+
+
+What is my contribution towards the team's deliveries?
+(A) What have I contributed with?
+Helping with my assigned task and getting everything ready for the presentation
+(B) What do I want to contribute with?
+Finishing up the report, getting the last stuff done and doing the presentation.
+(A -> B) How can I contribute?
+Doing the work
