@@ -1,0 +1,25 @@
+Self-evaluation 
+15/5 – 2020
+Oliver Karmetun
+
+What do I want to learn or understand better?:
+This week I cleared out with the stakeholder what they thought was most important to work on for this week. 
+I forwarded this to the team on Monday. I want to learn how the report should be made, so I will look through 
+the canvas page about it.
+
+How can I help someone else, or the entire team, to learn something new?:
+I helped the group I was not part of this week (Anna/Johannes) how we wanted the sorting to work. 
+I don’t see anything I can help the team learn something new for the last week.
+
+What is my contribution towards the team’s use of Scrum?:
+I did a final sprint review with the customer and prioritized what user stories we would do for the final week.
+I forwarded this to the team on Monday scrum meeting.
+I jumped between all teams in order to coordinate what methods should be made on each one in order to make the
+ work compatible. This helped greatly I think for the merges.
+
+What is my contribution towards the team’s deliveries?: 
+This week I worked with two groups on two different days. On Monday I worked with William and Max to fix 
+comment on product user story. 
+On Tuesday I worked with Samuel and Adam to fix the LoadExcelProducts user story. We had problems reading 
+the excel without a server, so we instead converted the excel to a format that html recognizes.
+I will try to contribute to our report as best I can next week.
