@@ -1,0 +1,21 @@
+Individual reflection – week 7 William Gerle
+
+What do I want to learn or understand better? 
+A:This week, I have been learning to better understand how the final touches of our project could contribute to customer value as much as possible.
+B:Next week, I would want to get a better understanding of our previous team reflections to be able to create a good final reflection.
+A->B: Read all the old team reflections and compare them to each other and think about how things have changed during the project. 
+
+How can I help someone else, or the entire team, to learn something new? 
+A: This week, I have showed to the group how if statements can be written as one-liners. 
+B: Next week, I would like to propose for the group that we should write the report in Latex, so that it looks nice. 
+A->B: I need to give the group an example of a Latex document and set up a Latex document for them. 
+
+What is my contribution towards the team’s use of Scrum?
+A: This week, besides attending our Scrum meetings I have reflected a lot with the team on our application of scrum.
+B: Next week, when we write the final reflection I would like to further reflect about our scrum use and what could have been done better.
+A->B: I will do this by taking time to reflect and talk to my team members during and before our meetings. 
+
+What is my contribution towards the team’s deliveries? 
+A: I helped finish up some touches on the product and wrote a lot of the team reflection.
+B: Next week, I would like to contribute to the final reflection with my opinions and thought regarding the project. 
+A->B: I hope to accomplish this by good planning and to take time for a good discussion during our meetings.
